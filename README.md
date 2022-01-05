@@ -17,7 +17,12 @@ sitio. También agregar una breve descripción del público al que apunta el sit
 Road Tripping SA es una empresa de turismo, dedicada a la venta de paquetes personalizados con el fin de satisfacer todas las demandas de nuestros clientes. Nuestros paquetes, que pueden ser para viajes en familia, como tambien para parejas o viajes con amigos, incluyen desde el transporte al destino elegido, hasta el alojamiento en los mejores hoteles, traslados desde y hacia el aeropuerto, alquiler de coches y todo lo que haga falta para vivir una experiencia de viaje relajada, divertida e inolvidable.  
 
 https://www.transrioturismo.tur.ar/travel/mision-vision-valores/
+Este sitio fue elegido por su apariencia y estructura. Es una idea simple y a la vez muy practica.
 https://www.magictravelbyana.com/mision-vision-valores/
+Este sitio fue elegido por su estructura y cantidad informacion.
 https://www.australia.com/en-us
+Este sitio fue elegido por su aparencia minimalista y simple. Capta mas la atencion del publico al que va dirigido.
 https://srilanka.travel/
+Este sitio fue elegido por su aparencia y practicidad.
 https://www.coovaeco.com/
+Este sitio se eligio por tener una estructura practica y apuntada a lo que necesita el usuario.
