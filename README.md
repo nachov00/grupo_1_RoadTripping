@@ -27,8 +27,11 @@ sitio. También agregar una breve descripción del público al que apunta el sit
 INTEGRANTES:
 
 Lis Perdomo: Planificadora, Project Manager, ux-ui
+
 Lucas Zanier: Lógistica, UX-UI
+
 Ignacio 
+
 Tomas Tisera: 
 
 3. Inspiración referentes del mercado
