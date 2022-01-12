@@ -24,6 +24,13 @@ Entregable​:​ Crear archivo README.md en el repositiorio con:
 sitio. También agregar una breve descripción del público al que apunta el sitio.
 ● Una breve descripción de los integrantes del equipo
 
+INTEGRANTES:
+
+Lis Perdomo: Planificadora, Project Manager, ux-ui
+Lucas Zanier:
+Ignacio 
+Tomas Tisera: 
+
 3. Inspiración referentes del mercado
 
 https://www.transrioturismo.tur.ar/travel/mision-vision-valores/
