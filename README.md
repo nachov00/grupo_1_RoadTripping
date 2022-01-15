@@ -26,13 +26,13 @@ sitio. También agregar una breve descripción del público al que apunta el sit
 
 INTEGRANTES:
 
-Lis Perdomo: Planificadora, Project Manager, ux-ui
+Lis Perdomo: Planificadora, Project Manager, UX-UI, Front-End Developer, Back-End Developer
 
-Lucas Zanier: Lógistica, UX-UI
+Lucas Zanier: Lógistica, UX-UI, Front-End Developer, Back-End Developer
 
-Ignacio 
+Ignacio Villanueva: Front-End Developer, Back-End Developer, UX-UI
 
-Tomas Tisera: 
+Tomas Tisera: Front-End Developer, Back-End Developer, UX-UI
 
 3. Inspiración referentes del mercado
 
