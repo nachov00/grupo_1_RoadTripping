@@ -1,0 +1,40 @@
+header {
+    background-color: bisque;
+}
+
+    .upper-head {
+
+    }
+
+        .logo {
+            display: inline-block  grid  inline-grid;
+            margin-left: 2%;
+            width: 20%;
+            /*22% del total*/
+        }
+
+        .fav-car-user {
+            display: inline-block  grid  inline-grid; 
+            margin-right: 2%;
+            margin-left: 60%;
+            box-sizing: border-box;
+            width: 15%;
+            /*17% del total*/
+            /*22% + 17% = 39% del total*/
+            /*100% - 39% = 61% disponible*/
+            text-align: center;
+        }
+
+    .lower-head {
+        
+    }
+
+        .buscador {
+            display: grid  inline-grid;
+            display: inline-block;
+        }
+
+        .boton-estrella {
+            display: grid  inline-grid;
+            display: inline-block;
+        }
