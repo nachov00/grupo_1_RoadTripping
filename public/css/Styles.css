@@ -10,5 +10,37 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
+.img-with-text {
+    text-align: start;
+    width: 10px;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.ingresar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+#ingresa-aqui {
+    color: blue;
+}
+
+#imagen-login {
+    display: flex;
+    justify-content: flex-start;
+}
