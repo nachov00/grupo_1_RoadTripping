@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar</title>
+    <title>Ingresa a tu cuenta</title>
     <link rel="Stylesheet" href="css/Styles.css">
 </head>
-<body class="ingresar">
+<header class="ingresar">
     <div id="imagen-login">
-        <img src="/img/Logo.png" alt="" width="100px">
+        <img src="/img/Logo.png" alt="" width="200px">
     </div>
-   <h1>Iniciar Sesión</h1>
-   <h2>Para crear una cuenta nueva <a id="ingresa-aqui" href="">Ingresa aquí</a></h2>
+    <div class="header-login">
+        <h1>Iniciar Sesión</h1>
+        <h2>Para crear una cuenta nueva <a id="ingresa-aqui" href="/register" target="_blank">Ingresa aquí</a></h2>
+    </div>
+</header>
+<body>
+    <form>
+        <div>
+            <label for="">Usuario: </label>
+            <input type="text" placeholder="Nombre de usuario" name="username" required> 
+            <label for="">Contraseña: </label>
+            <input type="password" placeholder="Contraseña" name="password" required>
+            <button type="submit">Ingresar</button>   
+            <input type="checkbox" checked="checked"> Recuérdame
+            <button type="button" class="cancelbtn"> Cancelar</button>
+            Olvidaste <a href="#"> contraseña? </a>  
+        </div>
+    </form>
+
 </body>
 </html>
