@@ -1,0 +1,14 @@
+.typo-roboto {
+    font-family: roboto;
+}
+
+.color-fondo {
+    background-color: #FFF72F;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
