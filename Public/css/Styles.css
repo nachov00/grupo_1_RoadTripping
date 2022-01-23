@@ -13,6 +13,76 @@
 }
 /*Codigo de Producto*/
 
+div#general{
+    margin:0%;
+    margin-top: 50px;
+    width: 1200px;
+    height: 3500px;
+    background-color: white;
+
+}
+
+div#promos{
+    width: 200px;
+    height: 50px;
+    background-color: #2A3594;
+    color:white;
+    text-align: center;
+    /*font-size: 15px;*/
+}
+
+.destino-precio ul li{
+    display: flex;
+    flex-wrap:wrap;
+    float: right;
+    width: 250px;
+    height: 80px;
+    background-color: #2A3594;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+}
+
+.destino-precio a{
+    text-decoration: none;
+    display: block;
+    border: 1px #FA9E29;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin-block-end: auto;
+    box-shadow: 0 0 0 10px #FA9E29,
+                0 15px 50px;
+    background-color:#FA9E29;
+    color:white;
+    border-radius: 10px;
+    float: right;
+    display: flex;
+    align-self: flex-end;
+    
+    transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+}
+
+.destino-precio a:hover{
+    background-color: white;
+    border-color: 1px #FA9E29;
+    color: #FA9E29;
+}
+div#descripcion{
+    width: 900px;
+    height: 200px;
+    background-color: #FA9E29;
+    font-size: 12px;
+}
+
 ul, li{
     margin:0;
     padding: 0;
@@ -20,16 +90,23 @@ ul, li{
 }
 
 .barra-origen-destino-fecha{
+    width: 600px;
+    height: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 400px;
+    background-color:#809DE8;
 }
 
-.promo-destino{
+.promo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
+    align-items: center;
 }
 .container-slider{
     width: 90%;
@@ -39,7 +116,8 @@ ul, li{
     box-shadow: 0 0 0 10px #809DE8,
                 0 15px 50px;
     position: relative;
-   
+   margin-top: 40px;
+   margin-bottom: 40px;
 }
 
 .slider{
