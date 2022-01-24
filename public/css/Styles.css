@@ -1,5 +1,4 @@
 header {
-    background-color: bisque;
     background-image: url(/public/img/Header.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -131,35 +130,52 @@ header {
 
 /*------------------------------------------------------------------*/
 
-.carrito {
+main {
+    height: 600px;
+    width: 100%;
     --espaciado-horizontal: 10%;
     --espaciado-vertical: 10%;
+    width: 100%;
     display: grid;
     grid-template-rows: var(--espaciado-horizontal) auto var(--espaciado-horizontal);
     grid-template-columns: var(--espaciado-vertical) auto 20% var(--espaciado-vertical);
 }
 
+.carrito {
+    --espaciado-horizontal: 10%;
+    --espaciado-vertical: 10%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #2A3594;
+    margin: 10px;
+    border-radius: 30px;
+    color: #FFFFFF;
+
+}
+
     .encuadre {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-color: #2A3594;
-        margin: 10px;
-        border-radius: 30px;
-        color: #FFFFFF;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 15% 25% auto 15%;
+        grid-template-rows: 10% 25% 25% 25% 15%;
     }
 
     .encuadre h3 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
         margin-left: 10px;
     }
-
+/*-------------------------------------------*/
     .producto {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
         margin: 10px 0px 10px 0px;
-        display: grid;
-        grid-template-columns: 15% 20% auto 15%;
         background-color: #809DE8;
         color: #000000;
+            display: grid;
+            grid-template-columns: 15% 25% auto 15%;
     }
 
     .producto span i {
@@ -183,13 +199,15 @@ header {
         grid-column-start: 4;
         grid-column-end: 5;
     }
-
+/*-------------------------------------------*/
     .detalles {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
         margin: 10px 0px 10px 0px;
-        display: grid;
-        grid-template-columns: 15% 20% auto 15%;
         background-color: #809DE8;
         color: #000000;
+            display: grid;
+            grid-template-columns: 15% 25% auto 15%;
     }
 
     .detalles span i {
@@ -210,11 +228,13 @@ header {
     }
 /*-------------------------------------------*/
     .agregado {
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
         margin: 10px 0px 10px 0px;
-        display: grid;
-        grid-template-columns: 15% 20% auto 15%;
         background-color: #809DE8;
         color: #000000;
+            display: grid;
+            grid-template-columns: 15% 25% auto 15%;
     }
 
     .agregado span i {
@@ -234,8 +254,9 @@ header {
         grid-column-end: 4;
     }
 /*-------------------------------------------*/
-
     .total {
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
         display: flex;
         justify-content: space-between;
     }
@@ -247,11 +268,48 @@ header {
     .total p {
         margin: 16px 16px 16px 0px;
     }
+/*-------------------------------------------*/
 
+.sugerencias{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.sugerencia-1 {
+    grid-row: 1 / 2;
+        display: grid;
+        grid-template-rows: 80% 20%;
+}
+
+.sugerencia-2 {
+    grid-row: 2 / 3;
+        display: grid;
+        grid-template-rows: 80% 20%;
+}
+
+.sugerencia-1 p {
+    grid-row: 1 / 2;
+    background-color: coral;
+    border-radius: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+.sugerencia-1 span {
+    justify-content: center;
+}
+
+.sugerencia-2 p {
+    grid-row: 1 / 2;
+    background-color: coral;
+    border-radius: 30px;
+    margin: 0px 0px 0px 0px;
+}
 /*------------------------------------------------------------------*/
 
 footer {
-    display: none;
     background-color: #FFF72F;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
