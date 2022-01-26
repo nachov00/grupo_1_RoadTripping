@@ -19,64 +19,27 @@ div#general{
     width: 1200px;
     height: 3500px;
     background-color: white;
+ }
 
-}
-
-div#promos{
+ div#promos{
     width: 200px;
     height: 50px;
     background-color: #2A3594;
     color:white;
     text-align: center;
-    /*font-size: 15px;*/
 }
 
-.destino-precio ul li{
+.promo{
     display: flex;
-    flex-wrap:wrap;
-    float: right;
-    width: 250px;
-    height: 80px;
-    background-color: #2A3594;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    margin-right: 20px;
-    margin-left: 20px;  
+    width: 10px;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
 }
 
-.destino-precio a{
-    text-decoration: none;
-    display: block;
-    border: 1px #FA9E29;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    padding-top: 10px;
-    margin-block-end: auto;
-    box-shadow: 0 0 0 10px #FA9E29,
-                0 15px 50px;
-    background-color:#FA9E29;
-    color:white;
-    border-radius: 10px;
-    float: right;
-    display: flex;
-    align-self: flex-end;
-    
-    transition: 1s;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-}
-
-.destino-precio a:hover{
-    background-color: white;
-    border-color: 1px #FA9E29;
-    color: #FA9E29;
-}
 div#descripcion{
-    width: 900px;
+    width: 600px;
     height: 200px;
     background-color: #FA9E29;
     font-size: 12px;
@@ -101,61 +64,73 @@ ul, li{
     background-color:#809DE8;
 }
 
-.promo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-}
-.container-slider{
-    width: 90%;
-    max-width: 900px;
-    margin:0;
-    overflow: hidden;
-    box-shadow: 0 0 0 10px #809DE8,
-                0 15px 50px;
-    position: relative;
-   margin-top: 40px;
-   margin-bottom: 40px;
-}
-
-.slider{
-    display: flex;
-    width: 900%;
-    height: 400px;
-    margin-left: -100%;
-}
-
-.slider__section{
-    align-items: flex-end;
-}
-
-.slider__img{
-    display: block;
+body{
+    background-color: white;
+    font-family: sans-serif;
+  }
+  
+  .container{
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position:relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
-}
-
-.slider__btn{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #809DE8;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: monospace;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
     text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-
-}
-.slider__btn--left{
-    left: 10px;
-}
-
-.slider__btn--right{
-    right: 10px;
-}
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
