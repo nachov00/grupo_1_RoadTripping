@@ -4,6 +4,7 @@
 ºReuniones de grupo
 ºReuniones de avance con el profesor
 ºMotivacion de participacion
+°Devoluciones Excelentes de los Springs
 **Seguir Haciendo:**
 ºReuniones semanales
 º Organizacion en cuanto a los documentos
