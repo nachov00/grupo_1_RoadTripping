@@ -55,3 +55,6 @@ Este sitio se eligio por tener una estructura practica y apuntada a lo que neces
 
 https://www.figma.com/file/yArmp2cQ9BdqqatTnrkT11/RoadTripping?node-id=0%3A1
 Wireframes de las cinco vistas principales de la página: Home, Detalles del producto, Carrito de compras, Log In & Sign in
+
+**Tablero de Seguimiento de Proyecto**
+https://github.com/nachov00/grupo_1_RoadTripping/projects/1
