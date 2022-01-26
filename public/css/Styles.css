@@ -83,9 +83,7 @@ header {
 
     .buscador {   
         color: rgb(226, 226, 226);
-        background-color: white;
         padding: 1px;
-        border: 1px solid gray;
         border-radius: 10px;
         margin: 2px 160px 2px 80px;
         grid-column-start: 2;
@@ -94,17 +92,22 @@ header {
         grid-row-end: 3;
     }
 
-        .contenedor-1 {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 94% 6%;
-            grid-template-rows: 100%;
-        }
+            .buscador input {
+                border-radius: 5px;
+
+            }
+
+            .buscador button {
+                border-radius: 5px;
+
+            }
+
+            .texto-1 {
+               
+            }
 
             .icon-1 {
-                grid-column-start: 2;
-                grid-column-end: 3;
-
+                
             }
 
     .boton-estrella {
@@ -176,18 +179,25 @@ main {
         color: #000000;
             display: grid;
             grid-template-columns: 15% 25% auto 15%;
+            
     }
 
-    .producto span i {
+    .producto span {
         grid-column-start: 1;
         grid-column-end: 2;
-        margin: 16px 0px 16px 0px;
+        margin: 16px auto 16px auto;
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
     }
     
     .producto h4 {
         grid-column-start: 2;
         grid-column-end: 3;
-        margin: 16px 0px 16px 10px;
+        margin: 16px auto 16px 10px;
     }
 
     .producto p {
@@ -210,10 +220,15 @@ main {
             grid-template-columns: 15% 25% auto 15%;
     }
 
-    .detalles span i {
+    .detalles span {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: 16px 0px 16px 0px;
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
     }
     
     .detalles h4 {
@@ -237,10 +252,15 @@ main {
             grid-template-columns: 15% 25% auto 15%;
     }
 
-    .agregado span i {
+    .agregado span {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: 16px 0px 16px 0px;
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
     }
     
     .agregado h4 {
@@ -292,7 +312,7 @@ main {
 
 .sugerencia-1 p {
     grid-row: 1 / 2;
-    background-color: coral;
+    background-color: #FA6C05;
     border-radius: 30px;
     margin: 0px 0px 0px 0px;
 }
@@ -303,10 +323,11 @@ main {
 
 .sugerencia-2 p {
     grid-row: 1 / 2;
-    background-color: coral;
+    background-color: #FA6C05;
     border-radius: 30px;
     margin: 0px 0px 0px 0px;
 }
+
 /*------------------------------------------------------------------*/
 
 footer {

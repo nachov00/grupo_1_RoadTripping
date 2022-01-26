@@ -1,0 +1,257 @@
+body {
+    display: grid;
+    grid-template-rows: 28% 62% 10%;
+}
+
+/*------------------------------------------------------------------*/
+
+header {
+    background-image: url(/public/img/Header.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    font-family: 'Roboto', sans-serif;
+    grid-row: 1 / 2;
+}
+
+.upper-head {
+    --espaciado-lateral: 2%;
+    --espaciado-horizontal: 3fr;
+    height: 50%;
+    display: grid;
+    grid-template-columns: var(--espaciado-lateral) 30% auto 10% 7%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+    .logo {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .logo-img {
+        width: 100%; 
+    }
+
+    .fav-car-user {
+        grid-column-start: 4;
+        grid-column-end: 5; 
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+
+    .user-grid {
+        --padding: 5px;
+        --border-radius: 30%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+        .fav { 
+            border: 1px solid #4f78e2;
+            padding: var(--padding);
+            border-radius: var(--border-radius);
+            background-color: #809de8;
+        }
+
+        .basket {
+            border: 1px solid #4f78e2;
+            padding: var(--padding);
+            border-radius: var(--border-radius);
+            background-color: #809de8;
+        }
+
+        .user {
+            border: 1px solid #4f78e2;
+            padding: var(--padding);
+            border-radius: var(--border-radius);
+            background-color: #809de8;
+        }
+
+
+.lower-head {
+    --espaciado:2%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: var(--espaciado) 43% auto 33% var(--espaciado);
+    grid-template-rows: 30% 25% 25% 5% 15%;
+}
+
+    .buscador {   
+        color: rgb(226, 226, 226);
+        padding: 1px;
+        border-radius: 10px;
+        margin: 2px 160px 2px 80px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+            .buscador input {
+                border-radius: 5px;
+
+            }
+
+            .buscador button {
+                border-radius: 5px;
+
+            }
+
+            .texto-1 {
+               
+            }
+
+            .icon-1 {
+                
+            }
+
+    .boton-estrella {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .texto-2{
+            display: none;
+        }
+
+        .boton-estrella i {
+            padding: 2px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 30%;
+            font-size: 30px;
+            color: #fa9e29;
+        }
+
+/*------------------------------------------------------------------*/
+
+main {
+    grid-row: 2 / 3;
+    height: 1000px;
+    
+}
+
+.nosotros {
+    margin: 10px;
+}
+
+.encabezado-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado-1 article {
+    width: 60%;
+    background-color: #2A3594;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 10px 10px 10px;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.encabezado-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.encabezado-2 article {
+    width: 40%;
+    background-color: #809DE8;
+    color: #000000;
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+    border-radius: 10px;
+}
+
+.contacto {
+    margin: 10px;
+}
+/*--------------------------------*/
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input [type=email], select, textarea  {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  } 
+/*--------------------------------*/
+
+/*------------------------------------------------------------------*/
+
+footer {
+    background-color: #FFF72F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing:border-box;
+    grid-row: 3 / 4;
+}
+
+.contenedor-home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+
+
+#logo-footer {
+    display: flex;
+
+}
