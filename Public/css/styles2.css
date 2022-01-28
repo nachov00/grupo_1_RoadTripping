@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-/*Codigo de Producto*/
+/*----HEADER----*/
 
 header {
   background-image: url(/public/img/Header.png);
@@ -138,6 +138,8 @@ header {
           font-size: 30px;
           color: #fa9e29;
       }
+/*   -------------------   */
+/*----DETALLE DE PRODUCTO-----*/
 
 div#general{
     margin:0%;
@@ -157,10 +159,12 @@ div#general{
 
 .promo{
     display: flex;
-    width: 10px;
+    width: 200px;
+    height: 60px;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -188,6 +192,44 @@ ul, li{
     margin-bottom: 0.5%;
     margin-left: 400px;
     background-color:#809DE8;
+    border-radius: 10px;
+}
+
+.destino-precio ul h2 li{
+  width: 200px;
+  height: 60px;
+  background-color: #2A3594;
+  color: white;
+}
+
+.destino-precio h2 a{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  display: block;
+  border: 1px dotted #FA9E29;
+  box-shadow: 3px 3px 10px #FA9E29;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  margin:auto;
+  background-color: #FA9E29;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+
+  transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+}
+
+.destino-precio h2 a:hover{
+background-color: white;
+border: 1px dotted #FA9E29;
+color: #FA9E29;
 }
 
 body{
@@ -260,3 +302,28 @@ body{
     font-size: 20px;
     border-radius: 100%;
   }
+
+  /*Footer*/
+  footer {
+    background-color: #FFF72F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing:border-box;
+    height: 135px;
+}
+
+.contenedor-home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+
+
+#logo-footer {
+    display: flex;
+
+}
