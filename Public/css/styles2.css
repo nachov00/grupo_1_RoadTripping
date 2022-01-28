@@ -153,19 +153,26 @@ div#general{
     width: 200px;
     height: 50px;
     background-color: #2A3594;
+    border-radius: 10px;
+    margin-top: 10px;
     color:white;
     text-align: center;
+    display: grid;
+  grid-template-columns: var(--espaciado-lateral) 30% auto 10% 7%;
+  grid-template-rows: 20% 60% 20%;
 }
 
 .promo{
     display: flex;
+    margin-top: 0%;
+    display: block;
     width: 200px;
     height: 60px;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     text-align: center;
-
+    
 }
 
 div#descripcion{
@@ -173,6 +180,8 @@ div#descripcion{
     height: 200px;
     background-color: #FA9E29;
     font-size: 12px;
+    text-align: justify;
+    border-radius: 10px;
 }
 
 ul, li{
@@ -198,8 +207,13 @@ ul, li{
 .destino-precio ul h2 li{
   width: 200px;
   height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   background-color: #2A3594;
   color: white;
+  border-radius: 10px;
 }
 
 .destino-precio h2 a{
