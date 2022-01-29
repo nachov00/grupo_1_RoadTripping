@@ -13,11 +13,23 @@
     </div>
     <div class="header-login">
         <h1>Iniciar Sesión</h1>
-        <h2>Para crear una cuenta nueva <a id="ingresa-aqui" href="/register" target="_blank">Ingresa aquí</a></h2>
+        <h2>Para crear una cuenta nueva <a id="ingresa-aqui" href="/registrarse" target="_blank">Ingresa aquí</a></h2>
     </div>
 </header>
 <body>
-    <form>
+    <form >
+        <div class="login">
+            <a style="text-decoration:none" href="https://www.facebook.com/login" class="botonSocial" id="fb" target="_blank">
+                <img src="img/fb.png" width=20px alt=""><strong> Ingresa con Facebook</strong>
+            </a>
+            <a style="text-decoration:none" href="https://www.twitter.com/login" class="botonSocial" id="twitter" target="_blank">
+                <img src="img/twitter.png" width=20px alt=""><strong>Ingresa con Twitter</strong>
+            </a>
+            <a style="text-decoration:none" href="https://accounts.google.com" class="botonSocial" id="google" target="_blank">
+                <img src="img/google+.png" width=20px alt=""><strong>Ingresa con Google+</strong>
+            </a>
+          </div>
+    
         <div class="login">
             <label for=""><strong>Usuario: </strong></label>
             <input type="text" placeholder="Nombre de usuario" name="username" required> 
@@ -26,7 +38,7 @@
             <button type="submit">Ingresar</button>   
             <input type="checkbox" checked="checked"> Recuérdame
             <button type="button" class="cancelbtn"> Cancelar</button>
-            Olvidaste <a href="#"> contraseña? </a>  
+            <a href="#">Olvidaste contraseña?</a>  
         </div>
     </form>
 
