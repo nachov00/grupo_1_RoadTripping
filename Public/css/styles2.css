@@ -15,7 +15,7 @@
 /*----HEADER----*/
 
 header {
-  background-image: url(/public/img/Header.png);
+  background-image: url(/img/Header.png);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; 
@@ -141,6 +141,37 @@ header {
 /*   -------------------   */
 /*----DETALLE DE PRODUCTO-----*/
 
+.caja1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.caja2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+.barra-destino{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-color: #809DE8;
+    box-sizing: border-box;
+}
+
+.barra-buscador{
+    background-color: white;
+    border-color: #809DE8;
+    color: black;
+    box-shadow: 3px 3px 10px #2A3594
+}
+
 div#general{
     margin:0%;
     margin-top: 50px;
@@ -176,32 +207,19 @@ div#general{
 }
 
 div#descripcion{
-    width: 600px;
-    height: 200px;
+    width: 88%;
+    height: auto;
     background-color: #FA9E29;
-    font-size: 12px;
+    font-size: 16px;
     text-align: justify;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 ul, li{
     margin:0;
     padding: 0;
     list-style: none;
-}
-
-.barra-origen-destino-fecha{
-    width: 600px;
-    height: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items: center;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-    margin-left: 400px;
-    background-color:#809DE8;
-    border-radius: 10px;
 }
 
 .destino-precio ul h2 li{

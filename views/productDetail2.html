@@ -12,127 +12,126 @@
 </head>
 
 <body>
-<!--        **HEADER**                 -->
+    <!--        **HEADER**                 -->
     <Header>
         <!--                                -->
-                <div class="upper-head">
-                    <div class="logo">
-                        <img class="logo-img" src="./img/Logo.png" alt="Logo">
-                    </div>
-                <!--                                -->
-                    <div class="fav-car-user">
-                    <div class="user-grid">
-                        <span class="fav"><i class="fas fa-heart"></i></span>
-                        <span class="basket"><i class="fas fa-shopping-basket"></i></span>
-                        <span class="user"><i class="fas fa-user"></i></span>
-                    </div>
-                    </div>
+        <div class="upper-head">
+            <div class="logo">
+                <img class="logo-img" src="./img/Logo.png" alt="Logo">
+            </div>
+            <!--                                -->
+            <div class="fav-car-user">
+                <div class="user-grid">
+                    <span class="fav"><i class="fas fa-heart"></i></span>
+                    <span class="basket"><i class="fas fa-shopping-basket"></i></span>
+                    <span class="user"><i class="fas fa-user"></i></span>
                 </div>
+            </div>
+        </div>
         <!--                                -->
-                <div class="lower-head">
-        
-                            <form action="POST" class="buscador">
-                                <input type="text" name="elemento" id="elemento" placeholder="Buscar articulo individual"> 
-                                <button type="submit"> <i class="fas fa-search"> </i> </button>
-                            </form>
-        
-                <!--                                -->
-                    <div class="boton-estrella">
-                        <span class="texto-2">Inicio - </span>
-                            <i class="fas fa-home"></i>
-                        <span class="texto-2">Paquetes - </span>
-                            <i class="fas fa-suitcase-rolling"></i>
-                        <span class="texto-2">Boletos - </span>
-                            <i class="fas fa-ticket-alt"></i>
-                        <span class="texto-2">Hoteles - </span>
-                            <i class="fas fa-hotel"></i>
-                        <span class="texto-2">Info</span>
-                            <i class="fas fa-info-circle"></i>
-                    </div>
-                </div>
+        <div class="lower-head">
+
+            <form action="POST" class="buscador">
+                <input type="text" name="elemento" id="elemento" placeholder="Buscar articulo individual">
+                <button type="submit"> <i class="fas fa-search"> </i> </button>
+            </form>
+
+            <!--                                -->
+            <div class="boton-estrella">
+                <span class="texto-2">Inicio - </span>
+                <i class="fas fa-home"></i>
+                <span class="texto-2">Paquetes - </span>
+                <i class="fas fa-suitcase-rolling"></i>
+                <span class="texto-2">Boletos - </span>
+                <i class="fas fa-ticket-alt"></i>
+                <span class="texto-2">Hoteles - </span>
+                <i class="fas fa-hotel"></i>
+                <span class="texto-2">Info</span>
+                <i class="fas fa-info-circle"></i>
+            </div>
+        </div>
         <!--                                -->
     </Header>
 
-<!--      DESCRIPCION DE PRODUCTOS          -->
+    <!--      DESCRIPCION DE PRODUCTOS          -->
 
     <div id="general">
-        <div id="promos">
-            <h1 class="promo">Promo 1:</h1>
+        <div class="barra-destino">
+            <input class="barra-buscador" type="text" placeholder="Origen:">
+            <input class="barra-buscador" type="text" placeholder="Destino:">
+            <input class="barra-buscador" type="text" placeholder="Del: " onfocus="(this.type='date')">
+            <input class="barra-buscador" type="text" placeholder="Al: " onfocus="(this.type='date')">
         </div>
-        <div id="Buscador-perzonalizado">
-            <ul class="barra-origen-destino-fecha">
-                <li><a>Origen:</a></li>
-                <li><a>___________</a></li>
-                <li><a>Destino:</a></li>
-                <li><a>___________</a></li>
-                <li><a>Fecha:</a></li>
-                <li><a> Del</a></li>
-                <li><a>___________</a></li>
-                <li><a> Al</a></li>
-                <li><a>___________</a></li>
-            </ul>
-            <div class="destino-precio">
-                <ul>
-                    <h2><li>Bariloche Precio $81.206 p/p</li></h2>
-                    <h2><a href="#">COMPRAR</a></h2>
-                </ul>
+
+        <div class="caja1">
+            <div id="promos">
+                <h1 class="promo">Promo 1:</h1>
             </div>
-            <div class="container">
+            <div class="caja2">
+                <div class="destino-precio">
+                    <ul>
+                        <h2>
+                            <li>Bariloche <br> $81.206 p/p</li>
+                        </h2>
+                        <h2><a href="#">COMPRAR</a></h2>
+                    </ul>
+                </div>
+                <div class="container">
 
-                <ul class="slider">
-                    <li id="slide1">
-                        <img src="./images/Bariloche/Bariloche1 Letras.jpg" />
-                    </li>
-                    <li id="slide2">
-                        <img src="./images/Bariloche/Bariloche2 Lago.jpg" />
-                    </li>
-                    <li id="slide3">
-                        <img src="./images/Bariloche/Bariloche3 Pueblo.jpg" />
-                    </li>
-                    <li id="slide4">
-                        <img src="./images/Bariloche/Bariloche4 Noche.jpg" />
-                    </li>
-                    <li id="slide5">
-                        <img src="./images/Bariloche/Bariloche5 Lago2.jpg" />
-                    </li>
-                    <li id="slide6">
-                        <img src="./images/Bariloche/Bariloche6 Lago3.jpg" />
-                    </li>
-                    <li id="slide7">
-                        <img src="./images/Bariloche/Bariloche7 catedral invierno.jpg" />
-                    </li>
-                    <li id="slide8">
-                        <img src="./images/Bariloche/Bariloche8 invierno2.jpg" />
-                    </li>
-                </ul>
+                    <ul class="slider">
+                        <li id="slide1">
+                            <img src="./images/Bariloche/Bariloche1 Letras.jpg" />
+                        </li>
+                        <li id="slide2">
+                            <img src="./images/Bariloche/Bariloche2 Lago.jpg" />
+                        </li>
+                        <li id="slide3">
+                            <img src="./images/Bariloche/Bariloche3 Pueblo.jpg" />
+                        </li>
+                        <li id="slide4">
+                            <img src="./images/Bariloche/Bariloche4 Noche.jpg" />
+                        </li>
+                        <li id="slide5">
+                            <img src="./images/Bariloche/Bariloche5 Lago2.jpg" />
+                        </li>
+                        <li id="slide6">
+                            <img src="./images/Bariloche/Bariloche6 Lago3.jpg" />
+                        </li>
+                        <li id="slide7">
+                            <img src="./images/Bariloche/Bariloche7 catedral invierno.jpg" />
+                        </li>
+                        <li id="slide8">
+                            <img src="./images/Bariloche/Bariloche8 invierno2.jpg" />
+                        </li>
+                    </ul>
 
-                <ul class="menu">
-                    <li>
-                        <a href="#slide1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide3">3</a>
-                    </li>
-                    <li>
-                        <a href="#slide4">4</a>
-                    </li>
-                    <li>
-                        <a href="#slide5">5</a>
-                    </li>
-                    <li>
-                        <a href="#slide6">6</a>
-                    </li>
-                    <li>
-                        <a href="#slide7">7</a>
-                    </li>
-                    <li>
-                        <a href="#slide8">8</a>
-                    </li>
-                </ul>
-
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide1">1</a>
+                        </li>
+                        <li>
+                            <a href="#slide2">2</a>
+                        </li>
+                        <li>
+                            <a href="#slide3">3</a>
+                        </li>
+                        <li>
+                            <a href="#slide4">4</a>
+                        </li>
+                        <li>
+                            <a href="#slide5">5</a>
+                        </li>
+                        <li>
+                            <a href="#slide6">6</a>
+                        </li>
+                        <li>
+                            <a href="#slide7">7</a>
+                        </li>
+                        <li>
+                            <a href="#slide8">8</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div id="descripcion">
                 <h2>Desconexión natural en San Carlos de Bariloche</h2>
@@ -149,74 +148,82 @@
                         </a></li>
                 </ul>
             </div>
-            <div id="promos">
-                <h1 class="promo">Promo 2:</h1>
+
+            <div class="caja1">
+                <div id="promos">
+                    <h1 class="promo">Promo 2:</h1>
+                </div>
             </div>
-            <div class="destino-precio">
-                <ul>
-                   <h2><li>Ushuaia Precio $83.956 p/p</li></h2> 
-                   <h2><a href="#">COMPRAR</a></h2>
-                </ul>
+            <div class="caja2">
+                <div class="destino-precio">
+                    <ul>
+                        <h2>
+                            <li>Ushuaia <br> $83.956 p/p</li>
+                        </h2>
+                        <h2><a href="#">COMPRAR</a></h2>
+                    </ul>
+                </div>
+
+                <div class="caja2">
+                    <div class="container">
+
+                        <ul class="slider">
+                            <li id="slide2.1">
+                                <img src="./images/Ushuaia/Ushuaia1.jpg" />
+                            </li>
+                            <li id="slide2.2">
+                                <img src="./images/Ushuaia/Ushuaia2.jpg" />
+                            </li>
+                            <li id="slide2.3">
+                                <img src="./images/Ushuaia/Ushuaia3.jpg" />
+                            </li>
+                            <li id="slide2.4">
+                                <img src="./images/Ushuaia/Ushuaia4.jpg" />
+                            </li>
+                            <li id="slide2.5">
+                                <img src="./images/Ushuaia/Ushuaia5.jpg" />
+                            </li>
+                            <li id="slide2.6">
+                                <img src="./images/Ushuaia/Ushuaia6.jpg" />
+                            </li>
+                            <li id="slide2.7">
+                                <img src="./images/Ushuaia/Ushuaia7.jpg" />
+                            </li>
+                            <li id="slide2.8">
+                                <img src="./images/Ushuaia/Ushuaia8.jpg" />
+                            </li>
+                        </ul>
+
+                        <ul class="menu">
+                            <li>
+                                <a href="#slide2.1">1</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.2">2</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.3">3</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.4">4</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.5">5</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.6">6</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.7">7</a>
+                            </li>
+                            <li>
+                                <a href="#slide2.8">8</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
-
-            <div class="container">
-
-                <ul class="slider">
-                    <li id="slide2.1">
-                        <img src="./images/Ushuaia/Ushuaia1.jpg" />
-                    </li>
-                    <li id="slide2.2">
-                        <img src="./images/Ushuaia/Ushuaia2.jpg" />
-                    </li>
-                    <li id="slide2.3">
-                        <img src="./images/Ushuaia/Ushuaia3.jpg" />
-                    </li>
-                    <li id="slide2.4">
-                        <img src="./images/Ushuaia/Ushuaia4.jpg" />
-                    </li>
-                    <li id="slide2.5">
-                        <img src="./images/Ushuaia/Ushuaia5.jpg" />
-                    </li>
-                    <li id="slide2.6">
-                        <img src="./images/Ushuaia/Ushuaia6.jpg" />
-                    </li>
-                    <li id="slide2.7">
-                        <img src="./images/Ushuaia/Ushuaia7.jpg" />
-                    </li>
-                    <li id="slide2.8">
-                        <img src="./images/Ushuaia/Ushuaia8.jpg" />
-                    </li>
-                </ul>
-
-                <ul class="menu">
-                    <li>
-                        <a href="#slide2.1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.3">3</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.4">4</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.5">5</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.6">6</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.7">7</a>
-                    </li>
-                    <li>
-                        <a href="#slide2.8">8</a>
-                    </li>
-                </ul>
-
-            </div>
-
             <div id="descripcion">
                 <h2>Postales de montaña en Ushuaia</h2>
                 <h3>Este paquete incluye:</h3>
@@ -231,94 +238,102 @@
                     <li><a>Excursiones: Experiencia Parque Nacional Tierra del Fuego</a></li>
                 </ul>
             </div>
-
-            <div id="promos">
-                <h1 class="promo">Promo 3:</h1>
+            <div class="caja1">
+                <div id="promos">
+                    <h1 class="promo">Promo 3:</h1>
+                </div>
             </div>
-            <div class="destino-precio">
-                <ul>
-                    <h2><li>Calafate Precio $79.766 p/p</li></h2>
-                    <h2><a href="#">COMPRAR</a></h2>
-                </ul>
+            <div class="caja2">
+                <div class="destino-precio">
+                    <ul>
+                        <h2>
+                            <li>Calafate <br> $79.766 p/p</li>
+                        </h2>
+                        <h2><a href="#">COMPRAR</a></h2>
+                    </ul>
+                </div>
+                <div class="container">
+
+                    <ul class="slider">
+                        <li id="slide3.1">
+                            <img src="./images/Calafate/Calafate1.jpg" />
+                        </li>
+                        <li id="slide3.2">
+                            <img src="./images/Calafate/Calafate2.jpg" />
+                        </li>
+                        <li id="slide3.3">
+                            <img src="./images/Calafate/Calafate3.jpeg" />
+                        </li>
+                        <li id="slide3.4">
+                            <img src="./images/Calafate/Calafate4.jpg" />
+                        </li>
+                        <li id="slide3.5">
+                            <img src="./images/Calafate/Calafate5.jpg" />
+                        </li>
+                        <li id="slide3.6">
+                            <img src="./images/Calafate/Calafate6.jpg" />
+                        </li>
+                        <li id="slide3.7">
+                            <img src="./images/Calafate/Calafate7.jpg" />
+                        </li>
+                        <li id="slide3.8">
+                            <img src="./images/Calafate/Calafate8.jpg" />
+                        </li>
+                    </ul>
+
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide3.1">1</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.2">2</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.3">3</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.4">4</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.5">5</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.6">6</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.7">7</a>
+                        </li>
+                        <li>
+                            <a href="#slide3.8">8</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="container">
-
-                <ul class="slider">
-                    <li id="slide3.1">
-                        <img src="./images/Calafate/Calafate1.jpg" />
-                    </li>
-                    <li id="slide3.2">
-                        <img src="./images/Calafate/Calafate2.jpg" />
-                    </li>
-                    <li id="slide3.3">
-                        <img src="./images/Calafate/Calafate3.jpeg" />
-                    </li>
-                    <li id="slide3.4">
-                        <img src="./images/Calafate/Calafate4.jpg" />
-                    </li>
-                    <li id="slide3.5">
-                        <img src="./images/Calafate/Calafate5.jpg" />
-                    </li>
-                    <li id="slide3.6">
-                        <img src="./images/Calafate/Calafate6.jpg" />
-                    </li>
-                    <li id="slide3.7">
-                        <img src="./images/Calafate/Calafate7.jpg" />
-                    </li>
-                    <li id="slide3.8">
-                        <img src="./images/Calafate/Calafate8.jpg" />
-                    </li>
-                </ul>
-
-                <ul class="menu">
-                    <li>
-                        <a href="#slide3.1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.3">3</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.4">4</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.5">5</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.6">6</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.7">7</a>
-                    </li>
-                    <li>
-                        <a href="#slide3.8">8</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div id="descripcion">
-                <h2>Montañas y aire puro en El Calafate</h2>
-                <h3>Este paquete incluye:</h3>
-                <ul class="detalle">
-                    <li><a>VUELO: Ida y Vuelta</a></li>
-                    <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
-                    <li><a>Habitación Doble Estándar con Minibar y Desayuno incluido</a></li>
-                    <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                    <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis</a></li>
-                    <li><a>El seguro de tu viaje</a></li>
-                    <li><a>Excursiones: Navegación frente al Glaciar Perito Moreno</a></li>
-                </ul>
-            </div>
-
+        </div>
+        <div id="descripcion">
+            <h2>Montañas y aire puro en El Calafate</h2>
+            <h3>Este paquete incluye:</h3>
+            <ul class="detalle">
+                <li><a>VUELO: Ida y Vuelta</a></li>
+                <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
+                <li><a>Habitación Doble Estándar con Minibar y Desayuno incluido</a></li>
+                <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
+                <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis</a></li>
+                <li><a>El seguro de tu viaje</a></li>
+                <li><a>Excursiones: Navegación frente al Glaciar Perito Moreno</a></li>
+            </ul>
+        </div>
+        <div class="caja1">
             <div id="promos">
                 <h1 class="promo">Promo 4:</h1>
             </div>
+        </div>
+        <div class="caja2">
             <div class="destino-precio">
                 <ul>
-                    <h2><li>Mendoza Precio $41.605 p/p</li></h2>
+                    <h2>
+                        <li>Mendoza <br> $41.605 p/p</li>
+                    </h2>
                     <h2><a href="#">COMPRAR</a></h2>
                 </ul>
             </div>
@@ -377,30 +392,116 @@
                         <a href="#slide4.8">8</a>
                     </li>
                 </ul>
-
             </div>
-            <div id="descripcion">
-                <h2>Bajo el encanto de Mendoza</h2>
-                <h3>Este paquete incluye:</h3>
-                <ul class="detalle">
-                    <li><a>VUELO: Ida y Vuelta</a></li>
-                    <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
-                    <li><a>Habitación Estándar con Desayuno incluido</a></li>
-                    <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                    <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Piscina ·Aire Acondicionado en zonas
-                            comunes</a></li>
-                    <li><a>El seguro de tu viaje</a></li>
-                    <li><a>Excursiones: City tour</a></li>
+        </div>
+        <div id="descripcion">
+            <h2>Bajo el encanto de Mendoza</h2>
+            <h3>Este paquete incluye:</h3>
+            <ul class="detalle">
+                <li><a>VUELO: Ida y Vuelta</a></li>
+                <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
+                <li><a>Habitación Estándar con Desayuno incluido</a></li>
+                <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
+                <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Piscina ·Aire Acondicionado en zonas
+                        comunes</a></li>
+                <li><a>El seguro de tu viaje</a></li>
+                <li><a>Excursiones: City tour</a></li>
+            </ul>
+        </div>
+
+        <div class="caja1">
+            <div id="promos">
+                <h1 class="promo">Promo 5:</h1>
+            </div>
+        </div>
+        <div class="caja2">
+            <div class="destino-precio">
+                <ul>
+                    <h2>
+                        <li>Jujuy <br> $56.361 p/p</li>
+                    </h2>
+                    <h2><a href="#">COMPRAR</a></h2>
                 </ul>
             </div>
+            <div class="container">
 
- <!--                                -->
+                <ul class="slider">
+                    <li id="slide5.1">
+                        <img src="./images/Jujuy/jujuy1.jpg" />
+                    </li>
+                    <li id="slide5.2">
+                        <img src="./images/Jujuy/jujuy2.jpg" />
+                    </li>
+                    <li id="slide5.3">
+                        <img src="./images/Jujuy/jujuy3.jpg" />
+                    </li>
+                    <li id="slide5.4">
+                        <img src="./images/Jujuy/jujuy4.jpg" />
+                    </li>
+                    <li id="slide5.5">
+                        <img src="./images/Jujuy/jujuy5.jpg" />
+                    </li>
+                    <li id="slide5.6">
+                        <img src="./images/Jujuy/jujuy6.jpg" />
+                    </li>
+                    <li id="slide5.7">
+                        <img src="./images/Jujuy/jujuy7.jpg" />
+                    </li>
+                    <li id="slide5.8">
+                        <img src="./images/Jujuy/jujuy8.jpg" />
+                    </li>
+                </ul>
 
- <!--        **FOOTER**                 -->
+                <ul class="menu">
+                    <li>
+                        <a href="#slide5.1">1</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.2">2</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.3">3</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.4">4</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.5">5</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.6">6</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.7">7</a>
+                    </li>
+                    <li>
+                        <a href="#slide5.8">8</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="descripcion">
+            <h2>Explora los colores de Jujuy</h2>
+            <h3>Este paquete incluye:</h3>
+            <ul class="detalle">
+                <li><a>VUELO: Ida y Vuelta</a></li>
+                <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
+                <li><a>Habitación Estándar con Desayuno incluido</a></li>
+                <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
+                <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Servicio al cuarto ·Aire Acondicionado en zonas
+                        comunes</a></li>
+                <li><a>El seguro de tu viaje</a></li>
+                <li><a>Excursiones: Cafayate, Quebrada de Humahuaca con cerro 7 colores, Salinas de Pumamarca</a></li>
+            </ul>
+        </div>
 
-            <footer>
-                <div>
-                    <div class="contenedor-home">
+        <!--                                -->
+
+        <!--        **FOOTER**                 -->
+
+        <footer>
+            <div>
+                <div class="contenedor-home">
                     <span><strong><a href="" target="blank">Quiénes Somos</a></strong></span>
                     <span>
                         <i class="fab fa-whatsapp"></i>
@@ -409,11 +510,11 @@
                     <span><strong><a href="" target="blank">Términos y condiciones</a></strong></span>
                     <span><strong><a href="" target="blank">Ayuda</a></strong></span>
                     <span id="logo-footer">
-                        <a href="#"><img src="./img/Logo.png" width="50%" height="auto"></a> 
+                        <a href="#"><img src="./img/Logo.png" width="50%" height="auto"></a>
                     </span>
-                    </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 </body>
 
 </html>
