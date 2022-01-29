@@ -45,6 +45,10 @@ input[type=text], input[type=password] {
      border-radius: 25px;
  }  
 
+ input:hover {
+     opacity:0.9;
+ }
+
  .fechaNacimiento {   
     width: 50%;   
     margin: 8px 0;  
@@ -55,6 +59,10 @@ input[type=text], input[type=password] {
     background-color: #809de8;
     border-radius: 25px;
 }  
+
+.fechaNacimiento:hover {
+    opacity:0.9;
+}
 
 button:hover {   
      opacity: 0.7;   
