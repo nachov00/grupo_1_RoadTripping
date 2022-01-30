@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: grid;
     grid-template-rows: 28% 62% 10%;
 }
+
+
 
 /*------------------------------------------------------------------*/
 
@@ -143,11 +149,81 @@ header {
 main {
     grid-row: 2 / 3;
     height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.back {
+    z-index: -1;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+    background-image: url(/public/img/valle_de_la_luna_2.jpeg);
+    filter: blur(8px);  
+    background-attachment: fixed;
+}
+
+.back img {
     
 }
 
-.nosotros {
+main section h2 {
     margin: 10px;
+}
+main section div {
+    margin: 10px;
+}
+
+main section div article {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);    
+}
+
+.nosotros, .defensa, .acuerdo_legal, .contacto  {
+    margin: 50px 10px 0px 10px;
+    background-color: rgba(147, 171, 231, 0.8);
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.defensa article {
+    width: 90%;  
+    background-color: #809DE8;
+    color: #000000;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.acuerdo_legal article {
+    width: 90%;  
+    background-color: #809DE8;
+    color: #000000;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.contacto article {
+    width: 90%;  
+    background-color: #809DE8;
+    color: #000000;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 .encabezado-1 {
@@ -182,9 +258,6 @@ main {
     border-radius: 10px;
 }
 
-.contacto {
-    margin: 10px;
-}
 /*--------------------------------*/
  /* Style inputs with type="text", select elements and textareas */
  input[type=text], select, textarea {
@@ -228,6 +301,12 @@ main {
     border-radius: 5px;
     padding: 20px;
   } 
+
+  .links, .para {
+      text-align: center;
+      padding: 5px;
+      margin-bottom: 5px;
+  }
 /*--------------------------------*/
 
 /*------------------------------------------------------------------*/
@@ -238,8 +317,9 @@ footer {
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
-    box-sizing:border-box;
-    grid-row: 3 / 4;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
 .contenedor-home {
@@ -248,7 +328,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    }
+}
 
 
 #logo-footer {
