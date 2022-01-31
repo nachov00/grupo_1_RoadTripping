@@ -274,7 +274,6 @@ body{
     background-color: white;
     width: 800px;
     padding: 30px;
-    position:relative;
   }
   
   ul, li {
@@ -290,6 +289,7 @@ body{
   }
   
   ul.slider li {
+      position: absolute;
       left: 0px;
       top: 0px;
       opacity: 0;
@@ -327,41 +327,13 @@ body{
     display: inline-block;
     color: white;
     text-decoration: none;
-    background-color:#809DE8(255, 255, 255, 0.7);
+    background-color: grey;
     padding: 10px;
     width: 20px;
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
   }
-
-/*-----BOTONES DE SLIDER-----*/
-
-.slider__btn{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: #809DE8(255, 255, 255, 0.7);
-    top: 50%;
-    transform: translateY(50%);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 50%;
-    cursor:pointer;
-}
-
-.slider__btn:hover{
-background-color: #809DE8;
-}
-
-.slider__btn--left{
-    left: 10px;
-}
-
-.slider__btn--right{
-    right: 10px;
-}
 
   /*Footer*/
   footer {
