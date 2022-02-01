@@ -22,7 +22,7 @@ body{
   .container{
     margin: auto;
     background-color: #2A3594;
-    width: 800px;
+    width: 500px;
     padding: 30px;
   }
   
@@ -34,7 +34,7 @@ body{
   
   ul.slider{
     position: relative;
-    width: 800px;
+    width: 500px;
     height: 300px;
   }
   
