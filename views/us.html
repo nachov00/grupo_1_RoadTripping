@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/public/css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/public/css/Styles-us.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles-us.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <!--                                -->
         <div class="upper-head">
             <div class="logo">
-                <img class="logo-img" src="/public/img/Logo.png" alt="Logo">
+                <img class="logo-img" src="./img/Logo.png" alt="Logo">
             </div>
             <!--                                -->
             <div class="fav-car-user">
@@ -33,12 +33,12 @@
         </div>
         <!--                                -->
         <div class="lower-head">
-
-            <form action="POST" class="buscador">
-                <input type="text" name="elemento" id="elemento" placeholder="Buscar articulo individual">
-                <button type="submit"> <i class="fas fa-search"> </i> </button>
-            </form>
-
+            <div class="flex-arrange">
+                <form action="POST" class="buscador">
+                    <input type="text" name="elemento" id="elemento" placeholder="Buscar articulo individual">
+                    <button type="submit"> <i class="fas fa-search"></i></button>
+                </form>
+            </div>
             <!--                                -->
             <div class="boton-estrella">
                 <span class="texto-2">Inicio - </span>
@@ -59,10 +59,10 @@
     <main>
 
         <section class="back">
-            <img width="100%"  src="/public/img/valle_de_la_luna_2.jpeg" alt="">
+            <img width="100%" src="/img/valle_de_la_luna_2.jpeg" alt="">
         </section>
 
-        <section class="nosotros">
+        <section class="nosotros" id="nosotros">
             <h2>Nosotros</h2>
             <div class="encabezado-1">
                 <article>
@@ -95,113 +95,117 @@
                     </p>
                 </article>
             </div>
-        </section>        
+        </section>
 
-        <section class="defensa">
+        <section class="defensa" id="defensa">
             <article>
-            <h2>Denuncias en Defensa del Consumidor</h2>
-            <div>
-                    <p> 
-                    Cualquier persona usuaria que tenga un problema con los servicios ofrecidos por RoadTripping podrá
-                    iniciar un reclamo. Para hacerlo, tendrá que ingresar a su cuenta con su usuario y contraseña y
-                    buscar la sección de Nosotros. Podrá contactar al equipo técnico para intentar solucionar el problema o
-                    incluso solicitar la intervención del equipo y las demas empresas involucradas.
+                <h2>Denuncias en Defensa del Consumidor</h2>
+                <div>
+                    <p>
+                        Cualquier persona usuaria que tenga un problema con los servicios ofrecidos por RoadTripping
+                        podrá
+                        iniciar un reclamo. Para hacerlo, tendrá que ingresar a su cuenta con su usuario y contraseña y
+                        buscar la sección de Nosotros. Podrá contactar al equipo técnico para intentar solucionar el
+                        problema o
+                        incluso solicitar la intervención del equipo y las demas empresas involucradas.
                     </p>
                     <p>
-                    Para las compras en la plataforma de RoadTripping, si la resolución de un reclamo no fuera
-                    satisfactoria, podrá continuar con el reclamo ante el Defensor del Cliente de RoadTripping.
-                    </p> 
-                    <p>
-                    Además, siempre podrá hacer una denuncia en el Portal de Defensa de las y los Consumidores; y para
-                    residentes en la Ciudad Autónoma de Buenos Aires, podrá hacer una denuncia ante Defensa del
-                    Consumidor. Ante cualquier duda, siempre podrá consultar la Ley de Defensa del Consumidor.
+                        Para las compras en la plataforma de RoadTripping, si la resolución de un reclamo no fuera
+                        satisfactoria, podrá continuar con el reclamo ante el Defensor del Cliente de RoadTripping.
                     </p>
-            </div>
+                    <p>
+                        Además, siempre podrá hacer una denuncia en el Portal de Defensa de las y los Consumidores; y
+                        para
+                        residentes en la Ciudad Autónoma de Buenos Aires, podrá hacer una denuncia ante Defensa del
+                        Consumidor. Ante cualquier duda, siempre podrá consultar la Ley de Defensa del Consumidor.
+                    </p>
+                </div>
             </article>
         </section>
 
-        <section class="acuerdo_legal">
+        <section class="acuerdo_legal" id="acuerdo_legal">
             <article>
-            <h2>Acuerdos de legalidad de RoadTripping</h2>
-            <div>
-                <!-- 
+                <h2>Acuerdos de legalidad de RoadTripping</h2>
+                <div>
+                    <!-- 
                     <iframe src="/utilidades/Terminos_y_Condiciones.pdf" id="Term_Cond" class="Term_Cond_Block"
                     webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" title="BlockIframe"
                     width="100%" height="538vh" frameborder="0"></iframe>
                 -->
-                <h2 class="links"><a href="/views/terminos_condiciones.html">Terminos y condiciones</a></h2>
-                <h2 class="links"><a href="/views/terminos_condiciones.html">Aviso de Privacidad</a></h2>
+                    <h2 class="links"><a href="/Term&Cond">Terminos y condiciones</a></h2>
+                    <h2 class="links"><a href="/Privacidad">Aviso de Privacidad</a></h2>
 
-                <p class="para"><em>Ya has aceptado los terminos y condiciones de esta página, al igual que los avisos de Privacidad</em> </p>
-            </div>
+                    <p class="para"><em>Ya has aceptado los terminos y condiciones de esta página, al igual que los
+                            avisos de Privacidad</em> </p>
+                </div>
             </article>
         </section>
 
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <article>
-            <h2>Contactanos</h2>
-            <div class="container">
-                <form action="#">
+                <h2>Contactanos</h2>
+                <div class="container">
+                    <form action="#">
 
-                    <label for="fname">Nombre</label>
-                    <input type="text" id="fname" name="Nombre" placeholder="Nombre  Ej. Martín">
+                        <label for="fname">Nombre</label>
+                        <input type="text" id="fname" name="Nombre" placeholder="Nombre  Ej. Martín">
 
-                    <label for="email">Correo electrónico</label>
-                    <input type="text" id="email" name="email" placeholder="Correo Electrónico">
-
-
-                    <label for="country">País</label>
-                    <select id="country" name="country">
-                        <option value="Argentina">Argentina</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Brasil">Brasil</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Costa_Rica">Costa Rica</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="El_Salvador">El Salvador</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="Mexico">México</option>
-                        <option value="Nicaragua">Nicaragua</option>
-                        <option value="Panama">Panamá</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Peru">Perú</option>
-                        <option value="República_Dominicana">República Dominicana</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Venezuela">Venezuela</option>
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" id="email" name="email" placeholder="Correo Electrónico">
 
 
-                    </select>
+                        <label for="country">País</label>
+                        <select id="country" name="country">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Costa_Rica">Costa Rica</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="El_Salvador">El Salvador</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Mexico">México</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Panama">Panamá</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Perú</option>
+                            <option value="República_Dominicana">República Dominicana</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
 
-                    <label for="subject">Mensaje</label>
-                    <textarea id="subject" name="subject" placeholder="Escribe tu consulta / queja aquí"
-                        style="height:200px"></textarea>
+
+                        </select>
+
+                        <label for="subject">Mensaje</label>
+                        <textarea id="subject" name="subject" placeholder="Escribe tu consulta / queja aquí"
+                            style="height:200px"></textarea>
                         <input type="submit" value="Submit">
-                        
+
                     </form>
                 </div>
-                </article>
+            </article>
         </section>
 
     </main>
 
     <footer>
-            <div>
-                <div class="contenedor-home">
-                    <span><strong><a href="" target="blank">Quiénes Somos</a></strong></span>
-                    <span>
-                        <i class="fab fa-whatsapp"></i>
-                        <i class="fas fa-at"></i>
-                        <strong><a href="" target="blank">Contactanos</a></strong></span>
-                    <span><strong><a href="" target="blank">Términos y condiciones</a></strong></span>
-                    <span><strong><a href="" target="blank">Ayuda</a></strong></span>
-                    <span id="logo-footer">
-                        <a href="#"><img src="/public/img/Logo.png" width="50%" height="auto"></a>
-                    </span>
-                </div>
+        <div>
+            <div class="contenedor-home">
+                <span><strong><a href="" target="blank">Quiénes Somos</a></strong></span>
+                <span>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-at"></i>
+                    <strong><a href="" target="blank">Contactanos</a></strong></span>
+                <span><strong><a href="" target="blank">Términos y condiciones</a></strong></span>
+                <span><strong><a href="" target="blank">Ayuda</a></strong></span>
+                <span id="logo-footer">
+                    <a href="#"><img src="/img/Logo.png" width="50%" height="auto"></a>
+                </span>
             </div>
+        </div>
     </footer>
 
 </body>
