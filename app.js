@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const path = require('path');
+app.use(express.static('public'));
 
 
 
@@ -22,4 +22,8 @@ app.get("/registrarse", function(req, res) {
 
 app.get("/preregistro", function(req, res) {
     res.sendFile(path.resolve(__dirname, './views/preregister.html'));
+});
+
+app.get('/Product-Detail', (req,res)=>{
+    res.sendFile(__dirname + '/views/productDetail2.html');
 });
