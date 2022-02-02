@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 app.use(express.static('public'));
 
 
@@ -26,4 +27,12 @@ app.get("/preregistro", function(req, res) {
 
 app.get('/Product-Detail', (req,res)=>{
     res.sendFile(__dirname + '/views/productDetail2.html');
+});
+
+app.get('/Carrito', (req,res)=>{
+    res.sendFile(__dirname + '/views/shopping.html');
+});
+
+app.get('/Nosotros', (req,res)=>{
+    res.sendFile(__dirname + '/views/us.html');
 });

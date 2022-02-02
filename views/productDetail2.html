@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle de Producto</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles-PD.css">
+    <link rel="stylesheet" href="./css/styles-pd.css">
+    <link rel="stylesheet" href="css/styles-shared.css">
+
 
 </head>
 
@@ -17,37 +19,37 @@
         <!--                                -->
         <div class="upper-head">
             <div class="logo">
-                <img class="logo-img" src="./img/Logo.png" alt="Logo">
+                <a href="/"><img class="logo-img" src="./img/Logo.png" alt="Logo"></a>
             </div>
             <!--                                -->
             <div class="fav-car-user">
                 <div class="user-grid">
                     <span class="fav"><i class="fas fa-heart"></i></span>
-                    <span class="basket"><i class="fas fa-shopping-basket"></i></span>
-                    <span class="user"><i class="fas fa-user"></i></span>
+                    <span class="basket"><a href="/Carrito"><i class="fas fa-shopping-basket"></i></a></span>
+                    <span class="user"><a href="/preregistro"><i class="fas fa-user"></i></a></span>
                 </div>
             </div>
         </div>
         <!--                                -->
         <div class="lower-head">
-
-            <form action="POST" class="buscador">
-                <input type="text" name="elemento" id="elemento" placeholder="Buscar articulo individual">
-                <button type="submit"> <i class="fas fa-search"> </i> </button>
-            </form>
-
+            <div class="flex-arrange">
+                <form action="POST" class="buscador">
+                    <input type="text" name="elemento" id="elemento" placeholder="Buscar articulo individual">
+                    <button type="submit"> <i class="fas fa-search"></i></button>
+                </form>
+            </div>
             <!--                                -->
             <div class="boton-estrella">
-                <span class="texto-2">Inicio - </span>
-                <i class="fas fa-home"></i>
+                <span class="texto-2"> Inicio - </span>
+                <a href="/"><i class="fas fa-home"></i></a>
                 <span class="texto-2">Paquetes - </span>
-                <i class="fas fa-suitcase-rolling"></i>
+                <a href="/Product-Detail"><i class="fas fa-suitcase-rolling"></i></a>
                 <span class="texto-2">Boletos - </span>
-                <i class="fas fa-ticket-alt"></i>
+                <a href="/Product-Detail"><i class="fas fa-ticket-alt"></i></a>
                 <span class="texto-2">Hoteles - </span>
-                <i class="fas fa-hotel"></i>
+                <a href="/Product-Detail"><i class="fas fa-hotel"></i></a>
                 <span class="texto-2">Info</span>
-                <i class="fas fa-info-circle"></i>
+                <a href="/Nosotros"><i class="fas fa-info-circle"></i></a>
             </div>
         </div>
         <!--                                -->
@@ -73,7 +75,7 @@
                         <h2>
                             <li>Bariloche <br> $81.206 p/p</li>
                         </h2>
-                        <h2><a href="#">COMPRAR</a></h2>
+                        <h2><a href="/Carrito">COMPRAR</a></h2>
                     </ul>
                 </div>
                 <div class="container">
@@ -160,7 +162,7 @@
                         <h2>
                             <li>Ushuaia <br> $83.956 p/p</li>
                         </h2>
-                        <h2><a href="#">COMPRAR</a></h2>
+                        <h2><a href="/Carrito">COMPRAR</a></h2>
                     </ul>
                 </div>
 
@@ -249,7 +251,7 @@
                         <h2>
                             <li>Calafate <br> $79.766 p/p</li>
                         </h2>
-                        <h2><a href="#">COMPRAR</a></h2>
+                        <h2><a href="/Carrito">COMPRAR</a></h2>
                     </ul>
                 </div>
                 <div class="container">
@@ -334,7 +336,7 @@
                     <h2>
                         <li>Mendoza <br> $41.605 p/p</li>
                     </h2>
-                    <h2><a href="#">COMPRAR</a></h2>
+                    <h2><a href="/Carrito">COMPRAR</a></h2>
                 </ul>
             </div>
             <div class="container">
@@ -420,7 +422,7 @@
                     <h2>
                         <li>Jujuy <br> $56.361 p/p</li>
                     </h2>
-                    <h2><a href="#">COMPRAR</a></h2>
+                    <h2><a href="/Carrito">COMPRAR</a></h2>
                 </ul>
             </div>
             <div class="container">
@@ -488,33 +490,36 @@
                 <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
                 <li><a>Habitación Estándar con Desayuno incluido</a></li>
                 <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Servicio al cuarto ·Aire Acondicionado en zonas
+                <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Servicio al cuarto ·Aire Acondicionado
+                        en zonas
                         comunes</a></li>
                 <li><a>El seguro de tu viaje</a></li>
                 <li><a>Excursiones: Cafayate, Quebrada de Humahuaca con cerro 7 colores, Salinas de Pumamarca</a></li>
             </ul>
         </div>
+    </div>
+    <!--                                -->
 
-        <!--                                -->
+    <!--        **FOOTER**                 -->
 
-        <!--        **FOOTER**                 -->
-
-        <footer>
-            <div>
-                <div class="contenedor-home">
-                    <span><strong><a href="" target="blank">Quiénes Somos</a></strong></span>
-                    <span>
-                        <i class="fab fa-whatsapp"></i>
-                        <i class="fas fa-at"></i>
-                        <strong><a href="" target="blank">Contactanos</a></strong></span>
-                    <span><strong><a href="" target="blank">Términos y condiciones</a></strong></span>
-                    <span><strong><a href="" target="blank">Ayuda</a></strong></span>
-                    <span id="logo-footer">
-                        <a href="#"><img src="./img/Logo.png" width="50%" height="auto"></a>
-                    </span>
-                </div>
+    <footer>
+        <div>
+            <div class="contenedor-home">
+                <span><strong><a href="/Nosotros#nosotros" target="blank">Quiénes Somos</a></strong></span>
+                <span>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-at"></i>
+                    <strong><a href="/Nosotros#contacto" target="blank">Contactanos</a></strong></span>
+                <span><strong><a href="/Nosotros#acuerdo_legal" target="blank">Términos y
+                            condiciones</a></strong></span>
+                <span><strong><a href="/Nosotros#defensa" target="blank">Ayuda</a></strong></span>
+                <span id="logo-footer">
+                    <a href="/"><img src="/img/Logo.png" width="50%" height="auto"></a>
+                </span>
             </div>
-        </footer>
+        </div>
+    </footer>
+
 </body>
 
 </html>
