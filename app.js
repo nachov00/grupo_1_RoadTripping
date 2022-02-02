@@ -7,6 +7,6 @@ app.listen(3000, ()=>{
     console.log('Servidor funcionando');
 });
 
-app.get('/', (req,res)=>{
+app.get('/Product-Detail', (req,res)=>{
     res.sendFile(__dirname + '/views/productDetail2.html');
 });
