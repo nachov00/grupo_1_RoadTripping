@@ -350,7 +350,7 @@ main {
 
 button {
     background-color: #809de8;
-    color: #2A3594; 
+    color: #2A3594;
     padding: 2px;
     border: 1px solid #2A3594;
     border-radius: 5px;
@@ -358,21 +358,22 @@ button {
 
 button:hover {
     background-color: #2A3594;
-    color: #809de8; 
-    border: 1px solid #809de8;  
+    color: #809de8;
+    border: 1px solid #809de8;
 }
 
 .total button {
     background-color: #2A3594;
-    color: #809de8; 
+    color: #809de8;
     border: 1px solid #809de8;
 }
 
 .total button:hover {
     background-color: #809de8;
-    color: #2A3594; 
+    color: #2A3594;
     border: 1px solid #2A3594;
 }
+
 /*-------------------------------------------*/
 
 .sugerencias {
