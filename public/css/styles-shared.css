@@ -156,12 +156,16 @@ header .buscador button {
 /*------------------------------------------------------------------*/
 
 footer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
     background-color: #FFF72F;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     height: 135px;
 }
 
@@ -171,7 +175,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    }
+}
 
 
 #logo-footer {
@@ -181,3 +185,17 @@ footer {
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    header {
+        background-image: url(/img/Header.png);
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        height: 150px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+}
