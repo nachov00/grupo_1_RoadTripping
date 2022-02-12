@@ -3,18 +3,21 @@ const app = express();
 const path = require('path');
 
 app.set("view engine", "ejs");
+app.use(express.static(path.resolve(__dirname, '../public')));
+
 
 
 
 app.listen(3000, () => console.log("Server Online!"))
 
-app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 var mainRouter = require('./routes/mainRoutes');
 app.use('/', mainRouter);
 
 
+var productRouter = require('./routes/productRoutes');
+app.use('/Product', productRouter);
 
 
 
