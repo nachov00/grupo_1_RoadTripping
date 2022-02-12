@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadTripping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles-hm.css">
+    <link rel="stylesheet" href="css/styles-shared.css">
+    <link rel="icon" href="/img/Logo2.png">
+</head>
+
+<body>
+   <!-- Header -->
+   <%- include("../partials/header")%>
+   
+
+    <main>
+
+        <section class="background-video">
+            <div>
+                <video autoplay="true" loop="true" width="100%" height="60%">
+                    <source src="/vid/backgroundV1.5 (online-video-cutter.com)V4.mp4">
+                    Sorry, your browser does not support HTML5 video.
+                </video>
+            </div>
+        </section>
+
+        <section class="buscador">
+            <form action="">
+                <input type="text" id="busqueda" name="item" placeholder="Buscar en nuestro catalogo">
+            </form>
+        </section>
+
+        <section class="promo-carousel">
+            <h2>Promos!!</h2>
+            <article class="carousel">
+                <div class="container-slider">
+                    <div class="container">
+                        <ul class="slider">
+                            <li id="slide1">
+                                <img src="/img/Bariloche/Bariloche1 Letras.jpg" />
+                            </li>
+                            <li id="slide2">
+                                <img src="/img/Ushuaia/Ushuaia2.jpg" />
+                            </li>
+                            <li id="slide3">
+                                <img src="/img/Bariloche/Bariloche3 Pueblo.jpg" />
+                            </li>
+                            <li id="slide4">
+                                <img src="/img/Ushuaia/Ushuaia3.jpg" />
+                            </li>
+                            <li id="slide5">
+                                <img src="/img/Bariloche/Bariloche4 Noche.jpg" />
+                            </li>
+                            <li id="slide6">
+                                <img src="/img/Ushuaia/Ushuaia5.jpg" />
+                            </li>
+                            <li id="slide7">
+                                <img src="/img/Bariloche/Bariloche7 catedral invierno.jpg" />
+                            </li>
+                            <li id="slide8">
+                                <img src="/img/Ushuaia/Ushuaia7.jpg" />
+                            </li>
+                        </ul>
+
+                        <ul class="menu">
+                            <li>
+                                <a href="#slide1">1</a>
+                            </li>
+                            <li>
+                                <a href="#slide2">2</a>
+                            </li>
+                            <li>
+                                <a href="#slide3">3</a>
+                            </li>
+                            <li>
+                                <a href="#slide4">4</a>
+                            </li>
+                            <li>
+                                <a href="#slide5">5</a>
+                            </li>
+                            <li>
+                                <a href="#slide6">6</a>
+                            </li>
+                            <li>
+                                <a href="#slide7">7</a>
+                            </li>
+                            <li>
+                                <a href="#slide8">8</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider__btn slider__btn--right" id="btn-right"></div>
+                <div class="slider__btn slider__btn--left" id="btn-left"></div>
+            </article>
+
+        </section>
+
+        <section class="promo-carousel-2">
+            <h2>Favoritos de los clientes!</h2>
+            <article class="carousel">
+                <div class="container-slider">
+                    <div class="container">
+                        <ul class="slider">
+                            <li id="slide1">
+                                <img src="/img/Bariloche/Bariloche1 Letras.jpg" />
+                            </li>
+                            <li id="slide2">
+                                <img src="/img/Ushuaia/Ushuaia2.jpg" />
+                            </li>
+                            <li id="slide3">
+                                <img src="/img/Bariloche/Bariloche3 Pueblo.jpg" />
+                            </li>
+                            <li id="slide4">
+                                <img src="/img/Ushuaia/Ushuaia3.jpg" />
+                            </li>
+                            <li id="slide5">
+                                <img src="/img/Bariloche/Bariloche4 Noche.jpg" />
+                            </li>
+                            <li id="slide6">
+                                <img src="/img/Ushuaia/Ushuaia5.jpg" />
+                            </li>
+                            <li id="slide7">
+                                <img src="/img/Bariloche/Bariloche7 catedral invierno.jpg" />
+                            </li>
+                            <li id="slide8">
+                                <img src="/img/Ushuaia/Ushuaia7.jpg" />
+                            </li>
+                        </ul>
+
+                        <ul class="menu">
+                            <li>
+                                <a href="#slide1">1</a>
+                            </li>
+                            <li>
+                                <a href="#slide2">2</a>
+                            </li>
+                            <li>
+                                <a href="#slide3">3</a>
+                            </li>
+                            <li>
+                                <a href="#slide4">4</a>
+                            </li>
+                            <li>
+                                <a href="#slide5">5</a>
+                            </li>
+                            <li>
+                                <a href="#slide6">6</a>
+                            </li>
+                            <li>
+                                <a href="#slide7">7</a>
+                            </li>
+                            <li>
+                                <a href="#slide8">8</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider__btn slider__btn--right" id="btn-right"></div>
+                <div class="slider__btn slider__btn--left" id="btn-left"></div>
+            </article>
+
+        </section>
+
+    </main>
+
+<!-- Footer -->
+<%- include("../partials/footer")%>
+
+</body>
+
+</html>
