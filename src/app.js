@@ -19,6 +19,9 @@ app.use('/', mainRouter);
 var productRouter = require('./routes/productRoutes');
 app.use('/Product', productRouter);
 
+var userRouter = require('./routes/userRoutes');
+app.use('/login', productRouter);
+
 
 
 
