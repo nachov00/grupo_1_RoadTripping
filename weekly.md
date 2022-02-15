@@ -1,4 +1,4 @@
-/Reunion grupal del 09/02/2022
+*/Reunion grupal del 09/02/2022*
 
 Lucas
 Que hizo ayer: Modifico wireframes  de paginas en vista celular. Actualizo codigo para hacer la pagina responsive.
@@ -14,3 +14,23 @@ Ignacio
 Que hizo ayer: Actualizacion de tablero de trabajo
 Inconvenientes: No se entendieron bien algunas consignas del Sprint 3
 Que va a hacer mañana: Avanzar sobre punto 6 (partials) del sprint 3. Redirigir links con carpetas nuevas (users y products)
+
+
+*/Reunion grupal del 16/02/2022*
+
+Lucas
+Que hizo ayer: 
+Inconvenientes:
+Que va a hacer mañana:
+
+Lis
+Que hizo ayer: 
+Inconvenientes:
+Que va a hacer mañana:
+
+Ignacio
+Que hizo ayer: 
+Inconvenientes:
+Que va a hacer mañana:
+
+**Fin Sprint 3**

@@ -152,6 +152,14 @@ header .buscador button {
     color: #fa9e29;
 }
 
+.huge {
+    display: block;
+}
+
+.tiny {
+    display: none;
+}
+
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 
@@ -198,4 +206,61 @@ footer {
         font-family: 'Roboto', sans-serif;
     }
     
+    .upper-head {
+    height: 50%;
+    display: flex;
+    justify-content: space-around
+}
+    
+    .logo {
+    position: relative;
+        right: 7%;
+    width: 60%;
+        
+}
+
+    .user-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+    
+    .lower-head {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+    
+    header .buscador {
+    width: 80%; 
+        position: relative;
+        left: 3%;
+    }
+    
+    header .buscador button {
+    position: relative;
+        right: 7.5%;
+    background-color: none;
+}
+    
+    .boton-estrella i {
+    width: 100%; 
+    text-align: center;    
+    border-radius: 0px;
+}
+    
+    .huge {
+        display: none;
+    }
+
+    .tiny {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 25%;
+
+    }
+
 }
