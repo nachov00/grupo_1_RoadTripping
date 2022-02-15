@@ -341,31 +341,6 @@ ul.slider li:target {
     border-radius: 100%;
 }
 
-/*Footer*/
-footer {
-    background-color: #FFF72F;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    height: 135px;
-}
-
-.contenedor-home {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-
-#logo-footer {
-    display: flex;
-
-}
-
 @media screen and (max-width:480px){
     .caja1 {
         display: block;
