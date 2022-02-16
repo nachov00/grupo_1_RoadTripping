@@ -127,6 +127,18 @@ div.fourth label[for="categorias"], div.fifth label[for="contenidos"] {
     font-size: 2vh;
 }
 
+div.fifth label {
+    font-size: 2vh
+}
+
+div.fifth input[type="checkbox"] {
+    opacity: 0
+}
+
+div.fifth label.titulo {
+    font-size: 5vh
+}
+
 div.seventh {
     display: flex;
     flex-direction: row;
@@ -171,44 +183,45 @@ div.select form select {
     border: 0px solid white;
 }
 
-.new-options-1 {
-    display: none;
+.control-me-1 {display: none;}
+#hotel:checked~.control-me-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-input[type="checkbox"]#hotel:checked~.new-options-1 {
-    display: block;
+.control-me-2 {display: none;}
+#boleto:checked~.control-me-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+    bottom: 24.2vh;
 }
 
-.new-options-2 {
-    display: none;
+.control-me-3 {display: none;}
+#excursiones:checked~.control-me-3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+    bottom: 24.2vh;
 }
 
-.new-options-3 {
-    display: none;
+.control-me-4 {display: none;}
+#crusero:checked~.control-me-4 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+    bottom: 24.2vh;
 }
 
-.new-options-4 {
-    display: none;
-}
-
-.new-options-5 {
-    display: none;
-}
-
-
-
-input[type="checkbox"]#boletos:checked~.new-options-2 {
-    display: block;
-}
-
-input[type="checkbox"]#excursiones:checked~.new-options-3 {
-    display: block;
-}
-
-input[type="checkbox"]#crusero:checked~.new-options-4 {
-    display: block;
-}
-
-input[type="checkbox"]#translado:checked~.new-options-5 {
-    display: block;
+.control-me-5 {display: none;}
+#translado:checked~.control-me-5 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+    bottom: 24.2vh;
 }

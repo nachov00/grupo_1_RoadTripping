@@ -18,6 +18,7 @@
   "homepage": "https://github.com/nachov00/grupo_1_RoadTripping#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "path": "^0.12.7"
   }
 }
