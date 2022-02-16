@@ -28,7 +28,17 @@ var userRouter = require('./routes/userRoutes');
 app.use('/User', userRouter);
 
 
+app.get("/Crear-Editar", function (req, res){
+    res.render(path.join(__dirname, './views/create_edit.ejs'))
+})
 
+app.get("/Crear", function (req, res){
+    res.render(path.join(__dirname, './views/create.ejs'))
+})
+
+app.get("/Editar", function (req, res){
+    res.render(path.join(__dirname, './views/edit.ejs'))
+})
 
 /*
 app.get("/", function (req, res) {
