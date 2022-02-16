@@ -165,9 +165,8 @@ footer {
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
-    box-sizing: border-box;
+    box-sizing:border-box;
     height: 135px;
-    overflow: hidden;
 }
 
 .contenedor-home {
@@ -176,7 +175,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-}
+    }
 
 
 #logo-footer {
