@@ -1,0 +1,214 @@
+* {
+    font-size: 32px;
+}
+
+main {
+    width: 100%;
+}
+
+#imagen-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2A3594;
+}
+
+.fa-user-gear {
+    position: relative;
+    right: 1%;
+    align-self: center;
+}
+
+.header-login {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mini-logo {
+    background-color: white;
+    border: 3px solid #2A3594;
+    border-radius: 15px;
+}
+
+
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+
+.create {
+    padding-right: 20%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    border-right: 1px solid #bbb;
+}
+
+.edit {
+    padding-left: 20%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    border-left: 1px solid #bbb;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+.main-2 {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.articulos {
+    margin: 45px;
+    /* margin-top: 20px; */
+    margin-left: 6vw;
+}
+
+div.first, div.second, div.third, div.fourth, div.fifth {
+    width: 100%;
+}
+
+div.first label, div.second label, div.third label, div.fourth label.titulo, div.fifth label.titulo, div.seventh label, div.sixth label, div.eighth label {
+    font-size: 5vh;
+}
+
+div.first span {
+    font-size: 2vh;
+}
+
+div.first form input {
+    width: 95%;
+    background-color: #C4C4C4;
+    border: 0px solid white;
+}
+
+div.first form input::-webkit-input-placeholder {
+    font-size: 2vh;
+}
+
+div.second form select, div.third form input, div.sixth form input {
+    width: 50%;
+    background-color: #C4C4C4;
+    border: 0px solid white;
+}
+
+div.controles {
+    /* display: flex; */
+    position: absolute;
+    bottom: 3vh;
+    right: 45%;
+}
+
+div.fourth, div.fifth {
+    display: flex;
+    flex-direction: column;
+}
+
+div.fourth form, div.fifth form {
+    display: flex;
+    flex-direction: column;
+}
+
+div.fourth label[for="categorias"], div.fifth label[for="contenidos"] {
+    font-size: 2vh;
+}
+
+div.seventh {
+    display: flex;
+    flex-direction: row;
+}
+
+div.seventh div.first, div.seventh div.second {
+    display: flex;
+    flex-direction: column;
+}
+
+div.second label[for="divisa"] {
+    font-size: 2vw;
+}
+
+div.second form[action="divisa"] {
+    position: relative;
+    top: 0.9vh;
+}
+
+div.sixth input[type="text"] {
+    width: 70%;
+    height: 20vh;
+    font-size: 22px;
+}
+
+div.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.select form {
+    width: 70%;
+}
+
+div.select form select {
+    width: 100%;
+}
+
+div.select form select {
+    background-color: #C4C4C4;
+    border: 0px solid white;
+}
+
+.new-options-1 {
+    display: none;
+}
+
+input[type="checkbox"]#hotel:checked~.new-options-1 {
+    display: block;
+}
+
+.new-options-2 {
+    display: none;
+}
+
+.new-options-3 {
+    display: none;
+}
+
+.new-options-4 {
+    display: none;
+}
+
+.new-options-5 {
+    display: none;
+}
+
+
+
+input[type="checkbox"]#boletos:checked~.new-options-2 {
+    display: block;
+}
+
+input[type="checkbox"]#excursiones:checked~.new-options-3 {
+    display: block;
+}
+
+input[type="checkbox"]#crusero:checked~.new-options-4 {
+    display: block;
+}
+
+input[type="checkbox"]#translado:checked~.new-options-5 {
+    display: block;
+}
