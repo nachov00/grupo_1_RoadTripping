@@ -161,4 +161,3 @@
     }
 }
 }
-console.log(JSON.stringify(nuestrosProductos));
