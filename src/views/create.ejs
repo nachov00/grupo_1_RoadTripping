@@ -15,7 +15,7 @@
 <body>
     <header class="ingresar">
         <div id="imagen-login">
-            <img class="mini-logo" src="/img/Logo.png" alt="" width="200px">
+            <a href="/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
             <i class="fa-solid fa-user-gear"></i>
         </div>
     </header>
@@ -75,7 +75,7 @@
 
                 <article class="articulos">
                     <div class="controles">
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button class="w3-button w3-light-grey"><a href="/crear-editar">Atras</a></button>
                         <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                     </div>
                 </article>
@@ -100,15 +100,33 @@
                     <div class="fifth">
                         <label class="titulo" for="contenido">Contenido</label>
 
-                        <label for="hotel">Hotel</label>
+                        <label for="hotel">
+                            <span class="for-hotel">Hotel</span>
+                        </label>
                             <input type="checkbox" id="hotel">
-                        <label for="boleto">Boletos</label>
+                        <label for="boleto">
+                            <span class="for-boleto">
+                                Boletos
+                            </span>
+                        </label>
                             <input type="checkbox" id="boleto">
-                        <label for="excursiones">Excursiones</label>
+                        <label for="excursiones"> 
+                            <span class="for-excursiones">
+                                Excursiones
+                            </span>
+                        </label>
                             <input type="checkbox" id="excursiones">
-                        <label for="crusero">Cruseros</label>
+                        <label for="crusero">
+                            <span class="for-crusero">
+                                Cruseros
+                            </span>
+                        </label>
                             <input type="checkbox" id="crusero">
-                        <label for="translado">Translado</label>
+                        <label for="translado">
+                            <span class="for-hotel">
+                                Translado
+                            </span>
+                        </label>
                             <input type="checkbox" id="translado">
 
                             
@@ -244,7 +262,7 @@
                 <article class="articulos">
                     <div class="controles">
                         <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                        <button class="w3-button w3-light-grey">Confirmar</button>
                     </div>
                 </article>
             </div>

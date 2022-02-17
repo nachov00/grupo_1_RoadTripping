@@ -118,6 +118,16 @@ div.fourth, div.fifth {
     flex-direction: column;
 }
 
+div.fourth {
+    position: absolute;
+    top: 18%;
+}
+
+div.fifth {
+    position: absolute;
+    top: 48%
+}
+
 div.fourth form, div.fifth form {
     display: flex;
     flex-direction: column;
@@ -137,6 +147,10 @@ div.fifth input[type="checkbox"] {
 
 div.fifth label.titulo {
     font-size: 5vh
+}
+
+div.fifth label span {
+    font-size: 2vh;
 }
 
 div.seventh {
@@ -183,14 +197,26 @@ div.select form select {
     border: 0px solid white;
 }
 
-.control-me-1 {display: none;}
+.control-me-1 {
+    display: none;
+}
+input#hotel:checked ~ span.for-hotel {
+    font-size: 4vh;
+}
 #hotel:checked~.control-me-1 {
     display: flex;
     flex-direction: column;
     position: relative;
+    left: 20vw;
+    bottom: 24.2vh;
 }
 
-.control-me-2 {display: none;}
+
+
+.control-me-2 {
+    display: none;
+}
+
 #boleto:checked~.control-me-2 {
     display: flex;
     flex-direction: column;
@@ -199,7 +225,14 @@ div.select form select {
     bottom: 24.2vh;
 }
 
-.control-me-3 {display: none;}
+#boleto:checked~.for-boleto {
+    background-color: #809DE8;
+}
+
+.control-me-3 {
+    display: none;
+}
+
 #excursiones:checked~.control-me-3 {
     display: flex;
     flex-direction: column;
@@ -208,7 +241,14 @@ div.select form select {
     bottom: 24.2vh;
 }
 
-.control-me-4 {display: none;}
+#excursiones:checked~.for-excursiones {
+    background-color: #809DE8;
+}
+
+.control-me-4 {
+    display: none;
+}
+
 #crusero:checked~.control-me-4 {
     display: flex;
     flex-direction: column;
@@ -217,11 +257,22 @@ div.select form select {
     bottom: 24.2vh;
 }
 
-.control-me-5 {display: none;}
+#crusero:checked~.for-crusero {
+    background-color: #809DE8;
+}
+
+.control-me-5 {
+    display: none;
+}
+
 #translado:checked~.control-me-5 {
     display: flex;
     flex-direction: column;
     position: relative;
     left: 20vw;
     bottom: 24.2vh;
+}
+
+#translado :checked~.for-translado {
+    background-color: #809DE8;
 }
