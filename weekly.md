@@ -1,4 +1,4 @@
-/Reunion grupal del 09/02/2022
+*/Reunion grupal del 09/02/2022*
 
 Lucas
 Que hizo ayer: Modifico wireframes  de paginas en vista celular. Actualizo codigo para hacer la pagina responsive.

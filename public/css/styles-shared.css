@@ -152,6 +152,14 @@ header .buscador button {
     color: #fa9e29;
 }
 
+.huge {
+    display: block;
+}
+
+.tiny {
+    display: none;
+}
+
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 
@@ -165,7 +173,7 @@ footer {
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     height: 135px;
 }
 
@@ -175,7 +183,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    }
+}
 
 
 #logo-footer {
@@ -185,3 +193,74 @@ footer {
 
 /*------------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    header {
+        background-image: url(/img/Header.png);
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        height: 150px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .upper-head {
+    height: 50%;
+    display: flex;
+    justify-content: space-around
+}
+    
+    .logo {
+    position: relative;
+        right: 7%;
+    width: 60%;
+        
+}
+
+    .user-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+    
+    .lower-head {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+    
+    header .buscador {
+    width: 80%; 
+        position: relative;
+        left: 3%;
+    }
+    
+    header .buscador button {
+    position: relative;
+        right: 7.5%;
+    background-color: none;
+}
+    
+    .boton-estrella i {
+    width: 100%; 
+    text-align: center;    
+    border-radius: 0px;
+}
+    
+    .huge {
+        display: none;
+    }
+
+    .tiny {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 25%;
+
+    }
+
+}
