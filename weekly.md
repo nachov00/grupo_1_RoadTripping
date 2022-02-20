@@ -31,3 +31,11 @@ Ignacio
 Que hizo ayer: Actualizacion de tablero de trabajo, Diseño de wireframes de edicion de productos, responsive de wireframes de Login y register, actualizacion de css.
 Inconvenientes: dificultad de rutear el url para visualizar la pagina
 Que va a hacer mañana: Revision de entregables de Sprints 3
+
+Reunion grupal del 20/02/2022
+
+Lucas Que hizo ayer: Entrega de Sprint 3 Inconvenientes: Agregar el back-ground-color a la creacion y edicion de productos Que va a hacer mañana: Edicion de CRUD en el Routers
+
+Lis Que hizo ayer: Entrega de Sprint 3 Inconvenientes: Que va a hacer mañana: Leer sobre los temas del Sprint 4, Actualizacion de Tablero, Edicion de CRUD en el Routers
+
+Ignacio Que hizo ayer: Entrega de Sprint 3 Inconvenientes: Que va a hacer mañana: Actualizar la Base de Data, Edicion de CRUD en el Routers
