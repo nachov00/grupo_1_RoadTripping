@@ -8,7 +8,12 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 
-app.listen(3000, () => console.log("Server Online!"))
+let port = 3030;
+
+app.listen(port, function() { 
+    console.log("Server Online!")
+    console.log("Port: "+port)
+})
 
 
 
@@ -20,12 +25,20 @@ var productRouter = require('./routes/productRoutes');
 app.use('/Product', productRouter);
 
 var userRouter = require('./routes/userRoutes');
-app.use('/login', productRouter);
+app.use('/User', userRouter);
 
 
+app.get("/Crear-Editar", function (req, res){
+    res.render(path.join(__dirname, './views/admin/create_edit.ejs'))
+})
 
+app.get("/Crear", function (req, res){
+    res.render(path.join(__dirname, './views/admin/create.ejs'))
+})
 
-
+app.get("/Editar", function (req, res){
+    res.render(path.join(__dirname, './views/admin/edit.ejs'))
+})
 
 /*
 app.get("/", function (req, res) {
