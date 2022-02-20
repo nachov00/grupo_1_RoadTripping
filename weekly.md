@@ -14,3 +14,20 @@ Ignacio
 Que hizo ayer: Actualizacion de tablero de trabajo
 Inconvenientes: No se entendieron bien algunas consignas del Sprint 3
 Que va a hacer mañana: Avanzar sobre punto 6 (partials) del sprint 3. Redirigir links con carpetas nuevas (users y products)
+
+/Reunion grupal del 20/02/2022
+
+Lucas
+Que hizo ayer: Entrega de Sprint 3
+Inconvenientes: Agregar el back-ground-color a la creacion y edicion de productos
+Que va a hacer mañana: Edicion de CRUD en el Routers
+
+Lis
+Que hizo ayer: Entrega de Sprint 3
+Inconvenientes: 
+Que va a hacer mañana: Leer sobre los temas del Sprint 4, Actualizacion de Tablero, Edicion de CRUD en el Routers
+
+Ignacio
+Que hizo ayer: Entrega de Sprint 3
+Inconvenientes: 
+Que va a hacer mañana: Actualizar la Base de Data, Edicion de CRUD en el Routers
