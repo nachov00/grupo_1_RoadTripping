@@ -1,17 +1,16 @@
 **Entregable Nº1**
 **Starfish**
 **Mas de:**
-º Asesorias con el Profesor
+º Asesorias con el Profesor 
 º Documentarnos mas de los temas para los sprints
 **Seguir Haciendo:**
-º 2 Reuniones semanales
-º Organizacion en cuanto a los documentos
-° Seguir actualizando tablero de trabajo (https://github.com/nachov00/grupo_1_RoadTripping/projects/1)
-º Mantener los canales de Comunicacion, grupo WS, Mail.
-º Reuniones por Google meet
-º Motivacion de participacion
-° Devoluciones Excelentes de los Springs
-º Reuniones de grupo
+º 2 Reuniones semanales 
+º Organizacion en cuanto a los documentos 
+° Seguir actualizando tablero de trabajo (https://github.com/nachov00/grupo_1_RoadTripping/projects/1) 
+º Mantener los canales de Comunicacion, grupo WS, Mail. 
+º Reuniones por Google meet º Motivacion de participacion 
+° Devoluciones Excelentes de los Springs 
+º Reuniones de grupo 
 º Seguir actualizando el weekly
 **Menos de:**
 º Discord

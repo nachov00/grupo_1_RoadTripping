@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoadTripping</title>
-    <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +17,9 @@
 </head>
 
 <body>
-   <!-- Header -->
-   <%- include("../partials/header")%>
-   
+
+<!-- Header -->
+<% -include("./views/partials/header")%>
 
     <main>
 
@@ -173,8 +172,23 @@
 
     </main>
 
-<!-- Footer -->
-<%- include("../partials/footer")%>
+    <footer>
+        <div>
+            <div class="contenedor-home">
+                <span><strong><a href="/Nosotros#nosotros" target="blank">Quiénes Somos</a></strong></span>
+                <span>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-at"></i>
+                    <strong><a href="/Nosotros#contacto" target="blank">Contactanos</a></strong></span>
+                <span><strong><a href="/Nosotros#acuerdo_legal" target="blank">Términos y
+                            condiciones</a></strong></span>
+                <span><strong><a href="/Nosotros#defensa" target="blank">Ayuda</a></strong></span>
+                <span id="logo-footer">
+                    <a href="/"><img src="/img/Logo.png" width="50%" height="auto"></a>
+                </span>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

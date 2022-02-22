@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/styles-ce.css">
+    <link rel="icon" href="/img/Logo2.png">
+</head>
+
+<body>
+    <header class="ingresar">
+        <div id="imagen-login">
+            <a href="/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
+            <i class="fa-solid fa-user-gear"></i>
+        </div>
+    </header>
+
+    <main class="main-2">
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <div class="select">
+
+                    <label for="edit">Producto a editar</label>
+                    <form action="editing">
+                        <select name="producto" id="">
+                            <option value="...">...</option>
+                            <option value="1">Producto 1</option>
+                            <option value="2">Producto 2</option>
+                            <option value="3">Producto 3</option>
+                            <option value="4">Producto 4</option>
+                            <option value="5">Producto 5</option>
+                            <option value="6">Producto 6</option>
+                            <option value="7">Producto 7</option>
+                            <option value="8">Producto 8</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <article class="articulos">
+                <div class="controles">
+                    <button class="w3-button w3-light-grey"><a href="/crear-editar">Atras</a></button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                </div>
+            </article>
+        </div>
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <article class="articulos">
+                    <div class="first">
+                        <label for="titulo">Título</label>
+                        <span>(Opcional)</span>
+                        <form action="">
+                            <input type="text" placeholder="Por defecto - Viaje a <destino>">
+                        </form>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="second">
+                        <label for="destino">Destino</label>
+                        <form action="destino">
+                            <select id="destino" name="destino">
+                                <option value="...">...</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa_Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="El_Salvador">El Salvador</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Mexico">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panama">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Perú</option>
+                                <option value="República_Dominicana">República Dominicana</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                        </form>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="third">
+                        <label for="fechas">Fecha</label>
+                        <form action="fechas">
+                            <input placeholder=" " type="date" id="date">
+                        </form>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="controles">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <article class="articulos">
+                    <div class="fourth">
+                        <label class="titulo" for="categoria">Categoria</label>
+                        <form action="categoria">
+                            <label for="categorias"><input type="checkbox" name="Destacado" id="">Destacado</label>
+                            <label for="categorias"><input type="checkbox" name="Promoción" id="">Promoción</label>
+                            <label for="categorias"><input type="checkbox" name="Escapadas" id="">Escapadas</label>
+                            <label for="categorias"><input type="checkbox" name="Actividades" id="">Actividades</label>
+                        </form>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="fifth">
+                        <label class="titulo" for="contenido">Contenido</label>
+
+                        <label for="hotel">Hotel</label>
+                            <input type="checkbox" id="hotel">
+                        <label for="boleto">Boletos</label>
+                            <input type="checkbox" id="boleto">
+                        <label for="excursiones">Excursiones</label>
+                            <input type="checkbox" id="excursiones">
+                        <label for="crusero">Cruseros</label>
+                            <input type="checkbox" id="crusero">
+                        <label for="translado">Translado</label>
+                            <input type="checkbox" id="translado">
+
+                            
+                        <div class="control-me-1">
+                            <label for="contenido-1">Los Cauquenes Resort</label>
+                            <input type="checkbox" name="los_cauquenes_resort" id="contenido-1">
+
+                            <label for="contenido-2">Los Ñires Hotel</label>
+                            <input type="checkbox" name="los_ñires_hotel" id="contenido-2">
+
+                            <label for="contenido-3">Aires del Beagle Apartments</label>
+                            <input type="checkbox" name="aires_del_beagle_apartments" id="contenido-3">
+
+                            <label for="contenido-4">Alberque Los Cormiranes</label>
+                            <input type="checkbox" name="alberque_los_cormiranes" id="contenido-4">
+                        </div>
+                        <div class="control-me-2">
+                            <label for="contenidos">Avion</label>
+                            <input type="checkbox" class="" name="avion" id="">
+                            <label for="contenidos">Barco</label>
+                            <input type="checkbox" class="" name="barco" id="">
+                            <label for="contenidos">Bus</label>
+                            <input type="checkbox" class="" name="bus" id="">
+                        </div>
+                        <div class="control-me-3">
+                            <label for="contenidos">a</label>
+                            <input type="checkbox" class="" name="a" id="">
+                            <label for="contenidos">b</label>
+                            <input type="checkbox" class="" name="b" id="">
+                            <label for="contenidos">c</label>
+                            <input type="checkbox" class="" name="c" id="">
+                            <label for="contenidos">d</label>
+                            <input type="checkbox" class="" name="d" id="">
+                        </div>
+                        <div class="control-me-4">
+                            <label for="contenidos">Incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                            <label for="contenidos">No incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                        </div>
+                        <div class="control-me-5">
+                            <label for="contenidos">Incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                            <label for="contenidos">No incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="controles">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <article class="articulos">
+                    <div class="seventh">
+                        <div class="first">
+                            <label for="precio">Precio</label>
+                            <form action="">
+                                <input type="number">
+                            </form>
+                        </div>
+                        <div class="second">
+                            <label for="divisa">Divisa</label>
+                            <form action="divisa">
+                                <select name="divisas" id="divisa">
+                                    <option value="ARS">Balboa</option>
+                                    <option value="ARS">Bolivar</option>
+                                    <option value="ARS">Boliviano</option>
+                                    <option value="ARS">Colón</option>
+                                    <option value="ARS">Córdoba</option>
+                                    <option value="ARS">Corona danesa</option>
+                                    <option value="ARS">Dólar bahameño</option>
+                                    <option value="ARS">Dólar barbadense</option>
+                                    <option value="ARS">Dólar beliceño</option>
+                                    <option value="ARS">Dólar canadiense</option>
+                                    <option value="ARS">Dólar estadounidense</option>
+                                    <option value="ARS">Dólar guyanés</option>
+                                    <option value="ARS">Dólar jamaiquino</option>
+                                    <option value="ARS">Dólar surinamés</option>
+                                    <option value="ARS">Dólar trinitense</option>
+                                    <option value="ARS">Dólar bermudeño</option>
+                                    <option value="ARS">Dólar de las Islas Caimán</option>
+                                    <option value="ARS">Florín antillano neerlandés</option>
+                                    <option value="ARS">Florín arubeño</option>
+                                    <option value="ARS">Florín caribeño</option>
+                                    <option value="ARS">Gourde</option>
+                                    <option value="ARS">Guaraní</option>
+                                    <option value="ARS">Lempira</option>
+                                    <option value="ARS">Libertad</option>
+                                    <option value="ARS">Libra malvinense</option>
+                                    <option value="ARS">Sol</option>
+                                    <option value="ARS">Peso argentino</option>
+                                    <option value="ARS">Peso chileno</option>
+                                    <option value="ARS">Peso colombiano</option>
+                                    <option value="ARS">Peso cubano</option>
+                                    <option value="ARS">Peso dominicano</option>
+                                    <option value="ARS">Peso mexicano</option>
+                                    <option value="ARS">Peso uruguayo</option>
+                                    <option value="ARS">Medio quetzal</option>
+                                    <option value="ARS">Quetzal</option>
+                                    <option value="ARS">Real brasileño</option>
+                                </select>
+                            </form>
+                        </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="sixth">
+                        <label for="descripcion">Descripción</label>
+                        <form action="descripcion">
+                            <input type="text">
+                        </form>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="eighth">
+                        <label for="imagenes">Imagenes</label>
+                        <form action="">
+                            <textarea name="" id="" cols="30" rows="10" style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"></textarea>
+                        </form>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="controles">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button class="w3-button w3-light-grey">Confirmar</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </main>
