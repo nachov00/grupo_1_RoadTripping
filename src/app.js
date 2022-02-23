@@ -29,15 +29,15 @@ app.use('/User', userRouter);
 
 
 app.get("/Crear-Editar", function (req, res){
-    res.render(path.join(__dirname, './views/create_edit.ejs'))
+    res.render(path.join(__dirname, './views/admin/create_edit.ejs'))
 })
 
 app.get("/Crear", function (req, res){
-    res.render(path.join(__dirname, './views/create.ejs'))
+    res.render(path.join(__dirname, './views/admin/create.ejs'))
 })
 
 app.get("/Editar", function (req, res){
-    res.render(path.join(__dirname, './views/edit.ejs'))
+    res.render(path.join(__dirname, './views/admin/edit.ejs'))
 })
 
 /*
