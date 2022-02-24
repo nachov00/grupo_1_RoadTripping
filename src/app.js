@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const methodOverride =  require('method-override'); 
+
 
 app.set("view engine", "ejs");
 app.use(express.static(path.resolve(__dirname, '../public')));
-
+app.use(methodOverride('_method'));
 
 
 
@@ -27,18 +29,21 @@ app.use('/Product', productRouter);
 var userRouter = require('./routes/userRoutes');
 app.use('/User', userRouter);
 
+var adminRouter = require('./routes/adminRoutes');
+app.use('/Admin', adminRouter);
 
-app.get("/Crear-Editar", function (req, res){
-    res.render(path.join(__dirname, './views/admin/create_edit.ejs'))
-})
+//app.get("/Crear-Editar", function (req, res){
+//    res.render(path.join(__dirname, './views/admin/create_edit.ejs'))
+//})
+//
+//app.get("/Crear", function (req, res){
+//    res.render(path.join(__dirname, './views/admin/create.ejs'))
+//})
+//
+//app.get("/Editar", function (req, res){
+//    res.render(path.join(__dirname, './views/admin/edit.ejs'))
+//})
 
-app.get("/Crear", function (req, res){
-    res.render(path.join(__dirname, './views/admin/create.ejs'))
-})
-
-app.get("/Editar", function (req, res){
-    res.render(path.join(__dirname, './views/admin/edit.ejs'))
-})
 
 /*
 app.get("/", function (req, res) {
