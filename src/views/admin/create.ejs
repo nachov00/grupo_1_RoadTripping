@@ -26,10 +26,10 @@
             <div class="contenedor">
                 <article class="articulos">
                     <div class="first">
-                        <form action="/" method="post">
+                        <form action="/admin/" method="POST">
                         <label for="titulo">Título</label>
                         <span>(Opcional)</span>
-                            <input type="text" placeholder="Por defecto - Viaje a <destino>">
+                            <input type="text" name="titulo" placeholder="Por defecto - Viaje a <destino>">
                     </div>
                 </article>
 
@@ -37,26 +37,26 @@
                     <div class="second">
                         <label for="destino">Destino</label>
                             <select id="destino" name="destino">
-                                <option value="...">...</option>
-                                <option value="Argentina">Argentina</option>
-                                <option value="Bolivia">Bolivia</option>
-                                <option value="Brasil">Brasil</option>
-                                <option value="Chile">Chile</option>
-                                <option value="Colombia">Colombia</option>
-                                <option value="Costa_Rica">Costa Rica</option>
-                                <option value="Cuba">Cuba</option>
-                                <option value="Ecuador">Ecuador</option>
-                                <option value="El_Salvador">El Salvador</option>
-                                <option value="Guatemala">Guatemala</option>
-                                <option value="Honduras">Honduras</option>
-                                <option value="Mexico">México</option>
-                                <option value="Nicaragua">Nicaragua</option>
-                                <option value="Panama">Panamá</option>
-                                <option value="Paraguay">Paraguay</option>
-                                <option value="Peru">Perú</option>
-                                <option value="República_Dominicana">República Dominicana</option>
-                                <option value="Uruguay">Uruguay</option>
-                                <option value="Venezuela">Venezuela</option>
+                                <option name="...">...</option>
+                                <option name="Argentina">Argentina</option>
+                                <option name="Bolivia">Bolivia</option>
+                                <option name="Brasil">Brasil</option>
+                                <option name="Chile">Chile</option>
+                                <option name="Colombia">Colombia</option>
+                                <option name="Costa_Rica">Costa Rica</option>
+                                <option name="Cuba">Cuba</option>
+                                <option name="Ecuador">Ecuador</option>
+                                <option name="El_Salvador">El Salvador</option>
+                                <option name="Guatemala">Guatemala</option>
+                                <option name="Honduras">Honduras</option>
+                                <option name="Mexico">México</option>
+                                <option name="Nicaragua">Nicaragua</option>
+                                <option name="Panama">Panamá</option>
+                                <option name="Paraguay">Paraguay</option>
+                                <option name="Peru">Perú</option>
+                                <option name="República_Dominicana">República Dominicana</option>
+                                <option name="Uruguay">Uruguay</option>
+                                <option name="Venezuela">Venezuela</option>
                             </select>
 
                     </div>
@@ -65,14 +65,14 @@
                 <article class="articulos">
                     <div class="third">
                         <label for="fechas">Fecha</label>
-                            <input placeholder=" " type="date" id="date">
+                            <input placeholder=" " type="date" name="fecha" id="date">
                     </div>
                 </article>
 
                 <article class="articulos">
                     <div class="controles">
-                        <button type="button" class="w3-button w3-light-grey"><a href="/crear-editar">Atras</a></button>
-                        <button class="w3-button w3-light-grey" onclick=plusDivs(1)>Siguiente</button>
+                        <button type="button" class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
+                        <button type="button" class="w3-button w3-light-grey" onclick=plusDivs(1)>Siguiente</button>
                     </div>
                 </article>
             </div>
@@ -82,7 +82,7 @@
             <div class="contenedor">
                 <article class="articulos">
                     <div class="fourth">
-                        <label class="titulo" for="categoria">Categoria</label>
+                        <label class="titulo" for="categoria" name="categoria">Categoria</label>
                             <label for="categorias"><input type="checkbox" name="Destacado" id="">Destacado</label>
                             <label for="categorias"><input type="checkbox" name="Promoción" id="">Promoción</label>
                             <label for="categorias"><input type="checkbox" name="Escapadas" id="">Escapadas</label>
@@ -97,31 +97,31 @@
                         <label for="hotel">
                             <span class="for-hotel">Hotel</span>
                         </label>
-                            <input type="checkbox" id="hotel">
+                            <input type="checkbox" name="hotel" id="hotel">
                         <label for="boleto">
                             <span class="for-boleto">
                                 Boletos
                             </span>
                         </label>
-                            <input type="checkbox" id="boleto">
+                            <input type="checkbox" name="boletos" id="boleto">
                         <label for="excursiones"> 
                             <span class="for-excursiones">
                                 Excursiones
                             </span>
                         </label>
-                            <input type="checkbox" id="excursiones">
+                            <input type="checkbox" name="excursiones" id="excursiones">
                         <label for="crusero">
                             <span class="for-crusero">
                                 Cruseros
                             </span>
                         </label>
-                            <input type="checkbox" id="crusero">
+                            <input type="checkbox" name="crusero"id="crusero">
                         <label for="translado">
                             <span class="for-hotel">
                                 Translado
                             </span>
                         </label>
-                            <input type="checkbox" id="translado">
+                            <input type="checkbox" name="translado" id="translado">
 
                             
                         <div class="control-me-1">
@@ -173,8 +173,8 @@
 
                 <article class="articulos">
                     <div class="controles">
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
-                        <button type="submit" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                     </div>
                 </article>
             </div>
@@ -186,7 +186,7 @@
                     <div class="seventh">
                         <div class="first">
                             <label for="precio">Precio</label>
-                                <input type="number">
+                                <input name="precio" type="number">
                         </div>
                         <div class="second">
                             <label for="divisa">Divisa</label>
@@ -211,7 +211,7 @@
                 <article class="articulos">
                     <div class="sixth">
                         <label for="descripcion">Descripción</label>
-                            <textarea name="" id="" cols="30" rows="10" style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"></textarea>
+                            <textarea name="descripcion" id="" cols="30" rows="10" style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"></textarea>
 
                     </div>
                 </article>
@@ -219,16 +219,16 @@
                 <article class="articulos">
                     <div class="eighth">
                         <label for="imagenes">Imagenes</label>
-                            <input type="file" name="imagen" id="">
+                            <input type="file" name="images" id="">
+                        </div>
+                    </article>
+                    
+                    <article class="articulos">
+                        <div class="controles">
+                            <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                            <button type="submit" class="w3-button w3-light-grey">Confirmar</button>
+                        </div>
                     </form>
-                    </div>
-                </article>
-
-                <article class="articulos">
-                    <div class="controles">
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
-                        <button type="submit" class="w3-button w3-light-grey">Confirmar</button>
-                    </div>
                 </article>
             </div>
         </div>

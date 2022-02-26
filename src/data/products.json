@@ -2,7 +2,8 @@
     {
         "id": 1,
         "nombre": "SECADOR DE PELO FULL TECNOLOGI 5000 TEKNIKPRO",
-        "descripcion": "ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor",
+        "descripcion": {
+        },
         "precio": 33200.34,
         "categoria": "Cuidador Personal",
         "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\SecadorOferta.jpg",

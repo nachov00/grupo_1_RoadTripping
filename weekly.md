@@ -34,8 +34,36 @@ Que va a hacer mañana: Revision de entregables de Sprints 3
 
 Reunion grupal del 20/02/2022
 
-Lucas Que hizo ayer: Entrega de Sprint 3 Inconvenientes: Agregar el back-ground-color a la creacion y edicion de productos Que va a hacer mañana: Edicion de CRUD en el Routers
+Lucas 
+Que hizo ayer: Entrega de Sprint 3 
+Inconvenientes: Agregar el back-ground-color a la creacion y edicion de productos 
+Que va a hacer mañana: Edicion de CRUD en el Routers
 
-Lis Que hizo ayer: Entrega de Sprint 3 Inconvenientes: Que va a hacer mañana: Leer sobre los temas del Sprint 4, Actualizacion de Tablero, Edicion de CRUD en el Routers
+Lis 
+Que hizo ayer: Entrega de Sprint 3 
+Inconvenientes: 
+Que va a hacer mañana: Leer sobre los temas del Sprint 4, Actualizacion de Tablero, Edicion de CRUD en el Routers
 
-Ignacio Que hizo ayer: Entrega de Sprint 3 Inconvenientes: Que va a hacer mañana: Actualizar la Base de Data, Edicion de CRUD en el Routers
+Ignacio 
+Que hizo ayer: Entrega de Sprint 3 
+Inconvenientes: 
+Que va a hacer mañana: Actualizar la Base de Data, Edicion de CRUD en el Routers
+
+Reunion grupal del 25/02/2022
+
+Lucas 
+Que hizo ayer: [X] JSON con edit y create 
+Inconvenientes: [ ] Pantalla se frizaba y formulario undefined
+Que va a hacer mañana: [ ] Terminar crear editar con el JSON
+
+Lis
+Que hizo ayer: [ ] Update tablero
+Inconvenientes: [ ] 
+Que va a hacer mañana: [ ] Wireframe User
+
+Nacho
+Que hizo ayer: [ ] JSON con edit y create 
+Inconvenientes: [ ] 
+Que va a hacer mañana: [ ] Codigo Vista user
+
+

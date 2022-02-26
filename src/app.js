@@ -32,6 +32,7 @@ app.use('/User', userRouter);
 var adminRouter = require('./routes/adminRoutes');
 app.use('/Admin', adminRouter);
 
+
 //app.get("/Crear-Editar", function (req, res){
 //    res.render(path.join(__dirname, './views/admin/create_edit.ejs'))
 //})

@@ -28,16 +28,12 @@
 
                     <label for="edit">Producto a editar</label>
                     <form action="/edit_method=PUT" method="POST">
-                        <select name="producto" id="">
-                            <option value="...">...</option>
-                            <option value="1">Producto 1</option>
-                            <option value="2">Producto 2</option>
-                            <option value="3">Producto 3</option>
-                            <option value="4">Producto 4</option>
-                            <option value="5">Producto 5</option>
-                            <option value="6">Producto 6</option>
-                            <option value="7">Producto 7</option>
-                            <option value="8">Producto 8</option>
+                        <select name="producto" id="" placeholder="...">
+
+                            <% for (let i = 0; i < productos.length; i++) {%> 
+                                <option value="<%= productos[i].id %>"> <%= productos[i].titulo %> </option>
+                            <% } %>     
+
                         </select>
                     </form>
                 </div>
@@ -45,7 +41,7 @@
 
             <article class="articulos">
                 <div class="controles">
-                    <button class="w3-button w3-light-grey"><a href="/crear-editar">Atras</a></button>
+                    <button class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
                     <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                 </div>
             </article>

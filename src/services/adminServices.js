@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path")
 
 const service = {
-    file: path.join(__dirname, "../data/products.json"),
+    file: path.join(__dirname, "../data/just_a_DB.json"),
     
     readFile: function(){
         return fs.readFileSync(this.file, "utf-8")
@@ -29,8 +29,9 @@ const service = {
 
     create: function(newProduct){
         let productos = this.findAll()
-        let producto = {...newProduct, id: products.length + 1 }
+        let producto = {...newProduct, id: productos.length + 1 }
         productos.push(producto)
+        console.log(newProduct)
         this.writeFile(productos)
     },
 
