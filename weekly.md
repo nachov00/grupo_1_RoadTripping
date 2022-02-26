@@ -52,7 +52,7 @@ Que va a hacer mañana: Actualizar la Base de Data, Edicion de CRUD en el Router
 Reunion grupal del 25/02/2022
 
 Lucas 
-Que hizo ayer:- [x] JSON con edit y create 
+Que hizo ayer: - [x] JSON con edit y create 
 Inconvenientes:- [ ] Pantalla se frizaba y formulario undefined
 Que va a hacer mañana:- [ ] Terminar crear editar con el JSON
 
