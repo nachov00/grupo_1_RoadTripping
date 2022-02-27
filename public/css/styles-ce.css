@@ -276,3 +276,15 @@ input#hotel:checked ~ span.for-hotel {
 #translado :checked~.for-translado {
     background-color: #809DE8;
 }
+
+.botones {
+    width: 90%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid #2a3594;   
+    box-sizing: border-box;   
+    text-align: center;
+    background-color: #809DE8;
+    border-radius: 25%;
+}
