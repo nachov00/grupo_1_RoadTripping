@@ -32,8 +32,6 @@ Lucas Zanier: Lógistica, UX-UI, Front-End Developer, Back-End Developer
 
 Ignacio Villanueva: Front-End Developer, Back-End Developer, UX-UI
 
-Tomas Tisera: Front-End Developer, Back-End Developer, UX-UI
-
 3. Inspiración referentes del mercado
 
 https://www.transrioturismo.tur.ar/travel/mision-vision-valores/

@@ -1,3 +1,91 @@
+<<<<<<< HEAD
+.typo-roboto {
+    font-family: roboto;
+}
+
+.color-fondo {
+    background-color: #FFF72F;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*-----------CARRUSEL-----------*/
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+  }
+  
+  .container{
+    margin: auto;
+    background-color: #2A3594;
+    width: 500px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 500px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:white;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #2A3594;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+<<<<<<<< HEAD:public/css/styles-li.css
+    padding: 10px;
+    border: 5px black solid;
+    box-sizing:border-box;
+=======
 .header-home {
     border: 1px black dashed;
     height: 283px;
@@ -5,11 +93,13 @@
     background-size: cover;
     background-position: center center;
 }
+
 main {
     border: 1px black dashed;
     height: 606px;
     background: url(/Wireframes/Limpio/Road\ Tripping\ \ -\ \ Limpio_4.jpg)
 }
+
 footer {
     background-color: #FFF72F;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -17,12 +107,14 @@ footer {
     font-size: 20px;
     padding: 10px;
     border: 5px black solid;
-    box-sizing:border-box;
+    box-sizing: border-box;
+>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
     height: 135px;
 }
 
 .contenedor-home {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -30,13 +122,23 @@ footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: Roboto;
     }
+=======
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 
 
 #logo-footer {
     display: flex;
+<<<<<<< HEAD
     align-self: flex-end;
     justify-content: bottom;
     text-align: center;
+=======
+>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 
 }
 
@@ -44,7 +146,11 @@ footer {
 .ingresar {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: flex-end;
+=======
+    justify-content: center;
+>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
     align-items: center;
     font-size: 10px;
 }
@@ -74,6 +180,7 @@ footer {
     font: roboto;
     font-size: 1rem;
     padding: 10px;
+<<<<<<< HEAD
     box-sizing:border-box;
     text-align: center;
 }
@@ -122,6 +229,58 @@ button:hover {
     display: inline-block;   
     border: 2px solid #2a3594;   
     box-sizing: border-box;   
+=======
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    background-color: #fa9e29;
+    width: 30%;
+    color: white;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #2a3594;
+    box-sizing: border-box;
+    background-color: #809de8;
+    border-radius: 25px;
+}
+
+input:hover {
+    opacity: 0.9
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 10px 5px;
+    border-radius: 25px;
+}
+
+/* social media*/
+
+.botonSocial {
+    width: 50%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #2a3594;
+    box-sizing: border-box;
+>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
     background-color: #809de8;
     border-radius: 25px;
     color: black;
@@ -132,31 +291,40 @@ button:hover {
     color: white;
     text-align: center;
     font-size: large;
+<<<<<<< HEAD
+========
+    border-radius: 100%;
+>>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55:public/css/Styles.css
   }
 
-  #fb:hover {   
-    opacity: 0.7;   
-}   
 
-  
+=======
+}
+
+#fb:hover {
+    opacity: 0.7;
+}
+
+
 #twitter {
     background-color: #55ACEE;
     color: white;
     text-align: center;
     font-size: large;
-  }
+}
 
-  #twitter:hover {   
-    opacity: 0.7;   
-}    
-  
+#twitter:hover {
+    opacity: 0.7;
+}
+
 #google {
     background-color: #dd4b39;
     color: white;
     text-align: center;
     font-size: large;
-  }
+}
 
-  #google:hover {   
-    opacity: 0.7;   
-}  
+#google:hover {
+    opacity: 0.7;
+}
+>>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55

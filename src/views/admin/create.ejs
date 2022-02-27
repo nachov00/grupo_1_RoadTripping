@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear</title>
+    <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/styles-ce.css">
+    <link rel="icon" href="/img/Logo2.png">
+</head>
+
+<body>
+    <header class="ingresar">
+        <div id="imagen-login">
+            <a href="/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
+            <i class="fa-solid fa-user-gear"></i>
+        </div>
+    </header>
+
+    <main class="main-2">
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <article class="articulos">
+                    <div class="first">
+                        <form action="/admin/" method="POST">
+                        <label for="titulo">Título</label>
+                        <span>(Opcional)</span>
+                            <input type="text" name="titulo" placeholder="Por defecto - Viaje a <destino>">
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="second">
+                        <label for="destino">Destino</label>
+                            <select id="destino" name="destino">
+                                <option name="...">...</option>
+                                <option name="Argentina">Argentina</option>
+                                <option name="Bolivia">Bolivia</option>
+                                <option name="Brasil">Brasil</option>
+                                <option name="Chile">Chile</option>
+                                <option name="Colombia">Colombia</option>
+                                <option name="Costa_Rica">Costa Rica</option>
+                                <option name="Cuba">Cuba</option>
+                                <option name="Ecuador">Ecuador</option>
+                                <option name="El_Salvador">El Salvador</option>
+                                <option name="Guatemala">Guatemala</option>
+                                <option name="Honduras">Honduras</option>
+                                <option name="Mexico">México</option>
+                                <option name="Nicaragua">Nicaragua</option>
+                                <option name="Panama">Panamá</option>
+                                <option name="Paraguay">Paraguay</option>
+                                <option name="Peru">Perú</option>
+                                <option name="República_Dominicana">República Dominicana</option>
+                                <option name="Uruguay">Uruguay</option>
+                                <option name="Venezuela">Venezuela</option>
+                            </select>
+
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="third">
+                        <label for="fechas">Fecha</label>
+                            <input placeholder=" " type="date" name="fecha" id="date">
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="controles">
+                        <button type="button" class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
+                        <button type="button" class="w3-button w3-light-grey" onclick=plusDivs(1)>Siguiente</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <article class="articulos">
+                    <div class="fourth">
+                        <label class="titulo" for="categoria" name="categoria">Categoria</label>
+                            <label for="categorias"><input type="checkbox" name="Destacado" id="">Destacado</label>
+                            <label for="categorias"><input type="checkbox" name="Promoción" id="">Promoción</label>
+                            <label for="categorias"><input type="checkbox" name="Escapadas" id="">Escapadas</label>
+                            <label for="categorias"><input type="checkbox" name="Actividades" id="">Actividades</label>
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="fifth">
+                        <label class="titulo" for="contenido">Contenido</label>
+
+                        <label for="hotel">
+                            <span class="for-hotel">Hotel</span>
+                        </label>
+                            <input type="checkbox" name="hotel" id="hotel">
+                        <label for="boleto">
+                            <span class="for-boleto">
+                                Boletos
+                            </span>
+                        </label>
+                            <input type="checkbox" name="boletos" id="boleto">
+                        <label for="excursiones"> 
+                            <span class="for-excursiones">
+                                Excursiones
+                            </span>
+                        </label>
+                            <input type="checkbox" name="excursiones" id="excursiones">
+                        <label for="crusero">
+                            <span class="for-crusero">
+                                Cruseros
+                            </span>
+                        </label>
+                            <input type="checkbox" name="crusero"id="crusero">
+                        <label for="translado">
+                            <span class="for-hotel">
+                                Translado
+                            </span>
+                        </label>
+                            <input type="checkbox" name="translado" id="translado">
+
+                            
+                        <div class="control-me-1">
+                            <label for="contenido-1">Los Cauquenes Resort</label>
+                            <input type="checkbox" name="los_cauquenes_resort" id="contenido-1">
+
+                            <label for="contenido-2">Los Ñires Hotel</label>
+                            <input type="checkbox" name="los_ñires_hotel" id="contenido-2">
+
+                            <label for="contenido-3">Aires del Beagle Apartments</label>
+                            <input type="checkbox" name="aires_del_beagle_apartments" id="contenido-3">
+
+                            <label for="contenido-4">Alberque Los Cormiranes</label>
+                            <input type="checkbox" name="alberque_los_cormiranes" id="contenido-4">
+                        </div>
+                        <div class="control-me-2">
+                            <label for="contenidos">Avion</label>
+                            <input type="checkbox" class="" name="avion" id="">
+                            <label for="contenidos">Barco</label>
+                            <input type="checkbox" class="" name="barco" id="">
+                            <label for="contenidos">Bus</label>
+                            <input type="checkbox" class="" name="bus" id="">
+                        </div>
+                        <div class="control-me-3">
+                            <label for="contenidos">a</label>
+                            <input type="checkbox" class="" name="a" id="">
+                            <label for="contenidos">b</label>
+                            <input type="checkbox" class="" name="b" id="">
+                            <label for="contenidos">c</label>
+                            <input type="checkbox" class="" name="c" id="">
+                            <label for="contenidos">d</label>
+                            <input type="checkbox" class="" name="d" id="">
+                        </div>
+                        <div class="control-me-4">
+                            <label for="contenidos">Incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                            <label for="contenidos">No incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                        </div>
+                        <div class="control-me-5">
+                            <label for="contenidos">Incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                            <label for="contenidos">No incluido</label>
+                            <input type="radio" class="" name="hotel" id="">
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="controles">
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="contenedor">
+                <article class="articulos">
+                    <div class="seventh">
+                        <div class="first">
+                            <label for="precio">Precio</label>
+                                <input name="precio" type="number">
+                        </div>
+                        <div class="second">
+                            <label for="divisa">Divisa</label>
+                                <select name="divisas" id="divisa">
+                                    <option value="ARS">$ARS</option>
+                                    <option value="MEX">MEX$</option>
+                                    <option value="RpD">RD$</option>
+                                    <option value="US">US$</option>
+                                    <option value="CAN">Can$</option>
+                                    <option value="AU">AU$</option>
+                                    <option value="EU">€</option>
+                                    <option value="ARS">₡</option>
+                                    <option value="ARS">₱</option>
+                                    <option value="ARS">Kč</option>
+                                    <option value="CHI">¥</option>
+                                    <option value="COR">₩</option>
+                                </select>
+
+                        </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="sixth">
+                        <label for="descripcion">Descripción</label>
+                            <textarea name="descripcion" id="" cols="30" rows="10" style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"></textarea>
+
+                    </div>
+                </article>
+
+                <article class="articulos">
+                    <div class="eighth">
+                        <label for="imagenes">Imagenes</label>
+                            <input type="file" name="images" id="">
+                        </div>
+                    </article>
+                    
+                    <article class="articulos">
+                        <div class="controles">
+                            <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                            <button type="submit" class="w3-button w3-light-grey">Confirmar</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                            }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </main>
