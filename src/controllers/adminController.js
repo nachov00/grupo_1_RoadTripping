@@ -7,8 +7,16 @@ const adminController = {
       res.render("../views/admin/create_edit")
     },
 
-    crear: (req, res) => {
-      res.render("../views/admin/create")
+    crear1: (req, res) => {
+      res.render("../views/admin/create-1")
+    },
+
+    crear2: (req, res) => {
+      res.render("../views/admin/create-2")
+    },
+
+    crear3: (req, res) => {
+      res.render("../views/admin/create-3")
     },
 
     guardar: (req, res) => {
@@ -23,11 +31,11 @@ const adminController = {
           titulo: req.body.titulo ,
           destino: req.body.destino,
           fecha: req.body.fecha ,
-          categoria: req.body.categoria , 
-          contenido: req.body.contenido , 
-          precio: req.body.precio,
-          divisa: req.body.divisa , 
-          descripcion: req.body.descripcion 
+          //categoria: req.body.categoria , 
+          //contenido: req.body.contenido , 
+          //precio: req.body.precio,
+          //divisa: req.body.divisa , 
+          //descripcion: req.body.descripcion 
       }
       
       //agrego el nuevo producto a mi listado de productos 
