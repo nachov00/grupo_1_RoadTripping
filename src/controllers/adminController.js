@@ -16,11 +16,18 @@ const adminController = {
       let products = service.findAll()
 
       //creo el nuevo producto para agregar
+      console.log(req.body)
       let newProduct = {
+        
           id: products.length + 1,
-          name: req.body.name ,
-          price: req.body.price,
-          description: req.body.description 
+          titulo: req.body.titulo ,
+          destino: req.body.destino,
+          fecha: req.body.fecha ,
+          categoria: req.body.categoria , 
+          contenido: req.body.contenido , 
+          precio: req.body.precio,
+          divisa: req.body.divisa , 
+          descripcion: req.body.descripcion 
       }
       
       //agrego el nuevo producto a mi listado de productos 

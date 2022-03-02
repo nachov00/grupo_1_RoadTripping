@@ -8,7 +8,7 @@
     <title>Crear</title>
     <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="/css/styles-ce.css">
+    <link rel="stylesheet" href="/css/styles-ce2.css">
     <link rel="icon" href="/img/Logo2.png">
 </head>
 
@@ -20,13 +20,15 @@
         </div>
     </header>
 
-    <main class="main-2">
+    <main class="main">
+
+        
+        <form action="/admin/" method="POST">
 
         <div class="mySlides">
             <div class="contenedor">
                 <article class="articulos">
                     <div class="first">
-                        <form action="/admin/" method="POST">
                         <label for="titulo">Título</label>
                         <span>(Opcional)</span>
                             <input type="text" name="titulo" placeholder="Por defecto - Viaje a <destino>">
@@ -65,7 +67,17 @@
                 <article class="articulos">
                     <div class="third">
                         <label for="fechas">Fecha</label>
-                            <input placeholder=" " type="date" name="fecha" id="date">
+
+                        <div class="primera-fecha">
+                            <label class="desde">Desde</label>
+                            <input name="from" class="desde" type="date">
+                        </div>
+
+                        <div class="segunda-fecha">
+                            <label class="hasta">Hasta</label>
+                        <input name="to" class="hasta" type="date">
+                        </div>
+
                     </div>
                 </article>
 
@@ -181,8 +193,9 @@
         </div>
 
         <div class="mySlides">
-            <div class="contenedor">
-                <article class="articulos">
+                <div class="contenedor">
+
+                    <article class="articulos">
                     <div class="seventh">
                         <div class="first">
                             <label for="precio">Precio</label>
@@ -206,32 +219,36 @@
                                 </select>
 
                         </div>
-                </article>
+                    </article>
 
-                <article class="articulos">
+                    <article class="articulos">
                     <div class="sixth">
                         <label for="descripcion">Descripción</label>
                             <textarea name="descripcion" id="" cols="30" rows="10" style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"></textarea>
 
                     </div>
-                </article>
+                    </article>
 
-                <article class="articulos">
+                    <article class="articulos">
                     <div class="eighth">
                         <label for="imagenes">Imagenes</label>
                             <input type="file" name="images" id="">
                         </div>
                     </article>
                     
+        </form>
+        
                     <article class="articulos">
                         <div class="controles">
                             <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
                             <button type="submit" class="w3-button w3-light-grey">Confirmar</button>
                         </div>
-                    </form>
-                </article>
+                    </article>
+
+                </div>
+                
             </div>
-        </div>
+
 
         <script>
             var slideIndex = 1;

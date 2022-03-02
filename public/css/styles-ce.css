@@ -59,7 +59,7 @@ main {
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 
-.main-2 {
+.main {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -161,6 +161,7 @@ div.seventh {
 div.seventh div.first, div.seventh div.second {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 div.second label[for="divisa"] {
@@ -200,9 +201,11 @@ div.select form select {
 .control-me-1 {
     display: none;
 }
-input#hotel:checked ~ span.for-hotel {
+
+input#hotel:checked~span.for-hotel {
     font-size: 4vh;
 }
+
 #hotel:checked~.control-me-1 {
     display: flex;
     flex-direction: column;
@@ -210,7 +213,6 @@ input#hotel:checked ~ span.for-hotel {
     left: 20vw;
     bottom: 24.2vh;
 }
-
 
 
 .control-me-2 {
@@ -275,4 +277,8 @@ input#hotel:checked ~ span.for-hotel {
 
 #translado :checked~.for-translado {
     background-color: #809DE8;
+}
+
+input.desde,input.hasta, label.divisa, input.divisa {
+    font-size: 2vh;
 }
