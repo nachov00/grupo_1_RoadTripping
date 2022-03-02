@@ -350,6 +350,50 @@ input[type=submit]:hover {
 
 /*------------------------------------------------------------------*/
 
+@media screen and (max-width:480px){
+    
+    .nosotros, .defensa, .acuerdo_legal, .contacto {
+        margin: 50px 10px 0px 10px;
+        background-color: rgba(147, 171, 231, 0.8);
+        border-radius: 15px;
+        padding: 2%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .encabezado-1 {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .encabezado-1 article {
+        width: 90%;
+        background-color: #2A3594;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px 10px 10px 10px;
+        align-content: center;
+        justify-content: center;
+        text-align: justify;
+    }
+    .encabezado-2 {
+        display: block;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .encabezado-2 article {
+        width: 100%;
+        background-color: #809DE8;
+        color: #000000;
+        padding: 10px;
+        margin: 10px 10px 20px 10px;
+        border-radius: 10px;
+    }
+}
+
 footer {
     position: absolute;
     bottom: 0%;

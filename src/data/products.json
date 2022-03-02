@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "nombre": "SECADOR DE PELO FULL TECNOLOGI 5000 TEKNIKPRO",
+        "descripcion": {
+        },
+        "precio": 33200.34,
+        "categoria": "Cuidador Personal",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\SecadorOferta.jpg",
+        "color": "Azul"
+    },
+    {
+        "id": 2,
+        "nombre": "Difusor Ultrasonico 300ml GADNIC",
+        "descripcion": "eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat",
+        "precio": 36398.41,
+        "categoria": "Climatizacion",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\DifusorOferta.jpg",
+        "color": "Gris"
+    },
+    {
+        "id": 3,
+        "nombre": "Aspiradora Inalámbrica Electrolux 2 en 1 120W ERG26",
+        "descripcion": "eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget",
+        "precio": 113786.93,
+        "categoria": "Electrohogar",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\AspiradoraOferta.jpg",
+        "color": "Rojo"
+    },
+    {
+        "id": 4,
+        "nombre": "SECADOR DE PELO FULL TECNOLOGI 5000 TEKNIKPRO",
+        "descripcion": "sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus",
+        "precio": 88220.49,
+        "categoria": "Cuidador Personal",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\SecadorOferta.jpg",
+        "color": "Gris"
+    },
+    {
+        "id": 5,
+        "nombre": "Difusor Ultrasonico 300ml GADNIC",
+        "descripcion": "molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
+        "precio": 20539.17,
+        "categoria": "Climatizacion",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\DifusorOferta.jpg",
+        "color": "Rojo"
+    },
+    {
+        "id": 6,
+        "nombre": "Aspiradora Inalámbrica Electrolux 2 en 1 120W ERG26",
+        "descripcion": "posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui",
+        "precio": 115122.94,
+        "categoria": "Electrohogar",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\AspiradoraOferta.jpg",
+        "color": "Azul"
+    },
+    {
+        "id": 7,
+        "nombre": "SECADOR DE PELO FULL TECNOLOGI 5000 TEKNIKPRO",
+        "descripcion": "ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt",
+        "precio": 88288.78,
+        "categoria": "Cuidador Personal",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\SecadorOferta.jpg",
+        "color": "Rojo"
+    },
+    {
+        "id": 8,
+        "nombre": "Difusor Ultrasonico 300ml GADNIC",
+        "descripcion": "lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt",
+        "precio": 114224.09,
+        "categoria": "Climatizacion",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\DifusorOferta.jpg",
+        "color": "Rojo"
+    },
+    {
+        "id": 9,
+        "nombre": "Aspiradora Inalámbrica Electrolux 2 en 1 120W ERG26",
+        "descripcion": "augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui",
+        "precio": 104744.78,
+        "categoria": "Electrohogar",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\AspiradoraOferta.jpg",
+        "color": "Rojo"
+    },
+    {
+        "id": 10,
+        "nombre": "SECADOR DE PELO FULL TECNOLOGI 5000 TEKNIKPRO",
+        "descripcion": "in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est",
+        "precio": 112129.99,
+        "categoria": "Cuidador Personal",
+        "imagen": "C:\\Users\\iván\\Desktop\\Atseupserpractica\\proyecto-integrador\\grupo_5_Lumiere\\public\\img\\SecadorOferta.jpg",
+        "color": "Negro"
+    }
+]
