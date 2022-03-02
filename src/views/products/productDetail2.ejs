@@ -98,19 +98,28 @@
                         </ul>
                     </div>
                 </div>
+
+                <!--HACER WIREFRAME LISTADO DE PRODUCTOS-->
                 <div id="descripcion">
-                    <h2><%= producto.descripcion%></h2>
+                    <p><%= producto.descripcion%></p>
                     <h3>Este paquete incluye:</h3>
                     <ul class="detalle">
-                        <li><a>VUELO: Ida y Vuelta</a></li>
-                        <li><a>ALOJAMIENTO 3 noches en los mejores hoteles con cercania al centro</a></li>
-                        <li><a>Habitación Doble Estándar con Vista a la Colina con Desayuno</a></li>
-                        <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                        <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis</a></li>
-                        <li><a>El seguro de tu viaje</a></li>
-                        <li><a>Excursiones: Circuito chico, Kayak en Lago Gutierrez, San Martín de los Andes por la Ruta
-                                de
-                                los 7 Lagos
+                        <li><a>Disponible desde: <%= producto[i].detail.disponibilidad.from%></a></li>
+                        <li>Hasta: <%= producto[i].detail.disponibilidad.to%></li>
+                        <li><a>Alojamiento en: <%= producto[i].detail.hotel%></a></li>
+                        <%if(producto[i].detail.translados){%>
+                        <li>usted cuenta con translado</li>
+                        <%}else{%>
+                        <li>sin translado</li>
+                        <%}%>
+            
+                        <%if(producto[i].detail.seguro){%>
+                            <li>usted cuenta con seguro</li>
+                            <%}else{%>
+                            <li>sin seguro</li>
+                            <%}%>
+        
+                        <li><a>Usted cuenta con las siguientes excursiones: <%= producto[i].detail.excursiones%> 
                             </a></li>
                     </ul>
                 </div>
