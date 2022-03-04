@@ -8,19 +8,19 @@
     <title>Editar</title>
     <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="/css/styles-ce.css">
+    <link rel="stylesheet" href="/css/styles-ce2.css">
     <link rel="icon" href="/img/Logo2.png">
 </head>
 
 <body>
     <header class="ingresar">
         <div id="imagen-login">
-            <a href="/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
+            <a href="/admin/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
             <i class="fa-solid fa-user-gear"></i>
         </div>
     </header>
 
-    <main class="main-2">
+    <main class="main">
 
         <div class="mySlides">
             <div class="contenedor">
@@ -28,7 +28,7 @@
 
                     <label for="edit">Producto a editar</label>
                     <form action="/edit_method=PUT" method="POST">
-                        <select name="producto" id="" placeholder="...">
+                        <select name="producto" placeholder="...">
 
                             <% for (let i = 0; i < productos.length; i++) {%> 
                                 <option value="<%= productos[i].id %>"> <%= productos[i].titulo %> </option>
@@ -41,8 +41,8 @@
 
             <article class="articulos">
                 <div class="controles">
-                    <button class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
-                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                    <button type="button" class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
+                    <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                 </div>
             </article>
         </div>
@@ -51,18 +51,17 @@
             <div class="contenedor">
                 <article class="articulos">
                     <div class="first">
-                        <form action="/edit/<&=id%>?_method=PUT" method="post">
+                        <form action="/edit/<%=//producto.id%>?_method=PUT" method="post">
                             <label for="titulo">Título</label>
                             <span>(Opcional)</span>
-                            <input type="text" placeholder="Por defecto - Viaje a <destino>">
+                            <input type="text" name="titulo" placeholder="<%=//producto.titulo%>">
                     </div>
                 </article>
 
                 <article class="articulos">
                     <div class="second">
                         <label for="destino">Destino</label>
-                        <select id="destino" name="destino">
-                            <option value="...">...</option>
+                        <select id="destino" name="destino" placeholder="<%=//producto.destino%>">
                             <option value="Argentina">Argentina</option>
                             <option value="Bolivia">Bolivia</option>
                             <option value="Brasil">Brasil</option>
@@ -90,14 +89,18 @@
                 <article class="articulos">
                     <div class="third">
                         <label for="fechas">Fecha</label>
-                        <input placeholder=" " type="date" id="date">
+                        <br>
+                        <label for="desde" style="font-size: 2vh" class="desde">Desde</label>
+                        <input placeholder="<%=//producto.fecha.from%>" name="from" type="date">
+                        <label for="hasta" style="font-size: 2vh" class="hasta">Hasta</label>
+                        <input placeholder="<%=//producto.fecha.to%>" name="to" type="date" id="date">
                     </div>
                 </article>
 
                 <article class="articulos">
                     <div class="controles">
-                        <button class="w3-button w3-light-grey"><a href="/crear-editar">Atras</a></button>
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                     </div>
                 </article>
             </div>
@@ -108,10 +111,10 @@
                 <article class="articulos">
                     <div class="fourth">
                         <label class="titulo" for="categoria">Categoria</label>
-                        <label for="categorias"><input type="checkbox" name="Destacado" id="">Destacado</label>
-                        <label for="categorias"><input type="checkbox" name="Promoción" id="">Promoción</label>
-                        <label for="categorias"><input type="checkbox" name="Escapadas" id="">Escapadas</label>
-                        <label for="categorias"><input type="checkbox" name="Actividades" id="">Actividades</label>
+                        <label for="categorias"><input type="checkbox" name="destacado">Destacado</label>
+                        <label for="categorias"><input type="checkbox" name="promoción">Promoción</label>
+                        <label for="categorias"><input type="checkbox" name="escapadas">Escapadas</label>
+                        <label for="categorias"><input type="checkbox" name="actividades">Actividades</label>
                     </div>
                 </article>
 
@@ -198,8 +201,8 @@
 
                 <article class="articulos">
                     <div class="controles">
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                     </div>
                 </article>
             </div>
@@ -211,11 +214,11 @@
                     <div class="seventh">
                         <div class="first">
                             <label for="precio">Precio</label>
-                            <input type="number">
+                            <input type="number" name="precio" value="<%=//producto.precio%>">
                         </div>
                         <div class="second">
-                            <label for="divisa">Divisa</label>
-                            <select name="divisas" id="divisa">
+                            <label class="divisa" for="divisa">Divisa</label>
+                            <select class="divisa" name="divisas" name="divisa" placeholder="<%=//producto.divisa%>">
                                 <option value="ARS">$ARS</option>
                                 <option value="MEX">MEX$</option>
                                 <option value="RpD">RD$</option>
@@ -236,8 +239,9 @@
                 <article class="articulos">
                     <div class="sixth">
                         <label for="descripcion">Descripción</label>
+                        <br>
                         <textarea name="" id="" cols="30" rows="10"
-                            style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"></textarea>
+                            style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"><%=//producto.descripcion%></textarea>
 
                     </div>
                 </article>
@@ -252,8 +256,8 @@
 
                 <article class="articulos">
                     <div class="controles">
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
-                        <button class="w3-button w3-light-grey">Confirmar</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button type="submit" class="w3-button w3-light-grey">Confirmar</button>
                     </div>
                 </article>
             </div>
