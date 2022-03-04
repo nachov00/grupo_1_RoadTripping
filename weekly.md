@@ -67,4 +67,19 @@ Que hizo ayer: [ ] JSON con edit y create
 Inconvenientes: [ ] 
 Que va a hacer mañana: [ ] Codigo Vista user
 
+Reunion grupal del 04/03/2022
 
+Lucas 
+Que hizo ayer: Modificar Creacion y edicion de productos del Json, Realizar Json respectivos de Producto y usuario
+Inconvenientes:  formulario undefined
+Que va a hacer mañana: Agregar boton para Delete, continuar con vistas de lista de Productos
+
+Lis
+Que hizo ayer: Actualizacion de tablero, cracion de wireframe lista de Productos, creacion de vista Lista de Productos.
+Inconvenientes: Uso de display flex, levantar server
+Que va a hacer mañana: continuar con vistas de lista de Productos
+
+Nacho
+Que hizo ayer:  cracion de wireframe Usuario
+Inconvenientes:  
+Que va a hacer mañana: Codigo Vista user, creacion de vista user.
