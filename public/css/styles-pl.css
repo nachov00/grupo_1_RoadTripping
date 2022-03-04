@@ -1,0 +1,83 @@
+#relacionados {
+  position: absolute;
+width: 567px;
+height: 25px;
+left: 19px;
+top: 283px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;  
+}
+
+.caja1{
+position: absolute;
+width: 284px;
+height: 443px;
+left: 49px;
+top: 328px;
+
+background: #061283;
+border-radius: 5px;
+color: white;
+}
+.caja2{
+position: absolute;
+width: 284px;
+height: 40px;
+left: 51px;
+top: 438px;
+color: black;
+background: #C4C4C4;
+border-radius: 5px;
+}
+.caja3{
+position: absolute;
+width: 284px;
+height: 50px;
+left: 51px;
+top: 488px;
+color: black;
+background: #C4C4C4;
+border-radius: 5px;
+}
+.caja4{
+position: absolute;
+width: 267px;
+height: 91px;
+left: 60px;
+top: 557px;
+color: black;
+background: #C4C4C4;
+border-radius: 5px;
+}
+.caja5{
+position: absolute;
+width: 284px;
+height: 75px;
+left: 51px;
+top: 665px;
+color:black;
+background: #C4C4C4;
+border-radius: 5px;
+}
+.mapa{
+position: absolute;
+width: 302px;
+height: 112px;
+left: 42px;
+top: 806px;
+background: url(image.png);
+}
+.mapa h2 a:hover {
+    background-color: white;
+    border: 1px dotted #FA9E29;
+    color: #FA9E29;
+}
