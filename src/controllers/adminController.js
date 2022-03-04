@@ -8,15 +8,7 @@ const adminController = {
     },
 
     crear1: (req, res) => {
-      res.render("../views/admin/create-1")
-    },
-
-    crear2: (req, res) => {
-      res.render("../views/admin/create-2")
-    },
-
-    crear3: (req, res) => {
-      res.render("../views/admin/create-3")
+      res.render("../views/admin/create")
     },
 
     guardar: (req, res) => {
@@ -25,17 +17,32 @@ const adminController = {
 
       //creo el nuevo producto para agregar
       console.log(req.body)
+
       let newProduct = {
         
           id: products.length + 1,
           titulo: req.body.titulo ,
           destino: req.body.destino,
-          fecha: req.body.fecha ,
-          //categoria: req.body.categoria , 
-          //contenido: req.body.contenido , 
-          //precio: req.body.precio,
-          //divisa: req.body.divisa , 
-          //descripcion: req.body.descripcion 
+          categoria: req.body.categoria , 
+          precio: {
+              valor: req.body.valor,
+              divisa: req.body.divisa
+          },
+          detalle: {
+              disponibilidad: {
+                    from: req.body.from,
+                    to: req.body.to
+              },
+              hotel: req.body.hotel,
+              boletos: req.body.boletos,
+              excursiones: { },
+              fecha: req.body.fecha,
+              translados: req.body.translado,
+              crusero: req.body.crusero,
+              descripcion: req.body.descripcion,
+          },
+          images: { }
+
       }
       
       //agrego el nuevo producto a mi listado de productos 
