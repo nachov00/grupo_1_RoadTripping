@@ -52,20 +52,19 @@ Que va a hacer mañana: Actualizar la Base de Data, Edicion de CRUD en el Router
 Reunion grupal del 25/02/2022
 
 Lucas 
-Que hizo ayer: 
-- [x] JSON con edit y create 
-Inconvenientes:- [ ] Pantalla se frizaba y formulario undefined
-Que va a hacer mañana:- [ ] Terminar crear editar con el JSON
+Que hizo ayer: JSON con edit y create 
+Inconvenientes:Pantalla se frizaba y formulario undefined
+Que va a hacer mañana:Terminar crear editar con el JSON
 
 Lis
-Que hizo ayer:- [x] Update tablero
-Inconvenientes: [ ] 
-Que va a hacer mañana: [ ] Wireframe User
+Que hizo ayer: Update tablero
+Inconvenientes: 
+Que va a hacer mañana: Wireframe User
 
 Nacho
-Que hizo ayer: [ ] JSON con edit y create 
-Inconvenientes: [ ] 
-Que va a hacer mañana: [ ] Codigo Vista user
+Que hizo ayer: JSON con edit y create 
+Inconvenientes: 
+Que va a hacer mañana: Codigo Vista user
 
 Reunion grupal del 04/03/2022
 
