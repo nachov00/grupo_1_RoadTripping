@@ -22,5 +22,3 @@
 ## **Comenzar:**
 º Programar en Visual en grupo
 
-
- 

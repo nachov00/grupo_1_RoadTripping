@@ -36,7 +36,7 @@
                     <div class="destino-precio">
                         <ul>
                             <h2>
-                                <li>Bariloche <br> $81.206 p/p</li>
+                                <li><%= producto.nombre%> <br> <%= producto.precio%></li>
                             </h2>
                             <h2><a href="/Carrito">COMPRAR</a></h2>
                         </ul>
@@ -98,372 +98,31 @@
                         </ul>
                     </div>
                 </div>
+                
                 <div id="descripcion">
-                    <h2><%= productos[i].detail.descripcion %>     </h2>
+                    <p><%= producto.descripcion%></p>
                     <h3>Este paquete incluye:</h3>
                     <ul class="detalle">
-                        <li><a>VUELO: <%=  %>  </a></li>
-                        <li><a>ALOJAMIENTO 3 noches en los mejores hoteles con cercania al centro</a></li>
-                        <li><a>Habitación Doble Estándar con Vista a la Colina con Desayuno</a></li>
-                        <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                        <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis</a></li>
-                        <li><a>El seguro de tu viaje</a></li>
-                        <li><a>Excursiones: Circuito chico, Kayak en Lago Gutierrez, San Martín de los Andes por la Ruta
-                                de
-                                los 7 Lagos
+                        <li><a>Disponible desde: <%= producto[i].detail.disponibilidad.from%></a></li>
+                        <li>Hasta: <%= producto[i].detail.disponibilidad.to%></li>
+                        <li><a>Alojamiento en: <%= producto[i].detail.hotel%></a></li>
+                        <%if(producto[i].detail.translados){%>
+                        <li>usted cuenta con translado</li>
+                        <%}else{%>
+                        <li>sin translado</li>
+                        <%}%>
+            
+                        <%if(producto[i].detail.seguro){%>
+                            <li>usted cuenta con seguro</li>
+                            <%}else{%>
+                            <li>sin seguro</li>
+                            <%}%>
+        
+                        <li><a>Usted cuenta con las siguientes excursiones: <%= producto[i].detail.excursiones%> 
                             </a></li>
                     </ul>
                 </div>
 
-                <div class="caja1">
-                    <div id="promos">
-                        <h1 class="promo">Promo 2:</h1>
-                    </div>
-                </div>
-                <div class="caja2">
-                    <div class="destino-precio">
-                        <ul>
-                            <h2>
-                                <li>Ushuaia <br> $83.956 p/p</li>
-                            </h2>
-                            <h2><a href="/Carrito">COMPRAR</a></h2>
-                        </ul>
-                    </div>
-
-                    <div class="caja2">
-                        <div class="container">
-
-                            <ul class="slider">
-                                <li id="slide2.1">
-                                    <img src="./img/Ushuaia/Ushuaia1.jpg" />
-                                </li>
-                                <li id="slide2.2">
-                                    <img src="./img/Ushuaia/Ushuaia2.jpg" />
-                                </li>
-                                <li id="slide2.3">
-                                    <img src="./img/Ushuaia/Ushuaia3.jpg" />
-                                </li>
-                                <li id="slide2.4">
-                                    <img src="./img/Ushuaia/Ushuaia4.jpg" />
-                                </li>
-                                <li id="slide2.5">
-                                    <img src="./img/Ushuaia/Ushuaia5.jpg" />
-                                </li>
-                                <li id="slide2.6">
-                                    <img src="./img/Ushuaia/Ushuaia6.jpg" />
-                                </li>
-                                <li id="slide2.7">
-                                    <img src="./img/Ushuaia/Ushuaia7.jpg" />
-                                </li>
-                                <li id="slide2.8">
-                                    <img src="./img/Ushuaia/Ushuaia8.jpg" />
-                                </li>
-                            </ul>
-
-                            <ul class="menu">
-                                <li>
-                                    <a href="#slide2.1">1</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.2">2</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.3">3</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.4">4</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.5">5</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.6">6</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.7">7</a>
-                                </li>
-                                <li>
-                                    <a href="#slide2.8">8</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="descripcion">
-                    <h2>Postales de montaña en Ushuaia</h2>
-                    <h3>Este paquete incluye:</h3>
-                    <ul class="detalle">
-                        <li><a>VUELO: Ida y Vuelta</a></li>
-                        <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
-                        <li><a>Habitación Doble Estándar con Vista al Lago, con Desayuno incluido</a></li>
-                        <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                        <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Calefacción en zonas comunes</a>
-                        </li>
-                        <li><a>El seguro de tu viaje</a></li>
-                        <li><a>Excursiones: Experiencia Parque Nacional Tierra del Fuego</a></li>
-                    </ul>
-                </div>
-                <div class="caja1">
-                    <div id="promos">
-                        <h1 class="promo">Promo 3:</h1>
-                    </div>
-                </div>
-                <div class="caja2">
-                    <div class="destino-precio">
-                        <ul>
-                            <h2>
-                                <li>Calafate <br> $79.766 p/p</li>
-                            </h2>
-                            <h2><a href="/Carrito">COMPRAR</a></h2>
-                        </ul>
-                    </div>
-                    <div class="container">
-
-                        <ul class="slider">
-                            <li id="slide3.1">
-                                <img src="./img/Calafate/Calafate1.jpg" />
-                            </li>
-                            <li id="slide3.2">
-                                <img src="./img/Calafate/Calafate2.jpg" />
-                            </li>
-                            <li id="slide3.3">
-                                <img src="./img/Calafate/Calafate3.jpeg" />
-                            </li>
-                            <li id="slide3.4">
-                                <img src="./img/Calafate/Calafate4.jpg" />
-                            </li>
-                            <li id="slide3.5">
-                                <img src="./img/Calafate/Calafate5.jpg" />
-                            </li>
-                            <li id="slide3.6">
-                                <img src="./img/Calafate/Calafate6.jpg" />
-                            </li>
-                            <li id="slide3.7">
-                                <img src="./img/Calafate/Calafate7.jpg" />
-                            </li>
-                            <li id="slide3.8">
-                                <img src="./img/Calafate/Calafate8.jpg" />
-                            </li>
-                        </ul>
-
-                        <ul class="menu">
-                            <li>
-                                <a href="#slide3.1">1</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.2">2</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.3">3</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.4">4</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.5">5</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.6">6</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.7">7</a>
-                            </li>
-                            <li>
-                                <a href="#slide3.8">8</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="descripcion">
-                <h2>Montañas y aire puro en El Calafate</h2>
-                <h3>Este paquete incluye:</h3>
-                <ul class="detalle">
-                    <li><a>VUELO: Ida y Vuelta</a></li>
-                    <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
-                    <li><a>Habitación Doble Estándar con Minibar y Desayuno incluido</a></li>
-                    <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                    <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis</a></li>
-                    <li><a>El seguro de tu viaje</a></li>
-                    <li><a>Excursiones: Navegación frente al Glaciar Perito Moreno</a></li>
-                </ul>
-            </div>
-            <div class="caja1">
-                <div id="promos">
-                    <h1 class="promo">Promo 4:</h1>
-                </div>
-            </div>
-            <div class="caja2">
-                <div class="destino-precio">
-                    <ul>
-                        <h2>
-                            <li>Mendoza <br> $41.605 p/p</li>
-                        </h2>
-                        <h2><a href="/Carrito">COMPRAR</a></h2>
-                    </ul>
-                </div>
-                <div class="container">
-
-                    <ul class="slider">
-                        <li id="slide4.1">
-                            <img src="./img/Mendoza/mendoza1.jpg" />
-                        </li>
-                        <li id="slide4.2">
-                            <img src="./img/Mendoza/mendoza2.jpg" />
-                        </li>
-                        <li id="slide4.3">
-                            <img src="./img/Mendoza/mendoza3.jpg" />
-                        </li>
-                        <li id="slide4.4">
-                            <img src="./img/Mendoza/mendoza4.jpg" />
-                        </li>
-                        <li id="slide4.5">
-                            <img src="./img/Mendoza/mendoza5.jpg" />
-                        </li>
-                        <li id="slide4.6">
-                            <img src="./img/Mendoza/mendoza6.jpg" />
-                        </li>
-                        <li id="slide4.7">
-                            <img src="./img/Mendoza/mendoza7.jpg" />
-                        </li>
-                        <li id="slide4.8">
-                            <img src="./img/Mendoza/mendoza8.jpg" />
-                        </li>
-                    </ul>
-
-                    <ul class="menu">
-                        <li>
-                            <a href="#slide4.1">1</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.2">2</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.3">3</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.4">4</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.5">5</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.6">6</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.7">7</a>
-                        </li>
-                        <li>
-                            <a href="#slide4.8">8</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="descripcion">
-                <h2>Bajo el encanto de Mendoza</h2>
-                <h3>Este paquete incluye:</h3>
-                <ul class="detalle">
-                    <li><a>VUELO: Ida y Vuelta</a></li>
-                    <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
-                    <li><a>Habitación Estándar con Desayuno incluido</a></li>
-                    <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                    <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Piscina ·Aire Acondicionado en zonas
-                            comunes</a></li>
-                    <li><a>El seguro de tu viaje</a></li>
-                    <li><a>Excursiones: City tour</a></li>
-                </ul>
-            </div>
-
-            <div class="caja1">
-                <div id="promos">
-                    <h1 class="promo">Promo 5:</h1>
-                </div>
-            </div>
-            <div class="caja2">
-                <div class="destino-precio">
-                    <ul>
-                        <h2>
-                            <li>Jujuy <br> $56.361 p/p</li>
-                        </h2>
-                        <h2><a href="/Carrito">COMPRAR</a></h2>
-                    </ul>
-                </div>
-                <div class="container">
-
-                    <ul class="slider">
-                        <li id="slide5.1">
-                            <img src="./img/Jujuy/jujuy1.jpg" />
-                        </li>
-                        <li id="slide5.2">
-                            <img src="./img/Jujuy/jujuy2.jpg" />
-                        </li>
-                        <li id="slide5.3">
-                            <img src="./img/Jujuy/jujuy3.jpg" />
-                        </li>
-                        <li id="slide5.4">
-                            <img src="./img/Jujuy/jujuy4.jpg" />
-                        </li>
-                        <li id="slide5.5">
-                            <img src="./img/Jujuy/jujuy5.jpg" />
-                        </li>
-                        <li id="slide5.6">
-                            <img src="./img/Jujuy/jujuy6.jpg" />
-                        </li>
-                        <li id="slide5.7">
-                            <img src="./img/Jujuy/jujuy7.jpg" />
-                        </li>
-                        <li id="slide5.8">
-                            <img src="./img/Jujuy/jujuy8.jpg" />
-                        </li>
-                    </ul>
-
-                    <ul class="menu">
-                        <li>
-                            <a href="#slide5.1">1</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.2">2</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.3">3</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.4">4</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.5">5</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.6">6</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.7">7</a>
-                        </li>
-                        <li>
-                            <a href="#slide5.8">8</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="descripcion">
-                <h2>Explora los colores de Jujuy</h2>
-                <h3>Este paquete incluye:</h3>
-                <ul class="detalle">
-                    <li><a>VUELO: Ida y Vuelta</a></li>
-                    <li><a>ALOJAMIENTO 4 noches en los mejores hoteles con cercania al centro</a></li>
-                    <li><a>Habitación Estándar con Desayuno incluido</a></li>
-                    <li><a>TRASLADO PRIVADO: Ida y vuelta del aeropuerto al hotel</a></li>
-                    <li><a>Wi-Fi gratis en zonas comunes · Estacionamiento gratis · Servicio al cuarto ·Aire
-                            Acondicionado
-                            en zonas
-                            comunes</a></li>
-                    <li><a>El seguro de tu viaje</a></li>
-                    <li><a>Excursiones: Cafayate, Quebrada de Humahuaca con cerro 7 colores, Salinas de Pumamarca</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <!--                                -->
 
         <!--        **FOOTER**                 -->
