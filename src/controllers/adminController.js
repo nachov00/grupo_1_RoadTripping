@@ -7,7 +7,7 @@ const adminController = {
       res.render("../views/admin/create_edit")
     },
 
-    crear1: (req, res) => {
+    crear: (req, res) => {
       res.render("../views/admin/create")
     },
 
@@ -49,7 +49,7 @@ const adminController = {
       products.push(newProduct)
 
       //modifico mi base de datos
-      writeFile(products)
+      service.writeFile(products)
 
         res.redirect("/admin/crear-editar")
     },

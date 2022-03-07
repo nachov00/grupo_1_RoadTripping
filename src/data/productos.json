@@ -348,5 +348,22 @@
             "d": "MANUAL-1",
             "e": "MANUAL-1"
         }
+    },
+    {
+        "id": 11,
+        "destino": "Mexico",
+        "precio": {
+            "valor": "555"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "2022-03-01",
+                "to": "2022-04-01"
+            },
+            "hotel": "on",
+            "excursiones": {},
+            "descripcion": "Producto de prueba: I"
+        },
+        "images": {}
     }
 ]

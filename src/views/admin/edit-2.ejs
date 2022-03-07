@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear</title>
+    <title>Editar</title>
     <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/css/styles-ce2.css">
@@ -15,127 +15,118 @@
 <body>
     <header class="ingresar">
         <div id="imagen-login">
-            <a href="/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
+            <a href="/admin/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
             <i class="fa-solid fa-user-gear"></i>
         </div>
     </header>
 
     <main class="main">
-        <form action="/admin/" method="POST"> 
+
+
         <div class="mySlides">
             <div class="contenedor">
-
-                    <article class="articulos">
-                        <div class="first">                         <!-- name: titulo -->
+                <article class="articulos">
+                    <div class="first">
+                        <form action="/edit/<%=//producto.id%>?_method=PUT" method="post">
                             <label for="titulo">Título</label>
                             <span>(Opcional)</span>
-                                <input type="text" placeholder="Por defecto - Viaje a <destino>">
-                        </div>
-                    </article>
+                            <input type="text" name="titulo" placeholder="<%=//producto.titulo%>">
+                    </div>
+                </article>
 
-                    <article class="articulos">
-                        <div class="second">                        <!-- name: destino -->
-                            <label for="destino">Destino</label>    
-                                <select id="destino" name="destino">
-                                    <option value="...">...</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Bolivia">Bolivia</option>
-                                    <option value="Brasil">Brasil</option>
-                                    <option value="Chile">Chile</option>
-                                    <option value="Colombia">Colombia</option>
-                                    <option value="Costa_Rica">Costa Rica</option>
-                                    <option value="Cuba">Cuba</option>
-                                    <option value="Ecuador">Ecuador</option>
-                                    <option value="El_Salvador">El Salvador</option>
-                                    <option value="Guatemala">Guatemala</option>
-                                    <option value="Honduras">Honduras</option>
-                                    <option value="Mexico">México</option>
-                                    <option value="Nicaragua">Nicaragua</option>
-                                    <option value="Panama">Panamá</option>
-                                    <option value="Paraguay">Paraguay</option>
-                                    <option value="Peru">Perú</option>
-                                    <option value="República_Dominicana">República Dominicana</option>
-                                    <option value="Uruguay">Uruguay</option>
-                                    <option value="Venezuela">Venezuela</option>
-                                </select>
+                <article class="articulos">
+                    <div class="second">
+                        <label for="destino">Destino</label>
+                        <select id="destino" name="destino" placeholder="<%=//producto.destino%>">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Costa_Rica">Costa Rica</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="El_Salvador">El Salvador</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Mexico">México</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Panama">Panamá</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Perú</option>
+                            <option value="República_Dominicana">República Dominicana</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
 
-                        </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="articulos">
-                        <div class="third">                         <!-- name: fechas.(desde) --> <!-- name: fechas.(hasta) -->
-                            <label for="fechas">Fecha</label>
+                <article class="articulos">
+                    <div class="third">
+                        <label for="fechas">Fecha</label>
+                        <br>
+                        <label for="desde" style="font-size: 2vh" class="desde">Desde</label>
+                        <input placeholder="<%=//producto.fecha.from%>" name="from" type="date">
+                        <label for="hasta" style="font-size: 2vh" class="hasta">Hasta</label>
+                        <input placeholder="<%=//producto.fecha.to%>" name="to" type="date" id="date">
+                    </div>
+                </article>
 
-                            <div class="primera-fecha">
-                                <label class="desde">Desde</label>
-                                <input name="from" class="desde" type="date">
-                            </div>
-
-                            <div class="segunda-fecha">
-                                <label class="hasta">Hasta</label>
-                            <input name="to" class="hasta" type="date">
-                            </div>
-                            
-                        </div>
-                    </article>
-
-                    <article class="articulos">                     <!-- Control: Button -->
-                        <div class="controles">
-                            <button type="button" class="w3-button w3-light-grey"><a href="/crear-editar">Atras</a></button>
-                            <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
-                        </div>
-                    </article>
-
+                <article class="articulos">
+                    <div class="controles">
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
+                        <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+                    </div>
+                </article>
             </div>
         </div>
 
         <div class="mySlides">
             <div class="contenedor">
-
-                <article class="articulos">                         
-                    <div class="fourth">                            <!-- name: categoria -->
+                <article class="articulos">
+                    <div class="fourth">
                         <label class="titulo" for="categoria">Categoria</label>
-
-                            <label for="categorias"><input type="checkbox" name="destacado" id="">Destacado</label>
-                            <label for="categorias"><input type="checkbox" name="promoción" id="">Promoción</label>
-                            <label for="categorias"><input type="checkbox" name="escapadas" id="">Escapadas</label>
-                            <label for="categorias"><input type="checkbox" name="actividades" id="">Actividades</label>
-
+                        <label for="categorias"><input type="checkbox" name="destacado">Destacado</label>
+                        <label for="categorias"><input type="checkbox" name="promoción">Promoción</label>
+                        <label for="categorias"><input type="checkbox" name="escapadas">Escapadas</label>
+                        <label for="categorias"><input type="checkbox" name="actividades">Actividades</label>
                     </div>
                 </article>
 
-                <article class="articulos">                        
-                    <div class="fifth">                             <!-- name: contenido --> 
+                <article class="articulos">
+                    <div class="fifth">
                         <label class="titulo" for="contenido">Contenido</label>
 
                         <label for="hotel">
                             <span class="for-hotel">Hotel</span>
                         </label>
-                            <input type="checkbox" id="hotel">
+                        <input type="checkbox" id="hotel">
                         <label for="boleto">
                             <span class="for-boleto">
                                 Boletos
                             </span>
                         </label>
-                            <input type="checkbox" id="boleto">
-                        <label for="excursiones"> 
+                        <input type="checkbox" id="boleto">
+                        <label for="excursiones">
                             <span class="for-excursiones">
                                 Excursiones
                             </span>
                         </label>
-                            <input type="checkbox" id="excursiones">
+                        <input type="checkbox" id="excursiones">
                         <label for="crusero">
                             <span class="for-crusero">
                                 Cruseros
                             </span>
                         </label>
-                            <input type="checkbox" id="crusero">
+                        <input type="checkbox" id="crusero">
                         <label for="translado">
                             <span class="for-hotel">
                                 Translado
                             </span>
                         </label>
-                            <input type="checkbox" id="translado">
+                        <input type="checkbox" id="translado">
+
 
                         <div class="control-me-1">
                             <label for="contenido-1">Los Cauquenes Resort</label>
@@ -184,72 +175,69 @@
                     </div>
                 </article>
 
-                <article class="articulos">                         <!-- Control: Button -->
+                <article class="articulos">
                     <div class="controles">
                         <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
                         <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
                     </div>
                 </article>
-
             </div>
         </div>
 
         <div class="mySlides">
             <div class="contenedor">
                 <article class="articulos">
-                    <div class="seventh">                           <!-- name: precio.valor --> <!-- name: precio.divisa -->
+                    <div class="seventh">
                         <div class="first">
                             <label for="precio">Precio</label>
-                                <input type="number" name="valor">
+                            <input type="number" name="precio" value="<%=//producto.precio%>">
                         </div>
                         <div class="second">
-                            <label for="divisa">Divisa</label>
-                                <select name="divisas" id="divisa">
-                                    <option value="ARS">$ARS</option>
-                                    <option value="MEX">MEX$</option>
-                                    <option value="RpD">RD$</option>
-                                    <option value="US">US$</option>
-                                    <option value="CAN">Can$</option>
-                                    <option value="AU">AU$</option>
-                                    <option value="EU">€</option>
-                                    <option value="ARS">₡</option>
-                                    <option value="ARS">₱</option>
-                                    <option value="ARS">Kč</option>
-                                    <option value="CHI">¥</option>
-                                    <option value="COR">₩</option>
-                                </select>
-                            </div>
-                    </div>
+                            <label class="divisa" for="divisa">Divisa</label>
+                            <select class="divisa" name="divisas" name="divisa" placeholder="<%=//producto.divisa%>">
+                                <option value="ARS">$ARS</option>
+                                <option value="MEX">MEX$</option>
+                                <option value="RpD">RD$</option>
+                                <option value="US">US$</option>
+                                <option value="CAN">Can$</option>
+                                <option value="AU">AU$</option>
+                                <option value="EU">€</option>
+                                <option value="ARS">₡</option>
+                                <option value="ARS">₱</option>
+                                <option value="ARS">Kč</option>
+                                <option value="CHI">¥</option>
+                                <option value="COR">₩</option>
+                            </select>
+
+                        </div>
                 </article>
 
                 <article class="articulos">
-                    <div class="sixth">                             <!-- name: descripcion -->
+                    <div class="sixth">
                         <label for="descripcion">Descripción</label>
                         <br>
-                        <textarea name="descripcion" id="msg" name="user_message" style="width: 1000px;
-                        height: 215px;">
+                        <textarea name="" id="" cols="30" rows="10"
+                            style="width:1010px; height:150px; font-size:22px; background-color:#bbb;"><%=//producto.descripcion%></textarea>
 
-                        </textarea>
                     </div>
                 </article>
 
                 <article class="articulos">
-                    <div class="eighth">                            <!-- name: imagen -->
+                    <div class="eighth">
                         <label for="imagenes">Imagenes</label>
-                            <input type="file" name="imagen" id="">
+                        <input type="file" name="imagen" id="">
+                        </form>
                     </div>
                 </article>
 
-                <article class="articulos">                         <!-- Control: Button -->
+                <article class="articulos">
                     <div class="controles">
                         <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(-1)">Atras</button>
                         <button type="submit" class="w3-button w3-light-grey">Confirmar</button>
                     </div>
                 </article>
             </div>
-        
         </div>
-        </form>
 
         <script>
             var slideIndex = 1;
@@ -270,7 +258,4 @@
                 x[slideIndex - 1].style.display = "block";
             }
         </script>
-
     </main>
-    </body>
-    </html>

@@ -8,8 +8,9 @@ router.get('/crear-editar', adminController.crearEditar);
 router.get('/crear', adminController.crear);
 router.post('/', adminController.guardar);
 
+router.get('/editar-1', adminController.editar);
+router.get('/editar-2', adminController.editar);
 
-router.get('/editar', adminController.editar);
 
 
 module.exports = router;
