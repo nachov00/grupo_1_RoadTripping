@@ -136,6 +136,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .precio {
   display: flex;
   flex-direction: row;
@@ -148,4 +149,178 @@
   color: white;
   border-radius: 5px;
   justify-content: center;
+}
+
+.caja-general3{
+  width: 300px;
+}
+.filtros p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.desayuno {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.desayuno p {
+  margin-left: 5%;
+}
+
+.varios-pagos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.varios-pagos p {
+  margin-left: 5%;
+}
+
+.cabañas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.cabañas p {
+  margin-left: 5%;
+}
+
+.departamentos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.departamentos p {
+  margin-left: 5%;
+}
+
+.hoteles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.hoteles p {
+  margin-left: 5%;
+}
+
+.estrellas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.estrellas p {
+  margin-left: 5%;
+}
+
+.filtro-estrellas p {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: solid;
+}
+
+.cinco-estrellas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.cinco-estrellas i {
+  margin-left: 5%;
+}
+
+.cuatro-estrellas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.cuatro-estrellas i {
+  margin-left: 5%;
+}
+
+.tres-estrellas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.tres-estrellas i {
+  margin-left: 5%;
+}
+
+.dos-estrellas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.dos-estrellas i {
+  margin-left: 5%;
+}
+
+.una-estrellas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.una-estrellas i {
+  margin-left: 5%;
+}
+
+.pagos p {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: solid;
+}
+
+.todas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.todas p {
+  margin-left: 5%;
+}
+
+.un-pago {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.un-pago p {
+  margin-left: 5%;
+}
+
+.varios-pagos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.varios-pagos p {
+  margin-left: 5%;
 }
