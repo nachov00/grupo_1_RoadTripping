@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path")
 
 const service = {
-    file: path.join(__dirname, "../data/just_a_DB.json"),
+    file: path.join(__dirname, "../data/productos.json"),
     
     readFile: function(){
         return fs.readFileSync(this.file, "utf-8")
