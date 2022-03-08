@@ -1,0 +1,1002 @@
+[
+    {
+        "user-id": 1,
+        "admin": true,
+        "apellido": "Breeze",
+        "nombre": "Egbert",
+        "email": "ebreeze0@goodreads.com",
+        "contraseña": "r44iK0FnL",
+        "genero": "Male",
+        "ip_address": "233.19.119.9",
+        "pais": "Indonesia",
+        "lenguaje": "Czech",
+        "moneda": "IDR",
+        "avatar": "https://robohash.org/uteaquequod.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-4",
+            "comprados": "paquete-4",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 2,
+        "admin": true,
+        "apellido": "Varnals",
+        "nombre": "Elwyn",
+        "email": "evarnals1@1und1.de",
+        "contraseña": "EBPh4kXokUb",
+        "genero": "Female",
+        "ip_address": "149.94.92.33",
+        "pais": "Russia",
+        "lenguaje": "Assamese",
+        "moneda": "RUB",
+        "avatar": "https://robohash.org/similiquelaudantiumdoloribus.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-5",
+            "comprados": "paquete-2",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 3,
+        "admin": true,
+        "apellido": "Courtier",
+        "nombre": "Wayland",
+        "email": "wcourtier2@amazon.com",
+        "contraseña": "NQScWbR12M1",
+        "genero": "Female",
+        "ip_address": "168.204.23.16",
+        "pais": "Pakistan",
+        "lenguaje": "Hiri Motu",
+        "moneda": "PKR",
+        "avatar": "https://robohash.org/nesciuntminimaqui.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-5",
+            "comprados": "paquete-1",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 4,
+        "admin": false,
+        "apellido": "Hubery",
+        "nombre": "Arliene",
+        "email": "ahubery3@taobao.com",
+        "contraseña": "ekJFE17T3",
+        "genero": "Female",
+        "ip_address": "78.178.111.42",
+        "pais": "Philippines",
+        "lenguaje": "Oriya",
+        "moneda": "PHP",
+        "avatar": "https://robohash.org/innonaut.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-1",
+            "comprados": "paquete-4",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 5,
+        "admin": false,
+        "apellido": "McCormick",
+        "nombre": "Carey",
+        "email": "cmccormick4@delicious.com",
+        "contraseña": "R4X0Zc",
+        "genero": "Polygender",
+        "ip_address": "21.89.178.66",
+        "pais": "Yemen",
+        "lenguaje": "Amharic",
+        "moneda": "YER",
+        "avatar": "https://robohash.org/occaecatimodiet.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-1",
+            "comprados": "paquete-3",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 6,
+        "admin": true,
+        "apellido": "Gogerty",
+        "nombre": "Paxton",
+        "email": "pgogerty5@feedburner.com",
+        "contraseña": "FsOgpn",
+        "genero": "Female",
+        "ip_address": "101.190.135.219",
+        "pais": "Estonia",
+        "lenguaje": "Bislama",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/undedictaincidunt.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-5",
+            "comprados": "paquete-5",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 7,
+        "admin": false,
+        "apellido": "Polly",
+        "nombre": "Samaria",
+        "email": "spolly6@bloglovin.com",
+        "contraseña": "lVzZ1lzUlH4",
+        "genero": "Genderqueer",
+        "ip_address": "163.211.38.254",
+        "pais": "China",
+        "lenguaje": "Portuguese",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/excepturiquiarecusandae.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-3",
+            "comprados": "paquete-5",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 8,
+        "admin": false,
+        "apellido": "Bootes",
+        "nombre": "Hallie",
+        "email": "hbootes7@latimes.com",
+        "contraseña": "ltbLsiz",
+        "genero": "Male",
+        "ip_address": "230.203.200.44",
+        "pais": "Indonesia",
+        "lenguaje": "Kyrgyz",
+        "moneda": "IDR",
+        "avatar": "https://robohash.org/amettotamdelectus.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-2",
+            "comprados": "paquete-5",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 9,
+        "admin": false,
+        "apellido": "Francesconi",
+        "nombre": "Sunny",
+        "email": "sfrancesconi8@de.vu",
+        "contraseña": "oCumWzaw5",
+        "genero": "Female",
+        "ip_address": "136.106.63.232",
+        "pais": "China",
+        "lenguaje": "Bosnian",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/magniassumendanon.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-5",
+            "comprados": "paquete-2",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 10,
+        "admin": true,
+        "apellido": "Spurman",
+        "nombre": "Shannan",
+        "email": "sspurman9@house.gov",
+        "contraseña": "xtAbFcx",
+        "genero": "Agender",
+        "ip_address": "119.191.52.154",
+        "pais": "Honduras",
+        "lenguaje": "Fijian",
+        "moneda": "HNL",
+        "avatar": "https://robohash.org/veniamutrerum.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-5",
+            "comprados": "paquete-4",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 11,
+        "admin": true,
+        "apellido": "Chaffyn",
+        "nombre": "Ernesto",
+        "email": "echaffyna@amazon.com",
+        "contraseña": "oapitopJ",
+        "genero": "Male",
+        "ip_address": "2.63.247.36",
+        "pais": "Mongolia",
+        "lenguaje": "Kurdish",
+        "moneda": "MNT",
+        "avatar": "https://robohash.org/quosrepudiandaemolestias.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-2",
+            "comprados": "paquete-1",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 12,
+        "admin": true,
+        "apellido": "Diego",
+        "nombre": "Neala",
+        "email": "ndiegob@intel.com",
+        "contraseña": "fvaWvL23J",
+        "genero": "Male",
+        "ip_address": "124.61.90.148",
+        "pais": "Portugal",
+        "lenguaje": "Hiri Motu",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/abideum.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-5",
+            "comprados": "paquete-2",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 13,
+        "admin": false,
+        "apellido": "Jumonet",
+        "nombre": "Blayne",
+        "email": "bjumonetc@time.com",
+        "contraseña": "uPu3jdpHwf4T",
+        "genero": "Male",
+        "ip_address": "33.54.92.108",
+        "pais": "Peru",
+        "lenguaje": "Indonesian",
+        "moneda": "PEN",
+        "avatar": "https://robohash.org/sintiurererum.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-3",
+            "comprados": "paquete-4",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 14,
+        "admin": true,
+        "apellido": "Reach",
+        "nombre": "Nevin",
+        "email": "nreachd@dailymotion.com",
+        "contraseña": "brFDHUvX24xc",
+        "genero": "Female",
+        "ip_address": "133.126.18.29",
+        "pais": "China",
+        "lenguaje": "Lithuanian",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/aututomnis.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-5",
+            "comprados": "paquete-2",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 15,
+        "admin": true,
+        "apellido": "Dalmon",
+        "nombre": "Esta",
+        "email": "edalmone@ftc.gov",
+        "contraseña": "QQSBOag",
+        "genero": "Female",
+        "ip_address": "171.106.187.102",
+        "pais": "Macedonia",
+        "lenguaje": "Kazakh",
+        "moneda": "MKD",
+        "avatar": "https://robohash.org/magnilaboriosampraesentium.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-4",
+            "comprados": "paquete-4",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 16,
+        "admin": false,
+        "apellido": "Veltman",
+        "nombre": "Elianora",
+        "email": "eveltmanf@google.com.hk",
+        "contraseña": "G8lQeysRWWd",
+        "genero": "Male",
+        "ip_address": "144.220.121.51",
+        "pais": "France",
+        "lenguaje": "Dutch",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/utliberoquae.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-3",
+            "comprados": "paquete-5",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 17,
+        "admin": false,
+        "apellido": "Bewsey",
+        "nombre": "Lenee",
+        "email": "lbewseyg@indiegogo.com",
+        "contraseña": "LSRvabfjlzw",
+        "genero": "Female",
+        "ip_address": "90.50.140.203",
+        "pais": "Argentina",
+        "lenguaje": "Portuguese",
+        "moneda": "ARS",
+        "avatar": "https://robohash.org/quissaepequod.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-4",
+            "comprados": "paquete-1",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 18,
+        "admin": false,
+        "apellido": "Clench",
+        "nombre": "Nisse",
+        "email": "nclenchh@nih.gov",
+        "contraseña": "Pa2QJ9A52C",
+        "genero": "Male",
+        "ip_address": "59.145.178.141",
+        "pais": "Brazil",
+        "lenguaje": "Haitian Creole",
+        "moneda": "BRL",
+        "avatar": "https://robohash.org/autvoluptatibusnon.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-1",
+            "comprados": "paquete-4",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 19,
+        "admin": true,
+        "apellido": "Wollers",
+        "nombre": "Audrye",
+        "email": "awollersi@blogspot.com",
+        "contraseña": "vtBdyvNfOilR",
+        "genero": "Female",
+        "ip_address": "145.63.148.29",
+        "pais": "Peru",
+        "lenguaje": "Bulgarian",
+        "moneda": "PEN",
+        "avatar": "https://robohash.org/suntvelitunde.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-3",
+            "comprados": "paquete-5",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 20,
+        "admin": false,
+        "apellido": "Erswell",
+        "nombre": "Morna",
+        "email": "merswellj@eventbrite.com",
+        "contraseña": "yUUy87T",
+        "genero": "Male",
+        "ip_address": "178.236.192.202",
+        "pais": "Poland",
+        "lenguaje": "Polish",
+        "moneda": "PLN",
+        "avatar": "https://robohash.org/ullamsaepequaerat.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-1",
+            "comprados": "paquete-1",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 21,
+        "admin": true,
+        "apellido": "Atcherley",
+        "nombre": "Paule",
+        "email": "patcherleyk@yelp.com",
+        "contraseña": "3CjDADQRMwuh",
+        "genero": "Female",
+        "ip_address": "188.213.202.112",
+        "pais": "Sweden",
+        "lenguaje": "Afrikaans",
+        "moneda": "SEK",
+        "avatar": "https://robohash.org/doloremquiexcepturi.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-5",
+            "comprados": "paquete-2",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 22,
+        "admin": false,
+        "apellido": "Weaben",
+        "nombre": "Giff",
+        "email": "gweabenl@webs.com",
+        "contraseña": "fpRK3pTXjcR",
+        "genero": "Male",
+        "ip_address": "52.189.11.132",
+        "pais": "Portugal",
+        "lenguaje": "Pashto",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/utipsaamet.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-4",
+            "comprados": "paquete-3",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 23,
+        "admin": false,
+        "apellido": "Webb-Bowen",
+        "nombre": "Rodolphe",
+        "email": "rwebbbowenm@moonfruit.com",
+        "contraseña": "3ULu3qFZeE9",
+        "genero": "Female",
+        "ip_address": "120.105.63.154",
+        "pais": "Russia",
+        "lenguaje": "Croatian",
+        "moneda": "RUB",
+        "avatar": "https://robohash.org/utsuntdistinctio.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-5",
+            "comprados": "paquete-4",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 24,
+        "admin": true,
+        "apellido": "Wooding",
+        "nombre": "Claudina",
+        "email": "cwoodingn@columbia.edu",
+        "contraseña": "13HS6U",
+        "genero": "Male",
+        "ip_address": "9.251.40.90",
+        "pais": "Canada",
+        "lenguaje": "Sotho",
+        "moneda": "CAD",
+        "avatar": "https://robohash.org/asperioresdolorereprehenderit.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-3",
+            "comprados": "paquete-2",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 25,
+        "admin": true,
+        "apellido": "Farland",
+        "nombre": "Artur",
+        "email": "afarlando@elegantthemes.com",
+        "contraseña": "5d68Ej1yH",
+        "genero": "Female",
+        "ip_address": "115.254.166.46",
+        "pais": "Russia",
+        "lenguaje": "Italian",
+        "moneda": "RUB",
+        "avatar": "https://robohash.org/similiqueestsed.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-4",
+            "comprados": "paquete-4",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 26,
+        "admin": true,
+        "apellido": "Fusedale",
+        "nombre": "Wini",
+        "email": "wfusedalep@ustream.tv",
+        "contraseña": "TBt0H27kh7Xf",
+        "genero": "Female",
+        "ip_address": "16.121.121.99",
+        "pais": "France",
+        "lenguaje": "Pashto",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/minimaassumendaquo.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-1",
+            "comprados": "paquete-2",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 27,
+        "admin": false,
+        "apellido": "McConaghy",
+        "nombre": "Shellysheldon",
+        "email": "smcconaghyq@businesswire.com",
+        "contraseña": "jLuyDXgDOrT3",
+        "genero": "Female",
+        "ip_address": "47.221.65.141",
+        "pais": "Russia",
+        "lenguaje": "Tok Pisin",
+        "moneda": "RUB",
+        "avatar": "https://robohash.org/autetnemo.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-2",
+            "comprados": "paquete-1",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 28,
+        "admin": true,
+        "apellido": "Dagger",
+        "nombre": "Mirna",
+        "email": "mdaggerr@newsvine.com",
+        "contraseña": "o8ILtpe",
+        "genero": "Male",
+        "ip_address": "218.167.232.103",
+        "pais": "Brazil",
+        "lenguaje": "Kyrgyz",
+        "moneda": "BRL",
+        "avatar": "https://robohash.org/nesciuntconsequaturunde.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-1",
+            "comprados": "paquete-5",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 29,
+        "admin": true,
+        "apellido": "Twitchett",
+        "nombre": "Eldredge",
+        "email": "etwitchetts@elegantthemes.com",
+        "contraseña": "nfu2gtF67lEb",
+        "genero": "Female",
+        "ip_address": "185.57.18.93",
+        "pais": "Russia",
+        "lenguaje": "Lao",
+        "moneda": "RUB",
+        "avatar": "https://robohash.org/saepequiasequi.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-1",
+            "comprados": "paquete-2",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 30,
+        "admin": true,
+        "apellido": "Canas",
+        "nombre": "Brier",
+        "email": "bcanast@zdnet.com",
+        "contraseña": "JpMPp4PrREF",
+        "genero": "Male",
+        "ip_address": "52.232.29.220",
+        "pais": "Philippines",
+        "lenguaje": "Portuguese",
+        "moneda": "PHP",
+        "avatar": "https://robohash.org/temporibusculpadignissimos.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-2",
+            "comprados": "paquete-5",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 31,
+        "admin": false,
+        "apellido": "Lauret",
+        "nombre": "Madison",
+        "email": "mlauretu@foxnews.com",
+        "contraseña": "vX26po",
+        "genero": "Male",
+        "ip_address": "35.244.191.64",
+        "pais": "Indonesia",
+        "lenguaje": "Armenian",
+        "moneda": "IDR",
+        "avatar": "https://robohash.org/quamnatusid.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-2",
+            "comprados": "paquete-5",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 32,
+        "admin": true,
+        "apellido": "Letteresse",
+        "nombre": "Erhart",
+        "email": "eletteressev@dell.com",
+        "contraseña": "yx6yaYWtGxZ",
+        "genero": "Male",
+        "ip_address": "102.26.150.249",
+        "pais": "Netherlands",
+        "lenguaje": "Kazakh",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/voluptatemsitdolores.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-5",
+            "comprados": "paquete-3",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 33,
+        "admin": true,
+        "apellido": "Cubley",
+        "nombre": "Nickolaus",
+        "email": "ncubleyw@discovery.com",
+        "contraseña": "H7XLMD",
+        "genero": "Male",
+        "ip_address": "225.154.68.163",
+        "pais": "Portugal",
+        "lenguaje": "Estonian",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/omnisquiet.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-5",
+            "comprados": "paquete-3",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 34,
+        "admin": true,
+        "apellido": "Tarver",
+        "nombre": "Alma",
+        "email": "atarverx@sina.com.cn",
+        "contraseña": "22AkD6",
+        "genero": "Male",
+        "ip_address": "34.216.191.90",
+        "pais": "China",
+        "lenguaje": "Italian",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/eautmollitia.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-2",
+            "comprados": "paquete-1",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 35,
+        "admin": false,
+        "apellido": "McTurk",
+        "nombre": "Aleta",
+        "email": "amcturky@tiny.cc",
+        "contraseña": "ZCdmEew",
+        "genero": "Male",
+        "ip_address": "252.125.51.148",
+        "pais": "Japan",
+        "lenguaje": "Azeri",
+        "moneda": "JPY",
+        "avatar": "https://robohash.org/istedistinctiocommodi.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-3",
+            "comprados": "paquete-3",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 36,
+        "admin": true,
+        "apellido": "Breese",
+        "nombre": "Vida",
+        "email": "vbreesez@npr.org",
+        "contraseña": "dKJX1nm",
+        "genero": "Genderfluid",
+        "ip_address": "135.99.155.85",
+        "pais": "Mexico",
+        "lenguaje": "Tajik",
+        "moneda": "MXN",
+        "avatar": "https://robohash.org/sequicorporisitaque.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-4",
+            "comprados": "paquete-2",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 37,
+        "admin": true,
+        "apellido": "Wallsworth",
+        "nombre": "Teddi",
+        "email": "twallsworth10@acquirethisname.com",
+        "contraseña": "1vp8wphQN0",
+        "genero": "Genderfluid",
+        "ip_address": "194.202.215.91",
+        "pais": "Comoros",
+        "lenguaje": "Māori",
+        "moneda": "KMF",
+        "avatar": "https://robohash.org/quosprovidentlabore.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-4",
+            "comprados": "paquete-5",
+            "carrito": "paquete-2"
+        }
+    },
+    {
+        "user-id": 38,
+        "admin": false,
+        "apellido": "Padly",
+        "nombre": "Brittni",
+        "email": "bpadly11@quantcast.com",
+        "contraseña": "sQICAhA",
+        "genero": "Male",
+        "ip_address": "201.155.7.174",
+        "pais": "Greece",
+        "lenguaje": "Telugu",
+        "moneda": "EUR",
+        "avatar": "https://robohash.org/laborumipsadolor.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-5",
+            "comprados": "paquete-2",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 39,
+        "admin": true,
+        "apellido": "Eirwin",
+        "nombre": "Bogey",
+        "email": "beirwin12@ameblo.jp",
+        "contraseña": "YeXxTgN3",
+        "genero": "Male",
+        "ip_address": "203.27.73.143",
+        "pais": "China",
+        "lenguaje": "Kurdish",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/facilisquitemporibus.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-1",
+            "comprados": "paquete-2",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 40,
+        "admin": false,
+        "apellido": "Francescoccio",
+        "nombre": "Gwen",
+        "email": "gfrancescoccio13@ocn.ne.jp",
+        "contraseña": "H2lhkYt",
+        "genero": "Male",
+        "ip_address": "193.238.49.110",
+        "pais": "Indonesia",
+        "lenguaje": "Hungarian",
+        "moneda": "IDR",
+        "avatar": "https://robohash.org/nullamaioressit.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-4",
+            "vistos": "paquete-4",
+            "comprados": "paquete-4",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 41,
+        "admin": false,
+        "apellido": "Andreia",
+        "nombre": "Rozele",
+        "email": "randreia14@wikimedia.org",
+        "contraseña": "dDnUsDbP",
+        "genero": "Male",
+        "ip_address": "110.73.124.58",
+        "pais": "Ukraine",
+        "lenguaje": "Sotho",
+        "moneda": "UAH",
+        "avatar": "https://robohash.org/sintfugapossimus.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-3",
+            "comprados": "paquete-1",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 42,
+        "admin": false,
+        "apellido": "Causley",
+        "nombre": "Law",
+        "email": "lcausley15@ycombinator.com",
+        "contraseña": "P3YZG6emCvO",
+        "genero": "Female",
+        "ip_address": "209.69.69.252",
+        "pais": "Indonesia",
+        "lenguaje": "Mongolian",
+        "moneda": "IDR",
+        "avatar": "https://robohash.org/etnonautem.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-4",
+            "comprados": "paquete-5",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 43,
+        "admin": false,
+        "apellido": "Tetla",
+        "nombre": "Freida",
+        "email": "ftetla16@spotify.com",
+        "contraseña": "zDQz3ID1D",
+        "genero": "Genderfluid",
+        "ip_address": "114.223.27.184",
+        "pais": "Indonesia",
+        "lenguaje": "Haitian Creole",
+        "moneda": "IDR",
+        "avatar": "https://robohash.org/reprehenderitrerumratione.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-1",
+            "comprados": "paquete-5",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 44,
+        "admin": true,
+        "apellido": "Roubeix",
+        "nombre": "Del",
+        "email": "droubeix17@furl.net",
+        "contraseña": "gKtjG6tLCm",
+        "genero": "Male",
+        "ip_address": "128.237.53.174",
+        "pais": "Poland",
+        "lenguaje": "German",
+        "moneda": "PLN",
+        "avatar": "https://robohash.org/etofficiissuscipit.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-4",
+            "comprados": "paquete-5",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 45,
+        "admin": false,
+        "apellido": "Fenn",
+        "nombre": "Nicola",
+        "email": "nfenn18@cloudflare.com",
+        "contraseña": "nU2EDEX4T7LX",
+        "genero": "Female",
+        "ip_address": "130.44.122.5",
+        "pais": "China",
+        "lenguaje": "Dutch",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/pariaturetperferendis.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-1",
+            "comprados": "paquete-1",
+            "carrito": "paquete-5"
+        }
+    },
+    {
+        "user-id": 46,
+        "admin": true,
+        "apellido": "Forkan",
+        "nombre": "Caresa",
+        "email": "cforkan19@columbia.edu",
+        "contraseña": "zdHAqKx",
+        "genero": "Female",
+        "ip_address": "131.93.138.238",
+        "pais": "United States",
+        "lenguaje": "Bosnian",
+        "moneda": "USD",
+        "avatar": "https://robohash.org/eosautempossimus.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-3",
+            "vistos": "paquete-4",
+            "comprados": "paquete-3",
+            "carrito": "paquete-3"
+        }
+    },
+    {
+        "user-id": 47,
+        "admin": true,
+        "apellido": "Potkins",
+        "nombre": "Boris",
+        "email": "bpotkins1a@sourceforge.net",
+        "contraseña": "ZIBc6siTdzss",
+        "genero": "Genderqueer",
+        "ip_address": "122.239.143.27",
+        "pais": "Thailand",
+        "lenguaje": "Japanese",
+        "moneda": "THB",
+        "avatar": "https://robohash.org/voluptatibusetvoluptatem.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-1",
+            "vistos": "paquete-3",
+            "comprados": "paquete-3",
+            "carrito": "paquete-4"
+        }
+    },
+    {
+        "user-id": 48,
+        "admin": false,
+        "apellido": "Curedell",
+        "nombre": "Kingsly",
+        "email": "kcuredell1b@51.la",
+        "contraseña": "JqPhrLhod",
+        "genero": "Female",
+        "ip_address": "224.162.204.167",
+        "pais": "Argentina",
+        "lenguaje": "Finnish",
+        "moneda": "ARS",
+        "avatar": "https://robohash.org/doloremnatusenim.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-4",
+            "comprados": "paquete-4",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 49,
+        "admin": true,
+        "apellido": "Wontner",
+        "nombre": "Alene",
+        "email": "awontner1c@forbes.com",
+        "contraseña": "TXKKnvWBqUfa",
+        "genero": "Female",
+        "ip_address": "90.19.147.174",
+        "pais": "China",
+        "lenguaje": "Kurdish",
+        "moneda": "CNY",
+        "avatar": "https://robohash.org/possimusquiperferendis.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-2",
+            "vistos": "paquete-1",
+            "comprados": "paquete-5",
+            "carrito": "paquete-1"
+        }
+    },
+    {
+        "user-id": 50,
+        "admin": false,
+        "apellido": "Droogan",
+        "nombre": "Byrom",
+        "email": "bdroogan1d@wunderground.com",
+        "contraseña": "2Y2bVEt2Gyw",
+        "genero": "Male",
+        "ip_address": "231.207.199.237",
+        "pais": "Tunisia",
+        "lenguaje": "Albanian",
+        "moneda": "TND",
+        "avatar": "https://robohash.org/debitisdolorescorporis.png?size=50x50&set=set1",
+        "productos": {
+            "favoritos": "paquete-5",
+            "vistos": "paquete-1",
+            "comprados": "paquete-3",
+            "carrito": "paquete-3"
+        }
+    }
+]
