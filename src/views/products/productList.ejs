@@ -54,12 +54,14 @@
                     <div class="mapa">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209937.30546584484!2d-58.628010157041224!3d-34.69835925761811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1646435797631!5m2!1ses!2sar"
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <button class="w3-button naranja">VER MAPA</button>
 
                     </div>
                 </div>
                 <div class="caja-general2">
+                    <% for(let i=0; i<productos.length;i++){%> 
+                        <% if(i==5){break} %> 
                     <article class="producto">
                         <div class="seleccion">
                             <form action=""><input type="checkbox"></form>
@@ -69,17 +71,20 @@
                         </div>
                         <div class="info">
                             <div class="titulo">
-                                <h3>Producto 1 Bariloche</h3>
+                                <h3><%= productos[i].titulo %> </h3>
                             </div>
                             <div class="precio">
                                 <div>Precio</div>
-                                <div>$73.404</div>
+                                <div>$<%= productos[i].precio.valor %></div>
                             </div>
                             <div class="boton">
+                                <a href="/product/detail/<%= productos[i].id %>">
                                 <button class="w3-button detalle">VER MAS</button>
+                                </a>
                             </div>
                         </div>
                     </article>
+                    <% } %> 
                 </div>
                 <div class="caja-general3">
                     <div class="filtros">
@@ -111,40 +116,40 @@
                             </div>
                         </div>
                         <div class="filtro-estrellas">
-                            <p>Estrellas:</p>
+                            <p> <strong>Estrellas:</strong></p>
                             <div class="cinco-estrellas">
                                 <form action=""><input type="checkbox"></form>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                             <span>★</span>
+                             <span>★</span>
+                             <span>★</span>
+                             <span>★</span>
+                             <span>★</span>
                             </div>
                             <div class="cuatro-estrellas">
                                 <form action=""><input type="checkbox"></form>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
                             </div>
                             <div class="tres-estrellas">
                                 <form action=""><input type="checkbox"></form>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
                             </div>
                             <div class="dos-estrellas">
                                 <form action=""><input type="checkbox"></form>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <span>★</span>
+                                <span>★</span>
                             </div>
                             <div class="una-estrellas">
                                 <form action=""><input type="checkbox"></form>
-                                <i class="fa-solid fa-star"></i>
+                                <span>★</span>
                             </div>
                         </div>
                         <div class="pagos">
-                            <p>Alternativas de Pago:</p>
+                            <p> <strong>Alternativas de Pago:</strong></p>
                             <div class="todas">
                                 <form action=""><input type="checkbox"></form>
                                 <p>Todas las formas</p>

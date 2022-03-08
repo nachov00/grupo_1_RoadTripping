@@ -6,8 +6,10 @@ const userController = require("../controllers/userController");
 router.get('/login', userController.login);
 router.get('/registrarse', userController.register);
 router.get('/preregistro', userController.preregister);
+
 router.get('/Term&Cond', userController.TermCond);
 router.get('/Privacidad', userController.Privacy);
+
 router.get('/misdatos', userController.userData);
 router.get('/mismillas', userController.userMillas);
 router.get('/miscompras', userController.userCompras);

@@ -21,6 +21,8 @@
   color: white;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  right: 5%;
 }
 
 .caja2 {
@@ -125,7 +127,7 @@
   color: white;
   border-radius: 5px;
   position: relative;
-  right: -47%;
+  right: -40%;
 }
 
 .producto {
@@ -135,6 +137,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 15px 0px;
 }
 
 .precio {
@@ -151,9 +154,10 @@
   justify-content: center;
 }
 
-.caja-general3{
+.caja-general3 {
   width: 300px;
 }
+
 .filtros p {
   display: flex;
   justify-content: space-around;
@@ -236,10 +240,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 30%;
-}
-
-.cinco-estrellas i {
-  margin-left: 5%;
+  font-size: 5vh;
 }
 
 .cuatro-estrellas {
@@ -247,10 +248,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 30%;
-}
-
-.cuatro-estrellas i {
-  margin-left: 5%;
+  font-size: 5vh;
 }
 
 .tres-estrellas {
@@ -258,10 +256,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 30%;
-}
-
-.tres-estrellas i {
-  margin-left: 5%;
+  font-size: 5vh;
 }
 
 .dos-estrellas {
@@ -269,10 +264,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 30%;
-}
-
-.dos-estrellas i {
-  margin-left: 5%;
+  font-size: 5vh;
 }
 
 .una-estrellas {
@@ -280,12 +272,8 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 30%;
+  font-size: 5vh;
 }
-
-.una-estrellas i {
-  margin-left: 5%;
-}
-
 .pagos p {
   display: flex;
   justify-content: space-around;
