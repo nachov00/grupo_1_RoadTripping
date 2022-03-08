@@ -16,12 +16,6 @@ const adminController = {
       console.log(req.body)
       let products = service.findAll()
 
-<<<<<<< HEAD
-      let newProduct = service.newProduct(req.body); 
-      products.push(newProduct)
-
-      writeFile(products)
-=======
       //creo el nuevo producto para agregar
       console.log(req.body)
 
@@ -57,7 +51,6 @@ const adminController = {
 
       //modifico mi base de datos
       service.writeFile(products)
->>>>>>> 502ba4744f8f96b7a4045e31483ccfff157202d6
 
         res.redirect("/admin/crear-editar")
     },

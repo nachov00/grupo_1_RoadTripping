@@ -348,8 +348,6 @@
             "d": "MANUAL-1",
             "e": "MANUAL-1"
         }
-<<<<<<< HEAD
-=======
     },
     {
         "id": 11,
@@ -367,6 +365,5 @@
             "descripcion": "Producto de prueba: I"
         },
         "images": {}
->>>>>>> 502ba4744f8f96b7a4045e31483ccfff157202d6
     }
 ]
