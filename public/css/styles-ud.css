@@ -9,7 +9,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items:center;
-
+    align-content: flex-end;
 }
 
 .editar-foto {
@@ -55,7 +55,6 @@ font-weight: 500;
     font: roboto;
     
   }
-  
 
   .topnav a {
     float: left;
@@ -69,7 +68,6 @@ font-weight: 500;
     
   }
   
-
   .topnav a:hover {
     background-color: grey;
     color: black;
@@ -100,8 +98,6 @@ font-weight: 500;
       font: roboto;
   }
 
- 
-
   .tipo-dato {
       display: flex;
       flex-direction: column;
@@ -127,4 +123,106 @@ font-weight: 500;
     flex-direction: row;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: roboto;
+}
+
+/*--------BODY------*/
+
+.nivel{
+    margin-left: 9%;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    background-color: #2A3594;
+    border-radius: 5%;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.beneficios{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+.container {
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+.suma-puntos p{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+.suma-puntos ul{
+    display: flex;
+    background-color: #809DE8;
+    flex-direction: column
+    ;
+}
+.puntos ul{
+    display: flex;
+    background-color: #809DE8;
+    flex-direction: column
 }
