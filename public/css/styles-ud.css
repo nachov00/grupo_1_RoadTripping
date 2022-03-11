@@ -1,45 +1,70 @@
+/*----------------------------HEADER-DE-NACHO---------------------------------------*/
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    right: -2%;
+}
+
+.user-picture-config {
+    position: relative;
+    right: 9.5%;
 }
 
 .profile-picture {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    right: 10%;
+}
 
+.profile-picture i {
+    font-size: 8vh;
+    margin-bottom: 4px;
+}
+
+.sign-out {
+    position: absolute;
+    right: -170%;
+    top: -5%;
 }
 
 .editar-foto {
-    display: flexbox;
-    font-size:x-small;
+    font-size: 2vh;
     background-color: gray;
     padding: 1%;
     color: black;
-    
+    width: 100%;
+    padding: 7px;
+    border-radius: 11px;
+    text-align: center;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
-flex-direction: row;
-list-style-type:none;
-justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
 .boton-user {
-    display: flexbox;
     flex-wrap: wrap;
-        background-color: grey;
+    background-color: grey;
     padding: 10px;
     white-space: nowrap;
     font-size: large;
     color: black;
     margin: 2px;
     border: 1px black solid;
-font-weight: 500;
+    font-weight: 500;
 }
 
 .boton-user:hover {
@@ -47,17 +72,17 @@ font-weight: 500;
 }
 
 .topnav {
-    background-color: darkgrey;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: roboto;
-    
-  }
-  
+    border-bottom: 2px solid #000000;
+}
 
-  .topnav a {
+
+.topnav a {
+    background-color: #C4C4C4;
     float: left;
     color: black;
     text-align: center;
@@ -66,65 +91,115 @@ font-weight: 500;
     font-size: 17px;
     border-left: 2px white solid;
     border-right: 2px white solid;
-    
-  }
-  
+}
 
-  .topnav a:hover {
+
+.topnav a:hover {
     background-color: grey;
     color: black;
-  }
-  
-  .topnav a.active {
+}
+
+.topnav a.active {
     background-color: #2A3594;
     color: white;
-  }
+}
 
-  .body {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font: roboto;
+.body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: roboto;
 
-  }
+}
 
-  .datos-cuenta {
-      display: block;
-      width: 48%;
-      height: 300px;
-      background-color: grey;
-      border: white 3px solid;
-      border-radius: 5%;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font: roboto;
-  }
+.datos-cuenta {
+    display: block;
+    width: 48%;
+    height: 300px;
+    background-color: grey;
+    border: white 3px solid;
+    border-radius: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: roboto;
+}
 
- 
 
-  .tipo-dato {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 50%;
-      height: auto;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font: roboto;
-  }
 
-  .titulos {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font: roboto;
-  }
+.tipo-dato {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: roboto;
+}
 
-  .titulos-seg {
+.titulos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: roboto;
+}
+
+.titulos-seg {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: roboto;
 }
+/*-------------------------FIN-HEADER-DE-NACHO--------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------------CONTENIDO-MIO-----------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: column;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section div p {
+    padding: 0% 1vw;
+}
+
+
+@media screen and (max-width: 950px) {
+    main {
+        font-size: 1.3vh;
+    }
+}
+/*----------------------------CONTENIDO-MIO-----------------------------------------*/
