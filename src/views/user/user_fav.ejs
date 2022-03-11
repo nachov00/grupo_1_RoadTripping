@@ -34,10 +34,10 @@
     </div>
     <br>
     <div class="topnav">
-        <a class="active">MIS DATOS</a>
+        <a href="/user/misDatos">MIS DATOS</a>
         <a href="/user/mismillas">MIS MILLAS</a>
         <a href="/user/miscompras">MIS COMPRAS</a>
-        <a href="/user/favoritos">FAVORITOS</a>
+        <a class="active">FAVORITOS</a>
         <a href="/user/seguridad">SEGURIDAD</a>
         <a href="/user/notificaciones">NOTIFICACIONES</a>
     </div>
@@ -52,6 +52,7 @@
                 <p>Eliminar favoritos seleccionados</p>
             </div>
         </div>
+<% for(let i= 0; i<3; i++){ %> 
         <article class="producto">
             <div class="seleccion">
                 <form action=""><input type="checkbox"></form>
@@ -68,10 +69,11 @@
                     <div>$00000</div>
                 </div>
                 <div class="eliminar">
-                    <p>Eliminar</p>
+                    <a href="#">Eliminar</a>
                 </div>
             </div>
         </article>
+<% } %> 
     </div>
 
 </body>

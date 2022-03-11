@@ -245,17 +245,14 @@ ul.slider li:target {
     margin-left: 10%;
     margin-top: 4%;
 }
-
-.suma-puntos ul {
-    display: flex;
+.descripcion{
     background-color: #809DE8;
-    flex-direction: column;
+    width: 30%;
+    padding: 5px 5px 5px 30px;
+    margin-left: 5%;
 }
-
-.puntos ul {
-    display: flex;
-    background-color: #809DE8;
-    flex-direction: column
+.descripcion p {
+ margin: 0%;
 }
 
 /*--------BODY Favoritos------*/
