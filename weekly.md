@@ -79,6 +79,23 @@ Lis
     ***Que va a hacer mañana:*** continuar con vistas de lista de Productos
 
 Nacho 
-    ***Que hizo ayer:*** cracion de wireframe Usuario 
+    ***Que hizo ayer:*** creacion de wireframe Usuario 
     ***Inconvenientes:***
     ***Que va a hacer mañana:*** Codigo Vista user, creacion de vista user.
+
+**Reunion grupal del 16/03/2022**
+
+Lucas 
+    ***Que hizo ayer:***
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:*** 
+
+Lis 
+    ***Que hizo ayer:*** 
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:*** 
+
+Nacho 
+    ***Que hizo ayer:*** 
+    ***Inconvenientes:***
+    ***Que va a hacer mañana:*** 
