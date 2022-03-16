@@ -13,6 +13,7 @@ const adminController = {
 
     guardar: (req, res) => {
           
+      console.log(req.body)
       let products = service.findAll()
 
       //creo el nuevo producto para agregar
@@ -55,7 +56,6 @@ const adminController = {
     },
 
     editar: (req, res) => {
-        console.table(service.readFile());
         res.render("../views/admin/edit", {productos: service.findAll()} )
     },
   };
