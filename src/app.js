@@ -4,6 +4,7 @@ const path = require('path');
 const methodOverride =  require('method-override'); 
 
 
+
 app.set("view engine", "ejs");
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(methodOverride('_method'));

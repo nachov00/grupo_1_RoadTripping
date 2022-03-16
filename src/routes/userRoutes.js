@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const userController = require("../controllers/userController");
+const multer = requiere('multer')
 
 
 router.get('/login', userController.login);
