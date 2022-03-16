@@ -3,6 +3,8 @@ var router = express.Router();
 const userController = require("../controllers/userController");
 const multer = requiere('multer')
 
+const multer=require('multer');
+
 
 router.get('/login', userController.login);
 router.get('/registrarse', userController.register);
