@@ -86,16 +86,16 @@ Nacho
 **Reunion grupal del 16/03/2022**
 
 Lucas 
-    ***Que hizo ayer:***
-    ***Inconvenientes:*** 
-    ***Que va a hacer mañana:*** 
+    ***Que hizo ayer:***Finalizar vistas de usuario, investigacion de middlewares
+    ***Inconvenientes:***Limitacion de tiempo
+    ***Que va a hacer mañana:***Implementar cokkieparser en la aplicacion
 
 Lis 
-    ***Que hizo ayer:*** 
-    ***Inconvenientes:*** 
-    ***Que va a hacer mañana:*** 
+    ***Que hizo ayer:***actualizacion de tablero, actualizacion de Retro, investigacion de multer
+    ***Inconvenientes:***limitacion de tiempo
+    ***Que va a hacer mañana:***implementar multer en los routers
 
 Nacho 
-    ***Que hizo ayer:*** 
+    ***Que hizo ayer:***
     ***Inconvenientes:***
     ***Que va a hacer mañana:*** 
