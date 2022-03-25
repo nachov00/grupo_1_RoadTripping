@@ -1,7 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const multer  = require('multer'); //
 const userController = require("../controllers/userController");
 
+const router = express.Router();
 
 router.get('/login', userController.login);
 router.get('/registrarse', userController.register);
