@@ -1,4 +1,5 @@
 var express = require('express');
+const upload = require('../middlewares/productMulter')
 var router = express.Router();
 const adminController = require('../controllers/adminController');
 
@@ -6,10 +7,14 @@ const adminController = require('../controllers/adminController');
 router.get('/crear-editar', adminController.crearEditar);
 
 router.get('/crear', adminController.crear);
-router.post('/', adminController.guardar);
+router.post('/',
+// upload.single('') //
+adminController.guardar);
 
 router.get('/editar-1', adminController.editar);
-router.get('/editar-2', adminController.editar);
+router.get('/editar-2',
+// upload.single('') //
+adminController.editar);
 
 
 

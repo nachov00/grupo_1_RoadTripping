@@ -1,10 +1,14 @@
 var express = require('express');
+const upload = require('../middlewares/userMulter')
 var router = express.Router();
 const userController = require("../controllers/userController");
 
 
 router.get('/login', userController.login);
-router.get('/registrarse', userController.register);
+router.get('/registrarse',
+// upload.single('') //
+userController.register);
+
 router.get('/preregistro', userController.preregister);
 
 router.get('/Term&Cond', userController.TermCond);
