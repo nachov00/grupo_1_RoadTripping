@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const methodOverride =  require('method-override'); 
-
+const cookieParser = require('cookie-parser');
 
 app.set("view engine", "ejs");
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
-
+app.use(cookieParser());
 
 
 let port = 3030;
