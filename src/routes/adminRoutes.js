@@ -1,7 +1,7 @@
 const express = require('express');
 const { check } = require('express-validator');
 const adminController = require('../controllers/adminController');
-const upload = require('../middlewares/productMulter')
+const upload = require('../middleware/productMulter')
 const router = express.Router();
 
 
@@ -26,7 +26,7 @@ router.get('/editar-1', [
                         ], adminController.editar);
 
 router.get('/editar-2',  [
-                        ], minController.editar);
+                        ], adminController.editar);
 
 router.post('/editar/:id', [
             check('titulo').notEmpty().withMessage('No debe estar vacio.')
