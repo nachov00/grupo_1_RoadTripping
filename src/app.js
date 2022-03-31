@@ -28,16 +28,25 @@ app.use(express.json());
 
 
 var mainRouter = require('./routes/mainRoutes');
-                    app.use('/', mainRouter);
+                app.use('/', mainRouter);
 
 var productRouter = require('./routes/productRoutes');
-                    app.use('/Product', productRouter);
+                app.use('/Product', productRouter);
 
 var userRouter = require('./routes/userRoutes');
-                    app.use('/User', userRouter);
+                app.use('/User', userRouter);
 
 var adminRouter = require('./routes/adminRoutes');
-                    app.use('/Admin', adminRouter);
+                app.use('/Admin', adminRouter);
+
+
+
+let port = 3030;
+
+app.listen(port, function () {
+    console.log("Server Online!")
+    console.log("Port: " + port)
+})
 
 
 
