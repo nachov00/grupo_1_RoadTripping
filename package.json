@@ -2,10 +2,10 @@
   "name": "grupo_1_roadtripping",
   "version": "1.0.0",
   "description": "1. Repositorio del proyecto \r https://github.com/nachov00/grupo_1_RoadTripping.git",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "nodemon ./bin/www"
+    "start": "node .src/bin/www",
+    "test": "nodemon .src/bin/www"
   },
   "repository": {
     "type": "git",
