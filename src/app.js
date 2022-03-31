@@ -41,12 +41,12 @@ var adminRouter = require('./routes/adminRoutes');
 
 
 
-let port = 3030;
+        // let port = 3030;
 
-app.listen(port, function () {
-    console.log("Server Online!")
-    console.log("Port: " + port)
-})
+        // app.listen(port, function () {
+        //     console.log("Server Online!")
+        //     console.log("Port: " + port)
+        // })
 
 
 

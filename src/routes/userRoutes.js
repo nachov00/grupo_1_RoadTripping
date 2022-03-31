@@ -6,8 +6,8 @@ const userController = require("../controllers/userController");
 
 router.get('/login', userController.login);
 router.get('/registrarse',
-// upload.single('') //
-userController.register);
+                            // upload.single('') //
+                            userController.register);
 
 router.get('/preregistro', userController.preregister);
 
