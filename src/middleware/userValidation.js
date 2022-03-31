@@ -24,6 +24,7 @@ const validator = {
                 }
                
                 throw new Error("Email no está registrado!");   //sino tiro error
+
             }),
 
         check("password")
@@ -32,7 +33,8 @@ const validator = {
             .bail()
 
             .custom(function (password) {
-                let check = bcrypt.compareSync(password /*,user[i].contraseña*/)
+                let usuario = service.findEmail(check('email'));
+                let check = bcrypt.compareSync(password, usuario.contraseña);
             })
     ],
 

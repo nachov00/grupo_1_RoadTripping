@@ -10,27 +10,36 @@ router.get('/crear-editar', adminController.crearEditar);
 router.get('/crear', adminController.crear);
 
 router.post('/', [
-            check('name').notEmpty(),
-            check('name').isLength({min:5, max:10}),
-            check('name').isEmail(),
-            check('name').isInt()
+            check('titulo').notEmpty().withMessage('No debe estar vacio.')
+                .bail().isLength({min:5, max:30}).withMessage('Debe contener más caracteres.'),
+            check('destino').notEmpty().withMessage('Elija un destino.'),
+            check('from').notEmpty().isNumeric(),
+            check('to').notEmpty().isNumeric(),
+            check('categoria').notEmpty().withMessage('No debe estar vacio.'),
+            check("contenido").isLength({min:5, max:30}),
+            check("valor").notEmpty().withMessage('No debe estar vacio.'),
+            check('divisas'),
+            check('descripcion'),
                                 ], adminController.guardar);
 
 router.get('/editar-1', [
-            check('name').notEmpty(),
-            check('name').isLength({min:5, max:10}),
-            check('name').isEmail(),
-            check('name').isInt()
                         ], adminController.editar);
 
 router.get('/editar-2',  [
-            check('name').notEmpty(),
-            check('name').isLength({min:5, max:10}),
-            check('name').isEmail(),
-            check('name').isInt()
                         ], minController.editar);
 
-
+router.post('/editar/:id', [
+            check('titulo').notEmpty().withMessage('No debe estar vacio.')
+                .bail().isLength({min:5, max:30}).withMessage('Debe contener más caracteres.'),
+            check('destino').notEmpty().withMessage('Elija un destino.'),
+            check('from').notEmpty().isNumeric(),
+            check('to').notEmpty().isNumeric(),
+            check('categoria').notEmpty().withMessage('No debe estar vacio.'),
+            check("contenido").isLength({min:5, max:30}),
+            check("valor").notEmpty().withMessage('No debe estar vacio.'),
+            check('divisas'),
+            check('descripcion'),
+                        ], adminController.editar);
 
 module.exports = router;
 
