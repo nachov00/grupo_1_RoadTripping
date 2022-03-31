@@ -1,6 +1,7 @@
 const express = require('express');
 const { check } = require('express-validator');
 const adminController = require('../controllers/adminController');
+const upload = require('../middlewares/productMulter')
 const router = express.Router();
 
 
