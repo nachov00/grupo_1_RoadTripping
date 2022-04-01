@@ -1,9 +1,0 @@
-Paletas creadas:
-
-    #FFF72F ---> Amarillo Footer
-    #FA9E29 ---> Naranja Botones
-    #FA6C05 ---> Naranja Destacado
-    #809DE8 ---> Celeste Destacado
-    #2A3594 ---> Azul Destacado
-    #061283 ---> Azul Logo
-
