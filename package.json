@@ -7,7 +7,7 @@
     "start": "node C:/Users/Lucas-PC/Documents/Estudios/DH_DWFS/grupo_1_RoadTripping/src/bin/www",
     "test": "nodemon C:/Users/Lucas-PC/Documents/Estudios/DH_DWFS/grupo_1_RoadTripping/src/bin/www"
   },
-  "repository": { 
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/nachov00/grupo_1_RoadTripping.git"
   },

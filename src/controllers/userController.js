@@ -1,18 +1,41 @@
 const { validationResult } = require("express-validator");
 const service = require('../services/userServices')
+const user = req.cookies.user;
 
 const userController = {
 
     login: (req, res) => {
-        res.render("user/login")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.redirect('/');
+        } else {
+            res.render("user/login")
+        }
+        
     },
 
     register: (req, res) => {
-        res.render("user/register")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.redirect('/');
+        } else {
+            res.render("user/register")
+        }
+
+
     },
 
     preregister: (req, res) => {
-        res.render("user/preregister")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.redirect('/');
+        } else {
+            res.render("user/preregister")
+        }
+
     },
 
     newRegister:(req, res) => {
@@ -22,12 +45,12 @@ const userController = {
         }
         
         const newUser = {
-            // id: users.length + 1,
-            // name: req.body.name,
-            // email: req.body.email,
-            // password: bcrypt.hashSync(req.body.password, 10),
-            // last_name: req.body.last_name,
-            // avatar: req.file ? req.file.filename : "image-default"
+             user_id: users.length + 1,
+             nombre: req.body.name,
+             email: req.body.email,
+             contraseña: bcrypt.hashSync(req.body.password, 10),
+             apellido: req.body.last_name,
+             avatar: req.file ? req.file.filename : "image-default"
         }
 
         users.push(newUser);
@@ -52,10 +75,10 @@ const userController = {
         if(userFound){
             //proceso session
             let user = {
-                // id: userFound.id,
-                // name: userFound.name,
-                // last_name: userFound.last_name,
-                // avatar: userFound.avatar,
+                 user_id: userFound.id,
+                 nombre: userFound.name,
+                 apellido: userFound.last_name,
+                 avatar: userFound.avatar,
             }
 
             req.session.usuarioLogueado = user
@@ -81,22 +104,64 @@ const userController = {
         res.render("user/aviso_privacidad")
     },
     userData: (req, res) => {
-        res.render("user/user_data")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.render("user/user_data")
+        } else {
+            res.redirect('/user/login');
+        }
+
     },
     userMillas: (req, res) => {
-        res.render("user/user_millas")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.render("user/user_millas")
+        } else {
+            res.redirect('/user/login');
+        }
+
     },
     userCompras: (req, res) => {
-        res.render("user/user_compras")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.render("user/user_compras")
+        } else {
+            res.redirect('/user/login');
+        }
+        
     },
     userFav: (req, res) => {
-        res.render("user/user_fav")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.render("user/user_fav")
+        } else {
+            res.redirect('/user/login');
+        }
+
     },
     userSeg: (req, res) => {
-        res.render("user/user_seg")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.render("user/user_seg")
+        } else {
+            res.redirect('/user/login');
+        }
+        
     },
     userNotif: (req, res) => {
-        res.render("user/user_notif")
+
+        if (user) {
+            let userFound = service.findID(user)
+            res.render("user/user_notif")
+        } else {
+            res.redirect('/user/login');
+        }
+
     },
 };
 

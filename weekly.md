@@ -99,3 +99,21 @@ Nacho
     ***Que hizo ayer:***
     ***Inconvenientes:***
     ***Que va a hacer mañana:*** 
+
+**Reunion grupal del 04/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** Implentación de los middlewares en el proyecto
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Emprolijar para entrega
+
+Lis 
+    ***Que hizo ayer:*** actualizacion de tablero
+    ***Inconvenientes:***
+    ***Que va a hacer mañana:***
+
+Nacho 
+    ***Que hizo ayer:*** Investigacion sobre Base de Datos
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:*** Organización del siguiente sprint
+

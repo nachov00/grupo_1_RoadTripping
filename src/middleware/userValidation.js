@@ -7,7 +7,7 @@ const validator = {
     login: [
         check("email")
             .notEmpty()
-            .withMessage("campo email vacio")
+            .withMessage("Campo email vacio")
             .bail()
 
             .custom(function (value) {
