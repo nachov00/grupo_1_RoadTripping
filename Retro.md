@@ -16,7 +16,7 @@
 º Seguir actualizando el weekly
 
 ## **Menos de:**
-º Discord
+º Discord 
 
 ## **Dejar de hacer:**
 

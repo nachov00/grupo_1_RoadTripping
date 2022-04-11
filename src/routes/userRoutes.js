@@ -1,13 +1,17 @@
 var express = require('express');
-const upload = require('../middlewares/userMulter')
+const upload = require('../middleware/userMulter')
 var router = express.Router();
 const userController = require("../controllers/userController");
 
 
 router.get('/login', userController.login);
+router.post('/login')
+
 router.get('/registrarse',
-// upload.single('') //
-userController.register);
+                            // upload.single('') //
+                            userController.register);
+
+router.post('/registrarse')
 
 router.get('/preregistro', userController.preregister);
 

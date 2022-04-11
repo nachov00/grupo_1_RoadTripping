@@ -27,6 +27,15 @@ const service = {
         return usuario;
     },
 
+    findEmail: function (email) {
+
+        const user = this.findAll()
+        let usuario = user.find(function (user) {
+            return user.email == email
+        })
+        return usuario;
+    },
+
     newUser: function (body) {
 
         //UPDATE USUARIO//
