@@ -117,3 +117,20 @@ Nacho
     ***Inconvenientes:*** 
     ***Que va a hacer mañana:*** Organización del siguiente sprint
 
+**Reunion grupal del 11/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** Revision de Sprint 5, merge y creacion de ramas
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** diseño de base de datos .sql
+
+Lis 
+    ***Que hizo ayer:*** actualizacion de tablero, actualizacion de Retro
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Revision de Sprint 6 y repaso de clases playground
+
+Nacho 
+    ***Que hizo ayer:*** Revision de Sprint 6, diseño de diagrama de entidades y relaciones
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** diseño de base de datos .sql
+
