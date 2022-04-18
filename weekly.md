@@ -139,17 +139,14 @@ Nacho
 Lucas 
     ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL
     ***Inconvenientes:*** Tiempo
-    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de
-modelos
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
 
 Lis 
     ***Que hizo ayer:*** Diagrama de base de datos, actualizacion de tablero, diseño estructura SQL
     ***Inconvenientes:*** Tiempo
-    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de
-modelos
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
 
 Nacho 
     ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL, Script de datos
     ***Inconvenientes:*** Tiempo
-    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de
-modelos
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
