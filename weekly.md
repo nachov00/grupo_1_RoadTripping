@@ -134,3 +134,22 @@ Nacho
     ***Inconvenientes:*** Tiempo
     ***Que va a hacer mañana:*** diseño de base de datos .sql
 
+**Reunion grupal del 18/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de
+modelos
+
+Lis 
+    ***Que hizo ayer:*** Diagrama de base de datos, actualizacion de tablero, diseño estructura SQL
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de
+modelos
+
+Nacho 
+    ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL, Script de datos
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de
+modelos
