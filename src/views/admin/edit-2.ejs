@@ -22,34 +22,6 @@
 
     <main class="main">
 
-        <div class="mySlides">
-            <form action="/edit/:id" method="POST">
-            <div class="contenedor">
-                <div class="select">
-
-                    <label for="edit">Producto a editar</label>
-                   
-                        <select name="producto" placeholder="...">
-
-                            <% for (let i = 0; i < productos.length; i++) {%> 
-                                <option value="<%= productos[i].id %>"> <%= productos[i].titulo %> </option>
-                            <% } %>     
-
-                        </select>
-                    
-
-                </div>
-            </div>
-
-            <article class="articulos">
-                <div class="controles">
-                    <button type="button" class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
-                    <button type="button" class="w3-button w3-ripple w3-red">ELIMINAR</button>
-                    <button type="button" class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
-                </div>
-            </article>
-            </form>
-        </div>
 
         <div class="mySlides">
             <div class="contenedor">

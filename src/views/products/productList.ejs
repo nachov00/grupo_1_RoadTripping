@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/styles-pl.css">
+    <link rel="stylesheet" href="/css/styles-shared.css">
+
+</head>
+
+<body>
+    <!--        **HEADER**                 -->
+    <%- include("../partials/header")%>
+
+        <!--      LISTA DE PRODUCTOS          -->
+        <main>
+            <p class="texto-busqueda">Busqueda Relacionada: Paquetes Bariloche, Promos Bariloche</p>
+            <div class="general">
+                <div class="caja-general1">
+                    <div class="caja1">
+                        <div>
+                            <h2>Paquetes Turisticos</h2>
+                            <h3>Vuelo+Alojamiento</h3>
+                        </div>
+                        <div class="caja2">
+                            <h3>Origen:</h3>
+                        </div>
+                        <div class="caja3">
+                            <h3>Destino:</h3>
+                        </div>
+                        <div class="caja4">
+                            <div class="fecha">
+                                <p>Fecha:</p>
+                            </div>
+                            <div class="noches">
+                                <p>Noches</p>
+                            </div>
+                        </div>
+                        <div class="caja5">
+                            <div class="habitaciones">
+                                <h3>Habitaciones</h3>
+                            </div>
+                            <div class="logos">
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209937.30546584484!2d-58.628010157041224!3d-34.69835925761811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1646435797631!5m2!1ses!2sar"
+                            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <button class="w3-button naranja">VER MAPA</button>
+
+                    </div>
+                </div>
+                <div class="caja-general2">
+                    <% for(let i=0; i<productos.length;i++){%> 
+                        <% if(i==5){break} %> 
+                    <article class="producto">
+                        <div class="seleccion">
+                            <form action=""><input type="checkbox"></form>
+                        </div>
+                        <div class="imagen">
+                            <img height="150px" src="/img/Bariloche/Bariloche1 Letras.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="titulo">
+                                <h3><%= productos[i].titulo %> </h3>
+                            </div>
+                            <div class="precio">
+                                <div>Precio</div>
+                                <div>$<%= productos[i].precio.valor %></div>
+                            </div>
+                            <div class="boton">
+                                <a href="/product/detail/<%= productos[i].id %>">
+                                <button class="w3-button detalle">VER MAS</button>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <% } %> 
+                </div>
+                <div class="caja-general3">
+                    <div class="filtros">
+                        <p><strong>Filtros mas usados:</strong></p>
+                        <div class="tipo-de-filtro">
+                            <div class="desayuno">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Desayuno</p>
+                            </div>
+                            <div class="varios-pagos">
+                                <form action=""><input type="checkbox"></form>
+                                <p>En varios pagos</p>
+                            </div>
+                            <div class="cabañas">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Cabañas</p>
+                            </div>
+                            <div class="departamentos">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Departamentos</p>
+                            </div>
+                            <div class="hoteles">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Hoteles</p>
+                            </div>
+                            <div class="estrellas">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Estrellas</p>
+                            </div>
+                        </div>
+                        <div class="filtro-estrellas">
+                            <p> <strong>Estrellas:</strong></p>
+                            <div class="cinco-estrellas">
+                                <form action=""><input type="checkbox"></form>
+                             <span>★</span>
+                             <span>★</span>
+                             <span>★</span>
+                             <span>★</span>
+                             <span>★</span>
+                            </div>
+                            <div class="cuatro-estrellas">
+                                <form action=""><input type="checkbox"></form>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                            <div class="tres-estrellas">
+                                <form action=""><input type="checkbox"></form>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                            <div class="dos-estrellas">
+                                <form action=""><input type="checkbox"></form>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                            <div class="una-estrellas">
+                                <form action=""><input type="checkbox"></form>
+                                <span>★</span>
+                            </div>
+                        </div>
+                        <div class="pagos">
+                            <p> <strong>Alternativas de Pago:</strong></p>
+                            <div class="todas">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Todas las formas</p>
+                            </div>
+                            <div class="un-pago">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Solo un pago</p>
+                            </div>
+                            <div class="varios-pagos">
+                                <form action=""><input type="checkbox"></form>
+                                <p>Varios pagos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+</body>
+
+</html>

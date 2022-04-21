@@ -13,27 +13,49 @@ const adminController = {
 
     guardar: (req, res) => {
           
+      console.log(req.body)
       let products = service.findAll()
 
       //creo el nuevo producto para agregar
+      console.log(req.body)
+
       let newProduct = {
+        
           id: products.length + 1,
-          name: req.body.name ,
-          price: req.body.price,
-          description: req.body.description 
+          titulo: req.body.titulo ,
+          destino: req.body.destino,
+          categoria: req.body.categoria , 
+          precio: {
+              valor: req.body.valor,
+              divisa: req.body.divisa
+          },
+          detalle: {
+              disponibilidad: {
+                    from: req.body.from,
+                    to: req.body.to
+              },
+              hotel: req.body.hotel,
+              boletos: req.body.boletos,
+              excursiones: { },
+              fecha: req.body.fecha,
+              translados: req.body.translado,
+              crusero: req.body.crusero,
+              descripcion: req.body.descripcion,
+          },
+          images: { }
+
       }
       
       //agrego el nuevo producto a mi listado de productos 
       products.push(newProduct)
 
       //modifico mi base de datos
-      writeFile(products)
+      service.writeFile(products)
 
         res.redirect("/admin/crear-editar")
     },
 
     editar: (req, res) => {
-        console.table(service.readFile());
         res.render("../views/admin/edit", {productos: service.findAll()} )
     },
   };

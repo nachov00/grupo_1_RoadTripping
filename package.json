@@ -1,10 +1,11 @@
 {
   "name": "grupo_1_roadtripping",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "1. Repositorio del proyecto \r https://github.com/nachov00/grupo_1_RoadTripping.git",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node C:/Users/Lucas-PC/Documents/Estudios/DH_DWFS/grupo_1_RoadTripping/src/bin/www",
+    "test": "nodemon C:/Users/Lucas-PC/Documents/Estudios/DH_DWFS/grupo_1_RoadTripping/src/bin/www"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,14 @@
   },
   "homepage": "https://github.com/nachov00/grupo_1_RoadTripping#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
     "method-override": "^3.0.0",
+    "multer": "^1.4.4",
     "path": "^0.12.7"
   }
 }

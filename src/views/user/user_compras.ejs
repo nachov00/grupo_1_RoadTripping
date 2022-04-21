@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Compras</title>
+    <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
+    <!--ESTA LINEA COPIALA ARRIBA DE LOS TAGS 'LINK'-->
+    <link rel="icon" href="/img/Logo2.png">
+    <link rel="Stylesheet" href="/css/styles-ud.css">
+</head>
+
+<body>
+
+    <header>
+        <!--COPIAR Y REEMPLAZAR HEADER'-->
+        <div class="header">
+
+            <div class="logo">
+                <a href="/"><img src="/img/Logo.png" alt="" width="200px"></a>
+            </div>
+
+            <div class="user-picture-config">
+
+                <div class="profile-picture">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="#" class="editar-foto">Editar foto</a>
+                </div>
+
+                <div class="sign-out">
+                    <p> -Nombre de usuario- </p>
+                    <a href="#" class="editar-foto">Cerrar Sesión</a>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="topnav">
+            <a href="/user/misDatos">MIS DATOS</a>
+            <a href="/user/mismillas">MIS MILLAS</a>
+            <a class="active">MIS COMPRAS</a>
+            <a href="/user/favoritos">FAVORITOS</a>
+            <a href="/user/seguridad">SEGURIDAD</a>
+            <a href="/user/notificaciones">NOTIFICACIONES</a>
+        </div>
+    </header>
+
+    <main class="2">
+
+        <div class="main-box-2">
+
+            <div class="form">
+                <br>
+                <form action="#">
+
+                    <div class="form-input" style="background-color: #C4C4C4;">
+                        <input type="text" style="background-color: #C4C4C4; border-color: #C4C4C4; border-style:none;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div style="margin-left: 3px; margin-bottom: 2px;">
+                        <select name="filter" id="">
+                            <option value="">Todas</option>
+                            <option value="">filtro-1</option>
+                            <option value="">filtro-2</option>
+                            <option value="">filtro-3</option>
+                            <option value="">filtro-4</option>
+                            <option value="">filtro-5</option>
+                        </select>
+                    </div>
+
+                </form>
+                <br>
+            </div>
+
+            <div class="compra">
+                <article>
+                    <h3>Compras</h3>
+                </article>
+                <% for (let i=0; i < 4; i++) {%>
+                    <section>
+                        <div class="another-div">
+                            <i class="fa-solid fa-image"></i>
+                            <div class="caja-flex">
+                                <p> - DD/MMMM/YYYY - </p>
+                                <p> - Titulo producto - </p>
+                            </div>
+                            <a href="#">Detalle de la compra</a>
+                        </div>
+                    </section>
+                    <% } %>
+            </div>
+        </div>
+
+        <div class="main-box-2">
+
+            <br>
+            <div>
+                <h3>Detalles de la compra</h3>
+            </div>
+
+            <div class="caja-1">
+
+                <div class="caja-1">
+
+                    <div>
+                        <!--Detalles-->
+                        <p> - DD/MMMM/YYYY - </p>
+                        <p> - Titulo producto - </p>
+                        <br>
+                        <p> - Descripcion - </p>
+                        <br>
+                        <p>Origen: </p>
+                        <p>Destino: </p>
+                        <p>Estadia: </p>
+                        <p>Forma de viaje: </p>
+                        <p>Hora de vuelo: </p>
+
+                    </div>
+
+                    <div class="product-image">
+                        <!--Imagen-->
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+
+                </div>
+
+                <div class="caja-2">
+                    <p>Precio: </p>
+                    <p>Valores agregados: </p>
+                    <p>Total: </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

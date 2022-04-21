@@ -1,0 +1,369 @@
+[
+    {
+        "id": 1,
+        "titulo": "producto 1",
+        "destino": "Jujuy",
+        "cetegoria": "Actividades",
+        "precio": {
+            "valor": 8675,
+            "divisa": "US"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "08/02/2022",
+                "to": "4/29/2021"
+            },
+            "hotel": "Nutibara Hotel",
+            "boletos": "Avion",
+            "excurciones": {
+                "a": "Opcion1",
+                "b": "Opcion4",
+                "c": "Opcion2",
+                "d": "Opcion5",
+                "e": "Opcion2"
+            },
+            "translados": true,
+            "cruseros": true,
+            "descripcion": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 2,
+        "titulo": "producto 2",
+        "destino": "Calafate",
+        "cetegoria": "Escapadas",
+        "precio": {
+            "valor": 1046,
+            "divisa": "ARS"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "12/06/2021",
+                "to": "3/26/2021"
+            },
+            "hotel": "Nutibara Hotel",
+            "boletos": "Avion",
+            "excurciones": {
+                "a": "Opcion3",
+                "b": "Opcion5",
+                "c": "Opcion1",
+                "d": "Opcion4",
+                "e": "Opcion1"
+            },
+            "translados": false,
+            "cruseros": false,
+            "descripcion": "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 3,
+        "titulo": "producto 3",
+        "destino": "Mendoza",
+        "cetegoria": "Actividades",
+        "precio": {
+            "valor": 114,
+            "divisa": "US"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "02/06/2021",
+                "to": "12/8/2021"
+            },
+            "hotel": "Ohasis Jujuy Hotel Spa",
+            "boletos": "Bus",
+            "excurciones": {
+                "a": "Opcion4",
+                "b": "Opcion3",
+                "c": "Opcion3",
+                "d": "Opcion5",
+                "e": "Opcion4"
+            },
+            "translados": true,
+            "cruseros": true,
+            "descripcion": "In sagittis dui vel nisl."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 4,
+        "titulo": "producto 4",
+        "destino": "Bariloche",
+        "cetegoria": "Destacado",
+        "precio": {
+            "valor": 1428,
+            "divisa": ""
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "27/03/2021",
+                "to": "11/18/2021"
+            },
+            "hotel": "Nutibara Hotel",
+            "boletos": "Avion",
+            "excurciones": {
+                "a": "Opcion2",
+                "b": "Opcion1",
+                "c": "Opcion3",
+                "d": "Opcion1",
+                "e": "Opcion2"
+            },
+            "translados": true,
+            "cruseros": true,
+            "descripcion": "In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 5,
+        "titulo": "producto 5",
+        "destino": "Calafate",
+        "cetegoria": "Actividades",
+        "precio": {
+            "valor": 5972,
+            "divisa": "US"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "10/07/2021",
+                "to": "7/4/2021"
+            },
+            "hotel": "Ohasis Jujuy Hotel Spa",
+            "boletos": "Avion",
+            "excurciones": {
+                "a": "Opcion3",
+                "b": "Opcion5",
+                "c": "Opcion4",
+                "d": "Opcion4",
+                "e": "Opcion1"
+            },
+            "translados": false,
+            "cruseros": true,
+            "descripcion": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 6,
+        "titulo": "producto 6",
+        "destino": "Ushuaia",
+        "cetegoria": "Actividades",
+        "precio": {
+            "valor": 466,
+            "divisa": ""
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "08/11/2021",
+                "to": "6/9/2021"
+            },
+            "hotel": "Hotel Cristal",
+            "boletos": "Avion",
+            "excurciones": {
+                "a": "Opcion3",
+                "b": "Opcion4",
+                "c": "Opcion3",
+                "d": "Opcion4",
+                "e": "Opcion1"
+            },
+            "translados": false,
+            "cruseros": true,
+            "descripcion": "Nunc purus."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 7,
+        "titulo": "producto 7",
+        "destino": "Jujuy",
+        "cetegoria": "Escapadas",
+        "precio": {
+            "valor": 8757,
+            "divisa": "US"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "07/09/2021",
+                "to": "7/23/2021"
+            },
+            "hotel": "Nutibara Hotel",
+            "boletos": "Bus",
+            "excurciones": {
+                "a": "Opcion3",
+                "b": "Opcion1",
+                "c": "Opcion4",
+                "d": "Opcion5",
+                "e": "Opcion2"
+            },
+            "translados": true,
+            "cruseros": true,
+            "descripcion": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 8,
+        "titulo": "producto 8",
+        "destino": "Mendoza",
+        "cetegoria": "Oferta",
+        "precio": {
+            "valor": 2467,
+            "divisa": ""
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "01/04/2021",
+                "to": "10/10/2021"
+            },
+            "hotel": "Hosteria Mi Vida",
+            "boletos": "Bus",
+            "excurciones": {
+                "a": "Opcion2",
+                "b": "Opcion2",
+                "c": "Opcion3",
+                "d": "Opcion5",
+                "e": "Opcion5"
+            },
+            "translados": false,
+            "cruseros": false,
+            "descripcion": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 9,
+        "titulo": "producto 9",
+        "destino": "Ushuaia",
+        "cetegoria": "Actividades",
+        "precio": {
+            "valor": 4245,
+            "divisa": ""
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "19/09/2021",
+                "to": "12/31/2021"
+            },
+            "hotel": "Hosteria Mi Vida",
+            "boletos": "Bus",
+            "excurciones": {
+                "a": "Opcion2",
+                "b": "Opcion4",
+                "c": "Opcion5",
+                "d": "Opcion4",
+                "e": "Opcion4"
+            },
+            "translados": true,
+            "cruseros": false,
+            "descripcion": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 10,
+        "titulo": "producto 10",
+        "destino": "Jujuy",
+        "cetegoria": "Destacado",
+        "precio": {
+            "valor": 1916,
+            "divisa": ""
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "08/12/2021",
+                "to": "10/3/2021"
+            },
+            "hotel": "Hosteria Mi Vida",
+            "boletos": "Avion",
+            "excurciones": {
+                "a": "Opcion5",
+                "b": "Opcion5",
+                "c": "Opcion2",
+                "d": "Opcion2",
+                "e": "Opcion5"
+            },
+            "translados": true,
+            "cruseros": false,
+            "descripcion": "Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam."
+        },
+        "images": {
+            "a": "MANUAL-1",
+            "b": "MANUAL-1",
+            "c": "MANUAL-1",
+            "d": "MANUAL-1",
+            "e": "MANUAL-1"
+        }
+    },
+    {
+        "id": 11,
+        "destino": "Mexico",
+        "precio": {
+            "valor": "555"
+        },
+        "detalle": {
+            "disponibilidad": {
+                "from": "2022-03-01",
+                "to": "2022-04-01"
+            },
+            "hotel": "on",
+            "excursiones": {},
+            "descripcion": "Producto de prueba: I"
+        },
+        "images": {}
+    }
+]

@@ -15,12 +15,12 @@
     </div>
     <div class="header-login">
         <h1>Iniciar Sesión</h1>
-        <h2>Para crear una cuenta nueva <a id="ingresa-aqui" href="" target="_blank">Ingresa aquí</a></h2>
+        <h2>Para crear una cuenta nueva <a id="ingresa-aqui" href="/preregistro" target="_blank">Registrate aquí</a></h2>
     </div>
 </header>
 
 <body>
-    <form>
+    <form action="/user/login" method="POST">
         <div class="login">
             <a style="text-decoration:none" href="https://www.facebook.com/login" class="botonSocial" id="fb"
                 target="_blank">
@@ -41,7 +41,7 @@
             <input type="text" placeholder="Nombre de usuario" name="username" required>
             <label for=""></label>
             <input type="password" placeholder="Contraseña" name="password" required>
-            <button type="submit">Ingresar</button>
+            <button type="submit">INGRESAR</button>   
             <input type="checkbox" checked="checked"> Recuérdame
             <button type="button" class="cancelbtn"> Cancelar</button>
             <a href="#">Olvidaste contraseña?</a>

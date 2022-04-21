@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/styles-ce2.css">
+    <link rel="icon" href="/img/Logo2.png">
+</head>
+
+<body>
+    <header class="ingresar">
+        <div id="imagen-login">
+            <a href="/admin/crear-editar"><img class="mini-logo" src="/img/Logo.png" alt="" width="200px"></a>
+            <i class="fa-solid fa-user-gear"></i>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="mySlides">
+            <form action="/edit">
+            <div class="contenedor">
+                <div class="select">
+
+                    <label for="edit">Producto a editar</label>
+                   
+                        <select name="producto" placeholder="...">
+
+                            <% for (let i = 0; i < productos.length; i++) {%> 
+                                <option value="<%= productos[i].id %>"> <%= productos[i].titulo %> </option>
+                            <% } %>     
+
+                        </select>
+                    
+
+                </div>
+            </div>
+
+            <article class="articulos">
+                <div class="controles">
+                    <button type="button" class="w3-button w3-light-grey"><a href="/admin/crear-editar">Atras</a></button>
+                    <button type="submit" formmethod="delete" class="w3-button w3-ripple w3-red">ELIMINAR</button>
+                    <button type="submit" formmethod="post"  class="w3-button w3-light-grey"><a href="/edit/:id">Siguiente</a> </button>
+                </div>
+            </article>
+            </form>
+        </div>
+
+    </main>
