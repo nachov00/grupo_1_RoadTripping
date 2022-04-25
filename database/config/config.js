@@ -3,7 +3,7 @@ module.exports= {
     "username": "grupo1",
     "password": "grupo1",
     "database": "roadtripping",
-    "host": "127.0.0.1",
+    "host": "3000",
     "dialect": "mysql"
   },
   "test": {
