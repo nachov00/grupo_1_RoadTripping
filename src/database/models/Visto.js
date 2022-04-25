@@ -25,5 +25,5 @@ module.exports = (sequelize, dataTypes) => {
 
     const Vistos = sequelize.define('alias', 'cols', 'config');
 
-    return Visto;
+    return Vistos;
 }
