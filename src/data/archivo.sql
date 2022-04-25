@@ -19,7 +19,9 @@
 -- Table structure for table `carrito de compras`
 --
 
-DROP TABLE IF EXISTS `carrito de compras`;
+CREATE DATABASE `roadtripping`
+USE `roadtripping`
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `carrito de compras` (
