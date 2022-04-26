@@ -3,4 +3,4 @@ tools
 src/data/anotherDB
 src/data
 src/database/config/config.js
-src/services/JSON_Services
+src/services/gitJSON_Services
