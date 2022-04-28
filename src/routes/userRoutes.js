@@ -1,4 +1,5 @@
 var express = require('express');
+const upload = require('../middleware/userMulter')
 var router = express.Router();
 const userController = require("../controllers/userController");
 const multer = requiere('multer')
@@ -7,7 +8,14 @@ const multer=require('multer');
 
 
 router.get('/login', userController.login);
-router.get('/registrarse', userController.register);
+router.post('/login')
+
+router.get('/registrarse',
+                            // upload.single('') //
+                            userController.register);
+
+router.post('/registrarse')
+
 router.get('/preregistro', userController.preregister);
 
 router.get('/Term&Cond', userController.TermCond);

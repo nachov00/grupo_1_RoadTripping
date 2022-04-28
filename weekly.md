@@ -79,6 +79,91 @@ Lis
     ***Que va a hacer mañana:*** continuar con vistas de lista de Productos
 
 Nacho 
-    ***Que hizo ayer:*** cracion de wireframe Usuario 
+    ***Que hizo ayer:*** creacion de wireframe Usuario 
     ***Inconvenientes:***
     ***Que va a hacer mañana:*** Codigo Vista user, creacion de vista user.
+
+**Reunion grupal del 16/03/2022**
+
+Lucas 
+    ***Que hizo ayer:***Finalizar vistas de usuario, investigacion de middlewares
+    ***Inconvenientes:***Limitacion de tiempo
+    ***Que va a hacer mañana:***Implementar cokkieparser en la aplicacion
+
+Lis 
+    ***Que hizo ayer:***actualizacion de tablero, actualizacion de Retro, investigacion de multer
+    ***Inconvenientes:***limitacion de tiempo
+    ***Que va a hacer mañana:***implementar multer en los routers
+
+Nacho 
+    ***Que hizo ayer:***
+    ***Inconvenientes:***
+    ***Que va a hacer mañana:*** 
+
+**Reunion grupal del 04/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** Implentación de los middlewares en el proyecto
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Emprolijar para entrega
+
+Lis 
+    ***Que hizo ayer:*** actualizacion de tablero
+    ***Inconvenientes:***
+    ***Que va a hacer mañana:***
+
+Nacho 
+    ***Que hizo ayer:*** Investigacion sobre Base de Datos
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:*** Organización del siguiente sprint
+
+**Reunion grupal del 11/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** Revision de Sprint 5, merge y creacion de ramas
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** diseño de base de datos .sql
+
+Lis 
+    ***Que hizo ayer:*** actualizacion de tablero, actualizacion de Retro
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Revision de Sprint 6 y repaso de clases playground
+
+Nacho 
+    ***Que hizo ayer:*** Revision de Sprint 6, diseño de diagrama de entidades y relaciones
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** diseño de base de datos .sql
+
+**Reunion grupal del 18/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
+
+Lis 
+    ***Que hizo ayer:*** Diagrama de base de datos, actualizacion de tablero, diseño estructura SQL
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
+
+Nacho 
+    ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL, Script de datos
+    ***Inconvenientes:*** Tiempo
+    ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
+
+    **Reunion grupal del 25/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** creacion de product services
+    ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
+    ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
+
+Lis 
+    ***Que hizo ayer:*** agregar estructura sequalize, creacion de carpetas modelos
+    ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
+    ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
+
+Nacho 
+    ***Que hizo ayer:*** creacion de user services
+    ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
+    ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 

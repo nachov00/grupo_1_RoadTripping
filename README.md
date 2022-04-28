@@ -56,3 +56,6 @@ Wireframes de las cinco vistas principales de la página: Home, Detalles del pro
 
 **Tablero de Seguimiento de Proyecto**
 https://github.com/nachov00/grupo_1_RoadTripping/projects/1
+
+**Diagrama de Entidades y Relaciones**
+https://app.diagrams.net/#G1m5Cr1dmfawQTDoJEmZJlHJRhSyvYzmr8

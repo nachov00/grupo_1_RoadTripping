@@ -1,60 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Datos</title>
+    <script src="https://kit.fontawesome.com/755d7f60e5.js" crossorigin="anonymous"></script> <!--ESTA LINEA COPIALA ARRIBA DE LOS TAGS 'LINK'-->
     <link rel="icon" href="/img/Logo2.png">
     <link rel="Stylesheet" href="/css/styles-ud.css">
 </head>
-<header>
-    <div class="header">
-    <div>
-        <a href="/"><img src="/img/Logo.png" alt="" width="200px"></a>
-    </div>
-        <div class="profile-picture">
-            <img src="/img/user/profile-picture.png" alt="" width="10%">
-            <a href="/user/misdatos" class="editar-foto">NOMBRE DE USUARIO</a>
+
+<body>
+
+    <header>                                                                                  <!--COPIAR Y REEMPLAZAR HEADER'-->
+        <div class="header">
+
+            <div class="logo">
+                <a href="/"><img src="/img/Logo.png" alt="" width="200px"></a>
+            </div>
+
+            <div class="user-picture-config">
+
+                <div class="profile-picture">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="#" class="editar-foto">Editar foto</a>
+                </div>
+
+                <div class="sign-out">
+                    <p> -Nombre de usuario-</p>
+                    <a href="#" class="editar-foto">Cerrar Sesión</a>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <br>
+        <br>
         <div class="topnav">
-            <a class="active">MIS DATOS</a>
+            <a class="active">MIS DATOS</a> 
             <a href="/user/mismillas">MIS MILLAS</a>
             <a href="/user/miscompras">MIS COMPRAS</a>
             <a href="/user/favoritos">FAVORITOS</a>
             <a href="/user/seguridad">SEGURIDAD</a>
             <a href="/user/notificaciones">NOTIFICACIONES</a>
-          </div>
-</header>
-<body>
-    <div class="titulos">
-    <h3>DATOS DE LA CUENTA</h3>
-    <h3>TARJETAS</h3>
-</div>
-<DIV class="body">
-    <p class="datos-cuenta">
-        Datos de la cuenta
-    </p>
+        </div>                                                                               
+    </header>                                                                                  <!--COPIAR Y REEMPLAZAR HEADER'-->
 
-    <p class="datos-cuenta">
-        Tarjetas
-    </p>
-</DIV>
-    <div class="titulos">
-        <h3>DATOS PERSONALES</h3>
-        <h3>DOMICILIO</h3>
-    </div>
-    <br>
-    <div class="body">
-    <p class="datos-cuenta">
-        Datos Personales
-    </p>
-    
-    <p class="datos-cuenta">
-        Domicilios
-    </p>
-</div>
+    <main>
+
+        <div class="main-box">
+
+            <div class="caja">
+                <article>
+                    <h3>DATOS DE LA CUENTA</h3>
+                    <a href="#">
+                        <p class="modify-button">Modificar</p>
+                    </a>
+                </article>
+                <section>
+
+                    <div>
+                        <p>Usuario</p>
+                        <p> -nombre de usuario- </p>
+                    </div>
+
+                    <div>
+                        <p>E-Mail</p>
+                        <p> -E-mail de usuario- </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="caja">
+                <article>
+                    <h3>DATOS PERSONALES</h3>
+                    <a href="#">
+                        <p class="modify-button">Modificar</p>
+                    </a>
+                </article>
+                <section>
+
+                    <div>
+                        <p>Nombre completo</p>
+                        <p> -nombre completo de usuario- </p>
+                    </div>
+
+                    <div>
+                        <p>Nombre (visible) </p>
+                        <p> -nombre de usuario- </p>
+                    </div>
+
+                    <div>
+                        <p>N° Documento</p>
+                        <p> -numDoc de usuario- </p>
+                    </div>
+
+                    <div>
+                        <p>Teléfono / Celular</p>
+                        <p> -tel/cel de usuario- </p>
+                    </div>
+
+                    <div>
+                        <p>Teléfono / Celular (alt)</p>
+                        <p> -tel/cel.A de usuario- </p>
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+
+        <div class="main-box">
+
+            <div class="caja">
+                <article>
+                    <h3>TARJETAS</h3>
+                    <a href="#">
+                        <p class="modify-button">Modificar</p>
+                    </a>
+                </article>
+                <section>
+
+                    <div>
+                        <p> <i class="fa-solid fa-credit-card"></i> </p>
+                        <p> -terminada en xx99- </p>
+                        <p> -fecha de vencimiento- </p>
+                        <a href="#">
+                            <p> ELIMINAR </p>
+                        </a>
+                    </div>
+                    <div class="add-button">
+                        <a href="#"><p>Agregar</p></a>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="caja">
+                <article>
+                    <h3>DOMICILIOS</h3>
+                    <a href="#">
+                        <p class="modify-button">Modificar</p>
+                    </a>
+                </article>
+                <section>
+
+                    <div>
+                        <p> <i class="fa-solid fa-house-user"></i> </p>
+                        <p> -calle x xx71 - </p>
+                        <a href="#">
+                            <p> ELIMINAR </p>
+                        </a>
+                    </div>
+
+                    <div class="add-button">
+                        <a href="#"><p>Agregar</p></a>
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+
 </body>
+
 </html>

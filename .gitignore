@@ -1,2 +1,6 @@
 node_modules
 tools
+src/data/anotherDB
+src/data
+src/database/config/config.js
+src/services/gitJSON_Services
