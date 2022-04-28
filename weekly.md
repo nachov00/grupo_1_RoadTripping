@@ -159,7 +159,7 @@ Lucas
     ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
 
 Lis 
-    ***Que hizo ayer:*** agregar esturcutra sequalize
+    ***Que hizo ayer:*** agregar estructura sequalize, creacion de carpetas modelos
     ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
     ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
 
