@@ -3,19 +3,20 @@ const upload = require('../middleware/userMulter')
 var router = express.Router();
 const userController = require("../controllers/userController");
 const multer = requiere('multer')
-
-const multer=require('multer');
+const { check } = require('express-validator');
 
 
 router.get('/login', userController.login);
 router.post('/login')
 
-router.get('/registrarse',
-                            // upload.single('') //
-                            userController.register);
+//---- Repetir para cada validacion a excepcion de la validacion del email----//
+router.post('/registrarse', [
+    check('Nombre').notEmpty().withMessage('No debe estar vacio.')
+        .bail().isLength({ min: 2 }).withMessage('Debe contener al menos 2 caracteres.'),
+],
+    userController.register);
 
-router.post('/registrarse')
-
+//----//
 router.get('/preregistro', userController.preregister);
 
 router.get('/Term&Cond', userController.TermCond);
