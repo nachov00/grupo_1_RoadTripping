@@ -150,3 +150,20 @@ Nacho
     ***Que hizo ayer:*** Diagrama de base de datos, diseño estructura SQL, Script de datos
     ***Inconvenientes:*** Tiempo
     ***Que va a hacer mañana:*** Creación de carpeta Sequelize y archivos de modelos
+
+    **Reunion grupal del 25/04/2022**
+
+Lucas 
+    ***Que hizo ayer:*** creacion de product services
+    ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
+    ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
+
+Lis 
+    ***Que hizo ayer:*** agregar estructura sequalize, creacion de carpetas modelos
+    ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
+    ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
+
+Nacho 
+    ***Que hizo ayer:*** creacion de user services
+    ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
+    ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 

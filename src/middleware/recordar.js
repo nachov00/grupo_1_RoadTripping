@@ -12,10 +12,10 @@ function rememberCookie (req, res , next){
         })
 
         let user = {
-            //COMPLETAR
-            //COMPLETAR
-            //COMPLETAR
-            //COMPLETAR
+            id: usuarioCookies.id,
+            name: usuarioCookies.name,
+            last_name: usuarioCookies.last_name,
+            avatar: usuarioCookies.avatar,
         }
 
         req.session.usuarioLogueado = user;

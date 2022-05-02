@@ -18,9 +18,9 @@ app.use(methodOverride('_method'));
 
 app.use(cookieParser());
 app.use(session({
-    secret: "COMPLETE", //COMPLETE
-    resave: "COMPLETE", //COMPLETE
-    saveUninitialized: "COMPLETE" //COMPLETE
+    secret: 'userInfo', //COMPLETE
+    resave: false, //COMPLETE
+    saveUninitialized: true //COMPLETE
 }))
 
 app.use(express.json());
