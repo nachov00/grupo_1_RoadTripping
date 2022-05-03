@@ -17,6 +17,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.use(cookieParser());
+
+
 app.use(session({
     secret: 'userInfo', //COMPLETE
     resave: false, //COMPLETE

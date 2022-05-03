@@ -6,8 +6,15 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true,
             primaryKey: true,
         },
-        producto: {
-            type: dataTypes.STRING
+        usuario_id: {
+            type: dataTypes.INTEGER,
+            autoIncrement: false,
+            foreingKey: true,
+        },
+        producto_id: {
+            type: dataTypes.INTEGER,
+            autoIncrement: false,
+            foreingKey: true,
         },
         descripcion: {
             type: dataTypes.STRING
@@ -23,7 +30,7 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
 
-    const Carrito = sequelize.define('alias', 'cols', 'config');
+    const Carrito = sequelize.define(alias, cols, config);
 
     return Carrito;
 }

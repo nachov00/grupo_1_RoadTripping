@@ -1,3 +1,4 @@
+const cookie_parser = require('cookie-parser')
 const service = require('../services/userServices')
 
 
@@ -5,10 +6,10 @@ function rememberCookie (req, res , next){
 
     if(!req.session.usuarioLogueado && req.cookies.user){
 
-        let usuarios = service.findAll()
+        let usuarios = service.list()
 
-        const usuarioCookies = usuarios.find(function(user){
-            return user.id == req.cookies.user
+        const usuarioCookies = usuarios.find(function(usuario){
+            return usuario.id == req.cookies.user
         })
 
         let user = {

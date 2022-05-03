@@ -8,7 +8,7 @@ module.exports = (sequelize, dataTypes) => {
         },
         usuario_id: {
             type: dataTypes.INTEGER,
-            autoIncrement: true,
+            autoIncrement: false,
             foreingKey: true,
         },
         producto_id: {
@@ -23,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
 
-    const Favorito = sequelize.define('alias', 'cols', 'config');
+    const Favorito = sequelize.define(alias, cols, config);
 
     return Favorito;
 }
