@@ -8,12 +8,10 @@ module.exports = (sequelize, dataTypes) => {
         },
         usuario_id: {
             type: dataTypes.INTEGER,
-            autoIncrement: false,
             foreingKey: true,
         },
         producto_id: {
             type: dataTypes.INTEGER,
-            autoIncrement: false,
             foreingKey: true,
         },
     };
