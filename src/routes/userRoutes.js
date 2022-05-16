@@ -4,6 +4,10 @@ var router = express.Router();
 const userController = require("../controllers/userController");
 const multer = requiere('multer')
 const { check } = require('express-validator');
+const db = require('../database/models');
+const res = require('express/lib/response');
+
+const usuarios = db.usuarios
 
 
 router.get('/login', userController.login);
@@ -13,6 +17,22 @@ router.post('/login')
 router.post('/registrarse', [
     check('Nombre').notEmpty().withMessage('No debe estar vacio.')
         .bail().isLength({ min: 2 }).withMessage('Debe contener al menos 2 caracteres.'),
+    check('password').notEmpty().withMessage('No debe estar vacio.')
+        .bail().isLength({ min: 8 }).withMessage('Debe contener al menos 8 caracteres.'),
+    check('email').notEmpty().withMessage('No debe estar vacio.')
+        .bail().isEmail().withMessage('Debe ser un email valido')
+        .bail().custom(async (email, req) => {
+            try {
+                const user = await usuarios.findAll()
+                const usuarioEncontrado = user.filter(mail => mail == email)
+                if (user) {
+                    return Promise.reject('Este mail ya esta registrado')
+                }
+            } catch (informacion) {
+                res.send(informacion)
+            }
+        })
+       //--- .normalizeEmail() INVESTIGAR MAS DE QUE TRATA Y QUE HACE ---//
 ],
     userController.register);
 
