@@ -4,6 +4,7 @@ const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');
 const res = require('express/lib/response');
+const cookie_parser = require('cookie-parser')
 
 const usuarios = db.usuarios
 
@@ -31,15 +32,15 @@ const userServices = {
         db.usuarios.create(
             {
                 nombre: req.body.nombre,
-                apellido: req.body.apellido,
-                genero: req.body.genero,
+                //apellido: req.body.apellido,
+                //genero: req.body.genero,
                 usuario: req.body.usuario,
                 contraseña: req.body.contraseña,
                 admin: req.body.admin,
                 avatar: req.body.avatar,
-                ubicacion: req.body.ubicacion,
-                lengua: req.body.lengua,
-                moneda: req.body.moneda
+                //ubicacion: req.body.ubicacion,
+                //lengua: req.body.lengua,
+                //moneda: req.body.moneda
             }
         )
         .then( 

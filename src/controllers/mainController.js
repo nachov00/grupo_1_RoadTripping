@@ -1,15 +1,27 @@
-let userID = req.cookies.user;
+const cookiees = require('../middleware/recordar')
+const cookie = require('cookie-parser')
+
+
+const req = require("express/lib/request");
+const fs = require("fs");
+const path = require("path")
+
+
 const service = require('../services/userServices')
 
+
+
+
 const mainController = {
-    home: (req, res) => {
-
-      if( userID ) { 
-        let userFound = service.findID(ID)
+  home: (req, res) => {
+    
+    /*if( req.cookies ) { 
+      const userID = req.cookies;
+        let userFound = service.detail(ID)
         return ID == userID
-      }
+      }*/
 
-      res.render("main/home" , {userFound})
+      res.render("main/home")// , {userFound})
     },
     us: (req, res) => {
       res.render("main/us")

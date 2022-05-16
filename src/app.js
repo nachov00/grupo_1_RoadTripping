@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 const session = require("express-session");
 const methodOverride = require('method-override');
 const httpError = require('http-errors');
-
+const  localsMiddle = require("./middleware/locals")
 
 const app = express();
 
@@ -18,14 +18,18 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.use(cookieParser());
+
+
+
 app.use(session({
-    secret: "COMPLETE", //COMPLETE
-    resave: "COMPLETE", //COMPLETE
-    saveUninitialized: "COMPLETE" //COMPLETE
+    secret: 'userInfo', //COMPLETE
+    resave: false, //COMPLETE
+    saveUninitialized: true //COMPLETE
 }))
 
-app.use(express.json());
 
+app.use(express.json());
+app.use(localsMiddle)
 
 
 var mainRouter = require('./routes/mainRoutes');

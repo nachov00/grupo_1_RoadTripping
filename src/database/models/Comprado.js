@@ -8,7 +8,7 @@ module.exports = (sequelize, dataTypes) => {
         },
         usuario_id: {
             type: dataTypes.INTEGER,
-            autoIncrement: true,
+            autoIncrement: false,
             foreingKey: true,
         },
         producto_id: {
@@ -23,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
 
-    const Comprado = sequelize.define('alias', 'cols', 'config');
+    const Comprado = sequelize.define(alias, cols, config);
 
     return Comprado;
 }

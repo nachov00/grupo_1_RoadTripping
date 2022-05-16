@@ -4,8 +4,8 @@
   "description": "1. Repositorio del proyecto \r https://github.com/nachov00/grupo_1_RoadTripping.git",
   "main": "src/app.js",
   "scripts": {
-    "start": "node C:/Users/Lucas-PC/Documents/Estudios/DH_DWFS/grupo_1_RoadTripping/src/bin/www",
-    "test": "nodemon C:/Users/Lucas-PC/Documents/Estudios/DH_DWFS/grupo_1_RoadTripping/src/bin/www"
+    "start": "node ./src/bin/www",
+    "test": "nodemon ./src/bin/www"
   },
   "repository": {
     "type": "git",

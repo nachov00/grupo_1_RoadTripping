@@ -1,15 +1,18 @@
 const { validationResult } = require("express-validator");
 const service = require('../services/userServices')
-const user = req.cookies.user;
 
 const userController = {
-
+    
     login: (req, res) => {
-
+        
+        const user = req.cookies.user;
+        
         if (user) {
-            let userFound = service.findID(user)
-            res.redirect('/');
+            let userFound = service.detail(user.id)
+            res.redirect('/', {usuario:userFound} );
         } else {
+            res.cookie('user', true, {maxAge: 60000 * 24}) // req.cookies.user
+
             res.render("user/login")
         }
         
@@ -18,9 +21,11 @@ const userController = {
     register: (req, res) => {
 
         if (user) {
-            let userFound = service.findID(user)
-            res.redirect('/');
+            let userFound = service.detail(user)
+            res.redirect('/', {usuario:userFound} );
         } else {
+            res.cookie('user', true, {maxAge: 60000 * 24}) // req.cookies.user
+
             res.render("user/register")
         }
 
@@ -30,7 +35,7 @@ const userController = {
     preregister: (req, res) => {
 
         if (user) {
-            let userFound = service.findID(user)
+            let userFound = service.detail(user)
             res.redirect('/');
         } else {
             res.render("user/preregister")
@@ -44,20 +49,7 @@ const userController = {
            return res.render("register", {errors: errors.mapped()})
         }
         
-        const newUser = {
-             user_id: users.length + 1,
-             nombre: req.body.name,
-             email: req.body.email,
-             contraseña: bcrypt.hashSync(req.body.password, 10),
-             apellido: req.body.last_name,
-             avatar: req.file ? req.file.filename : "image-default"
-        }
-
-        users.push(newUser);
-
-        service.writeFile(users)
-
-        res.redirect("/User/login");
+        service.create()
 
     },
 
@@ -68,23 +60,24 @@ const userController = {
             res.render("login", {errorsLogin: errors.mapped()})
         }
 
-        const userFound = users.find(function(user){
-            return user.email == req.body.email && bcrypt.compareSync(req.body.password, user.password)
+        const userFound = service.list().find(function(user){
+        //const userFound = users.find(function(user){
+            return user.usuario == req.body.usuario && bcrypt.compareSync(req.body.password, user.password)
         })
 
         if(userFound){
             //proceso session
             let user = {
-                 user_id: userFound.id,
+                 id: userFound.id,
                  nombre: userFound.name,
-                 apellido: userFound.last_name,
+                 usuario: userFound.usuario,
                  avatar: userFound.avatar,
             }
 
             req.session.usuarioLogueado = user
 
             if(req.body.remember){
-                res.cookie("user", user.id, {maxAge: 60000 * 24})
+                res.cookie('user', user.id, {maxAge: 60000 * 24}) // req.cookies.user
             }
 
             res.redirect("/")
@@ -94,6 +87,13 @@ const userController = {
         }
 
     },
+
+    //logout:function(req, res){
+    //    req.session.destroy();       
+    //    res.clearCookie("user");
+    //    res.redirect("/");
+    //},
+
     //
     // vvv Cosas que ya no importan tanto vvv
     //
