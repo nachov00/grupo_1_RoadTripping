@@ -167,3 +167,20 @@ Nacho
     ***Que hizo ayer:*** creacion de user services
     ***Inconvenientes:*** crash a la hora de correr npm. imposibilidad de ver los cambios en la pagina
     ***Que va a hacer mañana:*** finalizacion de crud y entrega de sprint 
+
+ **Reunion grupal del 16/05/2022**
+
+Lucas 
+    ***Que hizo ayer:*** finalizacion y entrega de sprint 
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:*** Validaciones Backend
+
+Lis 
+    ***Que hizo ayer:*** finalizacion y entrega de sprint 
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:*** Validaciones Backend, actualizacion Weekly y tablero
+
+Nacho 
+    ***Que hizo ayer:*** finalizacion y entrega de sprint
+    ***Inconvenientes:*** 
+    ***Que va a hacer mañana:***  Validaciones Backend
