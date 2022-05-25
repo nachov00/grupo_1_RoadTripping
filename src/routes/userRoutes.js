@@ -11,7 +11,7 @@ router.get('/registrarse',
                             // upload.single('') //
                             userController.register);
 
-router.post('/registrarse')
+router.post('/registrarse', userController.newRegister )
 
 router.get('/preregistro', userController.preregister);
 

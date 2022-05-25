@@ -8,6 +8,9 @@
     <title>Registro de usuario</title>
     <link rel="Stylesheet" href="css/styles-si.css">
     <link rel="icon" href="/img/Logo2.png">
+
+     <script src="/js/registerValidation.js"></script> 
+
 </head>
 <header class="ingresar">
     <div id="imagen-login">
@@ -15,26 +18,37 @@
     </div>
     <div class="header-login">
         <h1>Crea una nueva cuenta</h1>
-        <h2>Unete a nuestra comunidad! Crea tu cuenta. ¿Ya tienes una? <a id="ingresa-aqui" href="/login"
+        <h2>Unete a nuestra comunidad! Crea tu cuenta. ¿Ya tienes una? <a id="ingresa-aqui" href="/user/login"
                 target="_blank">Ingresa aquí</a></h2>
     </div>
 </header>
 
 <body>
-    <form action="/user/Registrarse" method="post" class="register">
+    <form action="/user/registrarse" method="post" class="register">
         <label for="Nombre"><strong></strong></label>
-        <input type="text" placeholder="Nombre y Apellido" name="Nombre" id="Nombre">
+            <input type="text" placeholder="Nombre y Apellido" name="Nombre" id="Nombre">
+            <span></span>
+            <br>
         <label for="usuario"><strong></strong></label>
-        <input type="text" placeholder="Nombre de Usuario" name="usuario" id="usuario">
+            <input type="text" placeholder="Nombre de Usuario" name="usuario" id="usuario">
+            <br>
         <label><strong></strong></label>
-        <input type="text" placeholder="Fecha de Nacimiento" onfocus="(this.type='date')" name="cumpleaños"
+            <input type="date" placeholder="Fecha de Nacimiento" onfocus="(this.type='date')" name="cumpleaños"
             min="1900-01-01" max="2010-01-01" class="fechaNacimiento">
+            <span></span>
+            <br>
         <label for="domicilio" placeholder="Domicilio"><strong></strong></label>
-        <input type="text" placeholder="Correo Electronico" name="email" id="email">
+            <input type="text" placeholder="Correo Electronico" name="email" id="email">
+            <span></span>
+            <br>
         <label for="password"><strong></strong></label>
-        <input type="password" placeholder="Contraseña" name="password" id="password">
+            <input type="password" placeholder="Contraseña" name="password" id="password">
+            <span></span>
+            <br>
         <label for="confirm-pass"><strong></strong></label>
-        <input type="password" placeholder="Confirmar contraseña" name="confirm-pass" id="confirm-pass">
+            <input type="password" placeholder="Confirmar contraseña" name="confirm-pass" id="confirm-pass">
+            <span></span>
+            <br>
         <button type="submit">
             <strong>Registrarse</strong>
         </button>

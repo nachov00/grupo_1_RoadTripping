@@ -1,90 +1,101 @@
 const { validationResult } = require("express-validator");
 const service = require('../services/userServices')
+const db = require('../database/models')
+
+const usuarios = db.usuarios
+
 
 const userController = {
-    
-    login: (req, res) => {
-        
-        const user = req.cookies.user;
-        
-        if (user) {
-            let userFound = service.detail(user.id)
-            res.redirect('/', {usuario:userFound} );
-        } else {
-            res.cookie('user', true, {maxAge: 60000 * 24}) // req.cookies.user
 
-            res.render("user/login")
-        }
-        
+    login: (req, res) => {
+
+        res.render("user/login")
+
     },
 
     register: (req, res) => {
 
-        if (user) {
-            let userFound = service.detail(user)
-            res.redirect('/', {usuario:userFound} );
-        } else {
-            res.cookie('user', true, {maxAge: 60000 * 24}) // req.cookies.user
-
-            res.render("user/register")
-        }
-
+        res.render("user/register")
 
     },
 
     preregister: (req, res) => {
 
-        if (user) {
-            let userFound = service.detail(user)
-            res.redirect('/');
-        } else {
-            res.render("user/preregister")
-        }
+        res.render("user/preregister")
+
 
     },
 
-    newRegister:(req, res) => {
+    newRegister: (req, res) => {
+
         const errors = validationResult(req)
-        if(errors.errors.length > 0){
-           return res.render("register", {errors: errors.mapped()})
-        }
-        
-        service.create()
 
+        if (errors.errors.length > 0) {
+            return res.render("register", { errors: errors.mapped() })
+        }
+        else { }
+
+        let user = {
+            nombre: req.body.name,
+            //apellido: user.apellido,
+            //genero: user.genero,
+            usuario: req.body.usuario,
+            contraseña: req.body.contraseña,
+            admin: req.body.admin,
+            avatar: req.body.avatar,
+        }
+
+
+
+        service.create(user)
+            .then((user) => {
+                let usuarioEncontrado = {
+                    id: user.id,
+                    nombre: user.name,
+                    usuario: user.usuario,
+                    avatar: user.avatar,
+                }
+                req.session.usuarioLogueado = usuarioEncontrado;
+                res.redirect('/');
+            }
+            )
     },
 
-    logMeIn:(req, res) => {
+    logMeIn: (req, res) => {
+
         const errors = validationResult(req);
-        
-        if(errors.errors.length > 0){
-            res.render("login", {errorsLogin: errors.mapped()})
+
+        if (errors.errors.length > 0) {
+            res.render("login", { errorsLogin: errors.mapped() })
         }
 
-        const userFound = service.list().find(function(user){
-        //const userFound = users.find(function(user){
-            return user.usuario == req.body.usuario && bcrypt.compareSync(req.body.password, user.password)
+        usuarios.findOne({
+            where: { email: req.body.email }
         })
+            .then((usuarioEncontrado) => {
 
-        if(userFound){
-            //proceso session
-            let user = {
-                 id: userFound.id,
-                 nombre: userFound.name,
-                 usuario: userFound.usuario,
-                 avatar: userFound.avatar,
-            }
+                if (usuarioEncontrado && bcrypt.compareSync(req.body.password, usuarioEncontrado.password)) {
 
-            req.session.usuarioLogueado = user
+                    let usuarioEncontrado = {
+                        id: user.id,
+                        nombre: user.name,
+                        usuario: user.usuario,
+                        avatar: user.avatar,
+                    }
 
-            if(req.body.remember){
-                res.cookie('user', user.id, {maxAge: 60000 * 24}) // req.cookies.user
-            }
+                    req.session.usuarioLogueado = usuarioEncontrado;
 
-            res.redirect("/")
+                    if (req.body.remember) {
+                        res.cookie('user', user.id, { maxAge: 60000 * 24 }) 
+                    }
 
-        }else{
-            res.render("login", {errorMsg: "Error credenciales invalidas"})
-        }
+                    res.redirect("/")   
+                }
+                else {
+                    res.render("Login", { errorsLogin:"Credenciales invalidas" } ) 
+                }
+
+            } )
 
     },
 
@@ -131,7 +142,7 @@ const userController = {
         } else {
             res.redirect('/user/login');
         }
-        
+
     },
     userFav: (req, res) => {
 
@@ -151,7 +162,7 @@ const userController = {
         } else {
             res.redirect('/user/login');
         }
-        
+
     },
     userNotif: (req, res) => {
 

@@ -11,15 +11,11 @@ const usuarios = db.usuarios
 const userServices = {
 
     'list': () => { 
-        db.usuarios.findAll()
-
-        .then( usuarios => usuarios)
+        return db.usuarios.findAll()
     },
 
-    'detail': () => {
-        db.usuarios.findByPk(req.params.id)
-
-        .then(usuario => usuario)
+    'detail': (id) => {
+        return db.usuarios.findByPk(id)
     },
 
     //'new': () => {},
@@ -28,25 +24,9 @@ const userServices = {
 
     //'add': => {},
 
-    'create': (req, res) => {
-        db.usuarios.create(
-            {
-                nombre: req.body.nombre,
-                //apellido: req.body.apellido,
-                //genero: req.body.genero,
-                usuario: req.body.usuario,
-                contraseña: req.body.contraseña,
-                admin: req.body.admin,
-                avatar: req.body.avatar,
-                //ubicacion: req.body.ubicacion,
-                //lengua: req.body.lengua,
-                //moneda: req.body.moneda
-            }
-        )
-        .then( 
-            () => {return res.redirect('/')} 
-            )
-        .catch(error => res.send(error))
+    'create': (user) => {
+        return db.usuarios.create(user)
+
     },
 
     /*

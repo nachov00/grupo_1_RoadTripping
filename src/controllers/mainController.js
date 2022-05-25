@@ -15,11 +15,11 @@ const service = require('../services/userServices')
 const mainController = {
   home: (req, res) => {
     
-    if( req.cookies ) { 
+    /*if( req.cookies ) { 
       const userID = req.cookies;
         let userFound = service.detail(ID)
         return ID == userID
-      }
+      }*/
 
       res.render("main/home")// , {userFound})
     },
