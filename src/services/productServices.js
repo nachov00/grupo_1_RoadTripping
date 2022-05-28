@@ -1,64 +1,88 @@
-const req = require("express/lib/request");
-const fs = require("fs");
-const path = require("path")
+const path = require('path');
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
+const moment = require('moment');
+const res = require('express/lib/response');
 
-const service = {
-    file: path.join(__dirname, "../data/productos.json"),
-    
-    readFile: function(){
-        return fs.readFileSync(this.file, "utf-8")
+const productos = db.productos
+
+const productsServices = {
+
+    'list': () => { 
+        db.productos.findAll()
+
+        .then( productos => productos)
     },
 
-    writeFile: function(array){
-        let aString = JSON.stringify(array, null, 4)
-        fs.writeFileSync(this.file, aString);
-    },
-    
-    findAll: function(){
-        return JSON.parse(this.readFile())
+    'detail': () => {
+        db.productos.findByPk(req.params.id)
+
+        .then(producto => producto)
     },
 
-    findID: function(id){
+    //'new': () => {},
 
-        const products = this.findAll()
-        let producto = products.find(function(product){
-            return product.id == id
+    //'recommended': () => {},
+
+    //'add': => {},
+
+    'create': (req, res) => {
+        db.productos.create(
+            {
+                titulo: req.body.titulo,
+                destino: req.body.destino,
+                categoria: req.body.categoria,
+                precio: req.body.precio,
+                detalle: req.body.detalle,
+            }
+        )
+        .then( 
+            () => {return res.redirect('/')} 
+            )
+        .catch(error => res.send(error))
+    },
+
+    /*
+    'edit': (req, res) => {
+        let productoID = req.params.id;
+        let producto = db.productos.findByPk(productoID)
+        Promise.all([producto])
+        .then( producto => {
+
+        } )
+    }, 
+    */
+
+    'update': (req, res) => {
+        let productoID = req.params.id;
+
+        db.producto.update({
+            titulo: req.body.titulo,
+            destino: req.body.destino,
+            categoria: req.body.categoria,
+            precio: req.body.precio,
+            detalle: req.body.detalle,
+            },
+            {
+                where: {id: productoID}
+            })
+        .then( () => {
+            return res.redirect('/')
         })
-        return producto;
+        .catch(error => res.send(error))
     },
 
-    create: function(newProduct){
-        let productos = this.findAll()
-        let producto = {...newProduct, id: products.length + 1 }
-        productos.push(producto)
-        this.writeFile(productos)
+    //'delete': () => {}
+
+    'destroy': (req, res) => {
+        let productoID = req.params.id
+
+        db.productos.destroy( {where: {id: productoID}, force: true} )
+        .then( () => res.redirect('/') )
+        .catch(error => res.send(error))
     },
-
-    update: function(array, id){
-        const productos = this.findAll()
-
-        let producto = productos.find(function(product){
-            return product.id == id;
-        })
-        
-        producto.name = array.name;                 //awdawdawdawdawd
-        producto.description = array.description;   //awdawdawdawdawd
-        producto.price = array.price;               //awdawdawdawddwad
-
-        this.writeFile(productos);
-    },
-
-    destroy: function(id){
-        let productos = this.findAll();
-
-        let productoIndex = productos.findIndex((product)=>{
-            return product.id == id
-        })
-
-        productos.splice(productoIndex, 1);
-
-        this.writeFile(productos);
-    }
 }
 
-module.exports = service
+module.exports = productsServices;
+

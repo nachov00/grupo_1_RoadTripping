@@ -1,3 +1,4 @@
+/*----------------------------HEADER-DE-NACHO---------------------------------------*/
 .header {
     display: flex;
     flex-direction: row;
@@ -151,6 +152,7 @@ ul {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: roboto;
 }
+<<<<<<< HEAD
 
 /*--------BODY Mis Millas------*/
 
@@ -258,10 +260,114 @@ ul.slider li:target {
 /*--------BODY Favoritos------*/
 
 .favoritos-lista {
+=======
+/*-------------------------FIN-HEADER-DE-NACHO--------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------------CONTENIDO-MIO-----------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+.main-box {
     display: flex;
     flex-direction: column;
 }
 
+.caja {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modify-button {
+    position: relative;
+    top: 45%;
+    right: 10%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #C4C4C4;
+    margin: 3px 0px;
+    border-radius: 10px;
+
+}
+
+section div p {
+    padding: 0% 1vw;
+}
+
+.add-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        font-size: 1.3vh;
+    }
+}
+/*----------------------------CONTENIDO-MIO-----------------------------------------*/
+/*----------------------------CONTENIDO-MIO-----------------------------------------*/
+
+.main-box-2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form-input {}
+
+.caja-1 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+}
+
+div.another-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #C4C4C4;
+    margin: 3px 0px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.caja-flex {
+>>>>>>> 19df24c2805176f10d61cce0cf45ff5a5606849d
+    display: flex;
+    flex-direction: column;
+}
+
+<<<<<<< HEAD
 .favoritos {
     margin-left: 9%;
 }
@@ -288,11 +394,21 @@ ul.slider li:target {
 }
 
 .precio {
+=======
+.product-image {
+    position: relative;
+    font-size: 15vh;
+    right: 5%;
+}
+
+div.caja-1 div.caja-1 {
+>>>>>>> 19df24c2805176f10d61cce0cf45ff5a5606849d
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .boton {
     display: flex;
     background-color: #FA9E29;
@@ -361,4 +477,10 @@ ul.slider li:target {
 
 .eliminar {
     display: flex;
+=======
+.caja-2 {
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-top: 2px solid #000000;
+>>>>>>> 19df24c2805176f10d61cce0cf45ff5a5606849d
 }
