@@ -170,11 +170,12 @@ footer {
     width: 100%;
     background-color: #FFF72F;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bolder;
     padding: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-    height: 135px;
+    height: 80px;
 }
 
 .contenedor-home {
