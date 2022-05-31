@@ -33,7 +33,7 @@ const userController = {
         const errors = validationResult(req)
 
         if (errors.errors.length > 0) {
-            return res.render("user/register", { errors: errors.errors })
+            return res.render("user/register", { errors: errors.mapped })
         }
         else { }
 
