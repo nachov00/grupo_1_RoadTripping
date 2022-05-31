@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 .register {
     display: flex;
     flex-wrap: wrap;
@@ -19,9 +15,8 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: roboto;
     font-size: 1rem;
-    padding: 10px;
-<<<<<<< HEAD
-    box-sizing:border-box;
+    padding: 5px;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -82,70 +77,6 @@ button:hover {
  }
 
  /* de aqui para abajo es preregistro */
-=======
-    box-sizing: border-box;
-    text-align: center;
-}
-
-button {
-    background-color: #fa9e29;
-    width: 30%;
-    color: white;
-    padding: 15px;
-    margin: 10px 0px;
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
-}
-
-input[type=text], input[type=password] {
-    width: 50%;
-    margin: 8px 0;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 2px solid #2a3594;
-    box-sizing: border-box;
-    background-color: #809de8;
-    border-radius: 25px;
-}
-
-input:hover {
-    opacity: 0.9;
-}
-
-.fechaNacimiento {
-    width: 50%;
-    margin: 8px 0;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 2px solid #2a3594;
-    box-sizing: border-box;
-    background-color: #809de8;
-    border-radius: 25px;
-}
-
-.fechaNacimiento:hover {
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity: 0.7;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    margin: 10px 5px;
-    border-radius: 25px;
-}
-
-.terminos {
-    font-size: small;
-    font-style: none;
-}
-
-/* de aqui para abajo es preregistro */
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 
 #eligecomo {
     display: flex;
@@ -156,7 +87,6 @@ button:hover {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: roboto;
 }
-<<<<<<< HEAD
  .botonSocial {
     width: 50%;   
     margin: 8px 0;  
@@ -164,16 +94,6 @@ button:hover {
     display: inline-block;   
     border: 2px solid #2a3594;   
     box-sizing: border-box;   
-=======
-
-.botonSocial {
-    width: 50%;
-    margin: 8px 0;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 2px solid #2a3594;
-    box-sizing: border-box;
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
     background-color: #809de8;
     border-radius: 25px;
     color: black;
@@ -184,7 +104,6 @@ button:hover {
     color: white;
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
   }
 
   #fb:hover {   
@@ -192,69 +111,43 @@ button:hover {
 }   
 
   
-=======
-}
-
-#fb:hover {
-    opacity: 0.7;
-}
-
-
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 #twitter {
     background-color: #55ACEE;
     color: white;
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
   }
 
   #twitter:hover {   
     opacity: 0.7;   
 }    
   
-=======
-}
-
-#twitter:hover {
-    opacity: 0.7;
-}
-
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 #google {
     background-color: #dd4b39;
     color: white;
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
   }
 
   #google:hover {   
     opacity: 0.7;   
 }  
-=======
-}
-
-#google:hover {
-    opacity: 0.7;
-}
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
 
 #emailPrereg {
     background-color: gray;
     color: white;
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
   }
 
   #emailPrereg:hover {   
     opacity: 0.7;   
 }  
-=======
-}
 
-#emailPrereg:hover {
-    opacity: 0.7;
+.ingresar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
->>>>>>> e7ed20e2f57c2e62ac6975e9dff34f2a2c342b55
