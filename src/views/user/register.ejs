@@ -59,6 +59,16 @@
             Borrar
         </button>
     </form>
+    <div>
+        <% if (errors != undefined) { %> 
+            <% console.log('Entré en el IF') %> 
+
+        <% for ( let i = 0; i < errors.length; i++) { %>
+            <%- errors[i].msg    %>
+        <% } %>  
+
+        <% } %> 
+    </div>
 </body>
 
 </html>
