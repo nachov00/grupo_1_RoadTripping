@@ -3,10 +3,7 @@ const services = require('../services/productServices')
 const productController = {
   listado: (req, res) => {
 
-    let productos = services.list()
-
-    console.log(productos);
-
+    let productos = services.list();
     res.render("products/productList", { productos })
   },
     detail: (req, res) => {

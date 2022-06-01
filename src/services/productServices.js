@@ -11,12 +11,12 @@ const productsServices = {
 
     'list': () => { 
         db.productos.findAll()
-
+        .then( (data) => data.JSON())
         .then( productos => productos)
     },
 
-    'detail': () => {
-        db.productos.findByPk(req.params.id)
+    'detail': (id) => {
+        db.productos.findByPk(id)
 
         .then(producto => producto)
     },
