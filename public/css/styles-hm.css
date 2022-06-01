@@ -51,6 +51,21 @@ header {
     width: 100%;
 }
 
+.logo-error {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.error-404 {
+    background-color: lightblue;
+}
+
+.error-text {
+    font: bolder;
+}
+
 .fav-car-user {
     grid-column-start: 4;
     grid-column-end: 5;
