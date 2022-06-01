@@ -10,6 +10,13 @@ const  localsMiddle = require("./middleware/locals")
 
 const app = express();
 
+let port = 3030;
+
+app.listen(port, function () {
+    console.log("Server Online!")
+    console.log("Port: " + port)
+})
+
 
 app.set("view engine", "ejs");
 app.set('views', path.resolve(__dirname, 'views'));
@@ -49,12 +56,7 @@ var adminRouter = require('./routes/adminRoutes');
 
 
 
-        // let port = 3030;
 
-        // app.listen(port, function () {
-        //     console.log("Server Online!")
-        //     console.log("Port: " + port)
-        // })
 
 
 
@@ -69,7 +71,7 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('user/errortest');
+    res.render('user/error404');
 });
 
 module.exports = app;
