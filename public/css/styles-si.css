@@ -151,3 +151,11 @@ button:hover {
     align-items: center;
     font-size: 10px;
 }
+
+.is-valid {
+    color: green;
+}
+
+.is-invalid { 
+    color: red;
+}
