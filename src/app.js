@@ -4,7 +4,9 @@ const cookieParser = require('cookie-parser');
 const session = require("express-session");
 const methodOverride = require('method-override');
 const httpError = require('http-errors');
+const cors = require('cors');
 const  localsMiddle = require("./middleware/locals")
+
 
 const app = express();
 
@@ -12,6 +14,8 @@ const app = express();
 app.set("view engine", "ejs");
 app.set('views', path.resolve(__dirname, 'views'));
 app.use(express.static(path.resolve(__dirname, '../public')));
+
+app.use(cors());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));

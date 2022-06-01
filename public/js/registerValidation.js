@@ -5,13 +5,13 @@ window.addEventListener("load", function () {
     let form = document.querySelector(".register");
 
 
-    let enteredPassword = "";
     const mailFormat = /\S+@\S+\.\S+/;
     const minusculas = /[a-z]/g;
     const mayusculas = /[A-Z]/g;
     const numeros = /[0-9]/g;
     const today = new Date();
     const year = today.getFullYear();
+    let enteredPassword = "";
 
 
     nombre.focus();
@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
                     // campo.nextElementSibling.classList.remove("is-invalid")
                     // campo.classList.add("is-valid");
                     if ((campo.name == "cumpleaños") && ((campo.value.length <= 0) || (year - (Number(campo.value.slice(0, 4))) < 18 ) )) {
-                        //console.log("Estamos en "+year);
+                        //console.log("Estamos en "+year);  
                         //console.log("Naciste en "+Number(campo.value.slice(0, 4)));     D-E-B-U-G-I-N-G
                         //console.log("Tenes "+(year - Number(campo.value.slice(0, 4))) )
                         campo.nextElementSibling.innerHTML = "Usted debe ser mayor de edad para registrarse al sitio";

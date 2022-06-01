@@ -15,7 +15,8 @@ const userController = {
 
     register: (req, res) => {
 
-        res.render("user/register")
+        let errors = []
+        res.render("user/register", {errors})
 
     },
 
@@ -28,10 +29,11 @@ const userController = {
 
     newRegister: (req, res) => {
 
+        
         const errors = validationResult(req)
 
         if (errors.errors.length > 0) {
-            return res.render("register", { errors: errors.mapped() })
+            return res.render("user/register", { errors: errors.mapped })
         }
         else { }
 

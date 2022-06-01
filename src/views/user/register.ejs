@@ -59,6 +59,18 @@
             Borrar
         </button>
     </form>
+    <div>
+        <% if (errors > 0) { %> 
+            <% console.log('Entré en el IF') %> 
+
+        <% for ( let i = 0; i < errors.length; i++) { %>
+            <% console.log(errors) %> 
+            <% console.log(errors[i]) %> 
+            <%- errors[i]    %>
+        <% } %>  
+
+        <% } %> 
+    </div>
 </body>
 
 </html>
