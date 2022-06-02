@@ -265,6 +265,17 @@ main .background-video {
 
 /*------------------------------------------------------------------*/
 
+section.carrusel-1 {
+    position: relative;
+    top: 75vh;
+    padding: 10vh;
+}
+
+section.carrusel {
+
+}
+
+
 main .promo-carousel {
     position: absolute;
     top: 2500%;

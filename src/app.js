@@ -7,7 +7,6 @@ const httpError = require('http-errors');
 const cors = require('cors');
 const  localsMiddle = require("./middleware/locals")
 
-
 const app = express();
 
 /* let port = 3030;
@@ -56,9 +55,10 @@ var adminRouter = require('./routes/adminRoutes');
 
                 //Aquí llamo a la ruta de las api de movies
 const apiUserRoutes = require('./routes/api/apiUsersRoutes')
+                app.use('/api/users', apiUserRoutes);
+
 const apiProductRoutes = require('./routes/api/apiProductsRoutes')
-app.use('/api/users', apiUserRoutes);
-app.use('/api/products', apiProductRoutes);
+                app.use('/api/products', apiProductRoutes);
 
 
 
@@ -77,9 +77,9 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('user/error404');
+    res.render('error');
+    //res.render('error404');
 });
-//Aquí creo la colección de mis recursos de movies (APIs)
 
 
 

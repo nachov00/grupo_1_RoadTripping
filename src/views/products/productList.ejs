@@ -59,12 +59,10 @@
 
                     </div>
                 </div>
-                <!-- let productos = ["prueba1", "prueba2", "prueba3"] PRUEBA PARA VER SI FUNCIONA
-                PRODUCTOS UNDEFINED -->
+
                 <div class="caja-general2">
                     
-                    <% if(productos > 0) { %> 
-                        <% console.log(productos) %> 
+                    <% if(productos !== 0) { %> 
                     <% for (let i=0; i < productos.length ; i++){ %> 
                         <% if(i==5){break} %> 
                     <article class="producto">
@@ -74,26 +72,23 @@
                         </div>
 
                         <div class="imagen">
-                            <img height="150px" src="/img/Bariloche/Bariloche1 Letras.jpg" alt="">
+                            <img height="150px" src="/img/carousel-imgs/<%= [i] %>.jpg" alt="">
                         </div>
 
                         <div class="info">
 
                             <div class="titulo">
-                                <h3><%= productos[i].titulo %> </h3>
+                                <h3><%= productos[i].destino %> </h3>
                             </div>
-
                             <div class="precio">
                                 <div>Precio</div>
                                 <div>$<%= productos[i].precio %></div>
                             </div>
-
                             <div class="boton">
                                 <a href="/product/detail/<%= productos[i].id %>">
                                 <button class="w3-button detalle">VER MAS</button>
                                 </a>
                             </div>
-
                         </div>
                     </article>
                     <% } %> 

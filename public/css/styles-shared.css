@@ -91,7 +91,7 @@ main .buscador {
     margin: 0px;
     display: flex;
     position: relative;
-    top: 1500%;
+    top: 35vh;
     left: 10%;
     padding: 1px;
 }
@@ -148,7 +148,7 @@ header .buscador button {
     padding: 2px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 30%;
-    font-size: 30px;
+    font-size: 27px;
     color: #fa9e29;
 }
 

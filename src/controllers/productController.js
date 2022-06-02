@@ -1,10 +1,14 @@
 const services = require('../services/productServices')
+const db = require("../database/models");
 
 const productController = {
   listado: (req, res) => {
+    
+    db.productos.findAll()
+    .then(data => {
+      res.render("products/productList", { productos: data })
+    })
 
-    let productos = services.list();
-    res.render("products/productList", { productos })
   },
     detail: (req, res) => {
       let producto = services.detail(req.params.id)
