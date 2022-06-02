@@ -78,25 +78,10 @@ header {
 }
 .img-error {
     position: absolute;
-    width: 600px;
-    height: 400px;
-    margin-top: -70px;
-    margin-left: 190px;
+    width: 50%;
+   margin-left: 500px;
 }
 
-.texterror {
-    position: absolute;
-    width: 100%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 94px;
-    text-align: center;
-    color: #FA6C05;
-    grid-row: 1 / 2;
-    padding: 5px;
-}
 /*---------------------Fin del ERROR Lis--------------*/
 
 .fav-car-user {
