@@ -8,6 +8,7 @@ const cors = require('cors');
 const  localsMiddle = require("./middleware/locals")
 
 
+
 const app = express();
 
 /* let port = 3030;
@@ -75,3 +76,4 @@ app.use(function (err, req, res, next) {
 });
 
 module.exports = app;
+

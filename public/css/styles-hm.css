@@ -78,8 +78,9 @@ header {
 }
 .img-error {
     position: absolute;
-    width: 50%;
+    width: 35%;
    margin-left: 500px;
+   margin-top: 150px;
 }
 
 /*---------------------Fin del ERROR Lis--------------*/
