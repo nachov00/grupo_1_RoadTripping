@@ -79,7 +79,30 @@ header {
 .img-error {
     position: absolute;
     width: 50%;
-   margin-left: 500px;
+    height: auto;
+   display: block;
+   margin-left: 25%;
+   
+}
+
+.msg-error {
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    
+}
+
+.msg-error2 {
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20%;
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.6)
+    
 }
 
 /*---------------------Fin del ERROR Lis--------------*/

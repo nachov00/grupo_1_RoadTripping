@@ -54,6 +54,12 @@ var userRouter = require('./routes/userRoutes');
 var adminRouter = require('./routes/adminRoutes');
                 app.use('/Admin', adminRouter);
 
+                //Aquí llamo a la ruta de las api de movies
+const apiUserRoutes = require('./routes/api/apiUsersRoutes')
+const apiProductRoutes = require('./routes/api/apiProductsRoutes')
+app.use('/api/users', apiUserRoutes);
+app.use('/api/products', apiProductRoutes);
+
 
 
 
@@ -73,5 +79,9 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('user/error404');
 });
+//Aquí creo la colección de mis recursos de movies (APIs)
+
+
+
 
 module.exports = app;
