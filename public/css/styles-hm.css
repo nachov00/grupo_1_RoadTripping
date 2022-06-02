@@ -51,6 +51,39 @@ header {
     width: 100%;
 }
 
+.logo-error {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.error-404 {
+    background-color: lightblue;
+}
+
+.error-text {
+    font: bolder;
+}
+
+/*------------ERROR 404 --------*/
+
+.error404 {
+    background-color: white;
+}
+
+.imagen {
+    background-color: white;
+
+}
+.img-error {
+    position: absolute;
+    width: 50%;
+   margin-left: 500px;
+}
+
+/*---------------------Fin del ERROR Lis--------------*/
+
 .fav-car-user {
     grid-column-start: 4;
     grid-column-end: 5;
@@ -329,3 +362,4 @@ footer {
     display: flex;
 
 }
+

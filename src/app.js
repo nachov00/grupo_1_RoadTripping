@@ -4,15 +4,26 @@ const cookieParser = require('cookie-parser');
 const session = require("express-session");
 const methodOverride = require('method-override');
 const httpError = require('http-errors');
+const cors = require('cors');
 const  localsMiddle = require("./middleware/locals")
 
+
 const app = express();
+
+/* let port = 3030;
+
+app.listen(port, function () {
+    console.log("Server Online!")
+    console.log("Port: " + port)
+})*/
 
 
 
 app.set("view engine", "ejs");
 app.set('views', path.resolve(__dirname, 'views'));
 app.use(express.static(path.resolve(__dirname, '../public')));
+
+app.use(cors());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
@@ -46,17 +57,6 @@ var adminRouter = require('./routes/adminRoutes');
 
 
 
-//app.get("/Crear-Editar", function (req, res){
-//    res.render(path.join(__dirname, './views/admin/create_edit.ejs'))
-//})
-//
-//app.get("/Crear", function (req, res){
-//    res.render(path.join(__dirname, './views/admin/create.ejs'))
-//})
-//
-//app.get("/Editar", function (req, res){
-//    res.render(path.join(__dirname, './views/admin/edit.ejs'))
-//})
 
 
 
@@ -71,7 +71,7 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    res.render('user/error404');
 });
 
 module.exports = app;

@@ -63,30 +63,40 @@
                 PRODUCTOS UNDEFINED -->
                 <div class="caja-general2">
                     
-                    <% for(let i=0; i<productos.length ;i++){ %> 
+                    <% if(productos > 0) { %> 
+                        <% console.log(productos) %> 
+                    <% for (let i=0; i < productos.length ; i++){ %> 
                         <% if(i==5){break} %> 
                     <article class="producto">
+
                         <div class="seleccion">
                             <form action=""><input type="checkbox"></form>
                         </div>
+
                         <div class="imagen">
                             <img height="150px" src="/img/Bariloche/Bariloche1 Letras.jpg" alt="">
                         </div>
+
                         <div class="info">
+
                             <div class="titulo">
                                 <h3><%= productos[i].titulo %> </h3>
                             </div>
+
                             <div class="precio">
                                 <div>Precio</div>
                                 <div>$<%= productos[i].precio %></div>
                             </div>
+
                             <div class="boton">
                                 <a href="/product/detail/<%= productos[i].id %>">
                                 <button class="w3-button detalle">VER MAS</button>
                                 </a>
                             </div>
+
                         </div>
                     </article>
+                    <% } %> 
                     <% } %> 
                 </div>
                 <div class="caja-general3">

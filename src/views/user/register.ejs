@@ -2,63 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de usuario</title>
-    <link rel="Stylesheet" href="/css/styles-si.css">
-    <link rel="icon" href="/img/Logo2.png">
+    <link rel="Stylesheet" href="/css/styles-si.css" />
+    <link rel="icon" href="/img/Logo2.png" />
 
-     <script src="/js/registerValidation.js"></script> 
-
+    <script src="/js/registerValidation.js"></script>
+    <!-- Validacion de FRONT -->
 </head>
 <header class="ingresar">
     <div id="imagen-login">
-        <a href="/"><img src="/img/Logo.png" alt="" width="200px"></a>
+        <a href="/"><img src="/img/Logo.png" alt="" width="200px" /></a>
     </div>
     <div class="header-login">
         <h1>Crea una nueva cuenta</h1>
-        <h2>Unete a nuestra comunidad! Crea tu cuenta. ¿Ya tienes una? <a id="ingresa-aqui" href="/user/login"
-                target="_blank">Ingresa aquí</a></h2>
+        <h2>
+            Unete a nuestra comunidad! Crea tu cuenta. ¿Ya tienes una?
+            <a id="ingresa-aqui" href="/user/login" target="_blank">Ingresa aquí</a>
+        </h2>
     </div>
 </header>
 
 <body class="login">
     <form action="/user/registrarse" method="post" class="register">
-        <label id="emailPrereg"  for="Nombre"><strong></strong></label>
-            <input type="text" placeholder="Nombre y Apellido" name="Nombre" id="Nombre">
-            <span></span>
-            <br>
+
+        <label id="emailPrereg" for="Nombre"><strong></strong></label>
+        <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" />
+        <span></span>
+        <br />
+        <!---->
+        <label id="emailPrereg" for="Apellido"><strong></strong></label>
+        <input type="text" placeholder="Apellido" name="Apellido" id="Apellido" />
+        <span></span>
+        <br />
+        <!----><!--
         <label for="usuario"><strong></strong></label>
-            <input type="text" placeholder="Nombre de Usuario" name="usuario" id="usuario">
-            <span></span>
-            <br>
-        <label><strong></strong></label>
-            <input type="date" placeholder="Fecha de Nacimiento" onfocus="(this.type='date')" name="cumpleaños"
-            min="1900-01-01" max="2010-01-01" class="fechaNacimiento">
-            <span></span>
-            <br>
-        <label for="domicilio" placeholder="Domicilio"><strong></strong></label>
-            <input type="text" placeholder="Correo Electronico" name="email" id="email">
-            <span></span>
-            <br>
+        <input type="text" placeholder="Nombre de Usuario" name="usuario" id="usuario" />
+        <span></span>
+        <br />
+    --><!---->
+        <label for="domicilio"><strong></strong></label>
+        <input type="text" placeholder="Correo Electronico" name="email" id="email" />
+        <span></span>
+        <br />
+        <!---->
+        <input type="date" placeholder="Fecha de Nacimiento" onfocus="(this.type='date')" name="cumpleaños"
+            min="1900-01-01" max="2010-01-01" class="fechaNacimiento" />
+        <span></span>
+        <br />
+        <!---->
         <label for="password"><strong></strong></label>
-            <input type="password" placeholder="Contraseña" name="password" id="password">
-            <span></span>
-            <br>
+        <input type="password" placeholder="Contraseña" name="password" id="password" />
+        <span></span>
+        <br />
+        <!---->
         <label for="confirm-pass"><strong></strong></label>
-            <input type="password" placeholder="Confirmar contraseña" name="confirm-pass" id="confirm-pass">
-            <span></span>
-            <br>
+        <input type="password" placeholder="Confirmar contraseña" name="confirm-pass" id="confirm-pass" />
+        <span></span>
+        <br />
+        <!---->
         <button type="submit">
             <strong>Registrarse</strong>
         </button>
-        <p class="terminos">Al crear la cuenta confirmo que he leído y aceptado los <a href="/user/Term&Cond">Terminos y
-                condiciones</a> y la <a href="/user/Privacidad">Politica de privacidad</a></p>
-        <button type="reset" class="cancelbtn">
-            Borrar
-        </button>
+        <!---->
+        <p class="terminos">
+            Al crear la cuenta confirmo que he leído y aceptado los
+            <a href="/user/Term&Cond">Terminos y condiciones</a> y la
+            <a href="/user/Privacidad">Politica de privacidad</a>
+        </p>
+
+        <button type="reset" class="cancelbtn">Borrar</button>
     </form>
+
+    <div>
+        <% if (errors) { %>
+            <% console.log('Entré en el IF') %>
+                <% for ( let i=0; i < errors.length; i++) { %>
+                    <% console.log(errors)%>
+                        <%= errors[i].msg%>
+                            <% } %>
+                                <% } %>
+    </div>
+
 </body>
 
 <header class="ingresar">

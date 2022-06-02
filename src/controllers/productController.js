@@ -1,8 +1,10 @@
-const services=require('../services/productServices')
+const services = require('../services/productServices')
 
 const productController = {
   listado: (req, res) => {
-    res.render("products/productList", {productos:services.list()})
+
+    let productos = services.list();
+    res.render("products/productList", { productos })
   },
     detail: (req, res) => {
       let producto = services.detail(req.params.id)
