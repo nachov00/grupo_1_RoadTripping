@@ -15,12 +15,23 @@ const products = db.Producto;
 const usersAPIController = {
     'list': (req, res) => {
         users.findAll()
-        .then(user => {
+        .then(data => {
+            let new_users = data.map(user => {
+                return {
+                    id: user.id,
+                    nombre: user.nombre,
+                    apellido: user.apellido,
+                    usuario: user.usuario,
+                    gereno: user.genero,
+                    ubicacion: user.ubicacion
+                }
+            })
+            
             let respuesta = {
-                data: user,
+                data: new_users,
                 meta: {
                     status : 200,
-                    count: user.length,
+                    count: users.length,
                     url: 'api/users'
                 }
                 
