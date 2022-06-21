@@ -43,13 +43,23 @@ const usersAPIController = {
     'detail': (req, res) => {
         users.findByPk(req.params.id)
             .then(user => {
+
+                let new_user = {
+                        id: user.id,
+                        nombre: user.nombre,
+                        apellido: user.apellido,
+                        usuario: user.usuario,
+                        gereno: user.genero,
+                        ubicacion: user.ubicacion
+                    }
+
                 let respuesta = {
                     meta: {
                         status: 200,
                         total: user.length,
                         url: '/api/users/:id'
                     },
-                    data: user
+                    data: new_user
                 }
                 res.json(respuesta);
             });
